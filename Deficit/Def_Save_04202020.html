@@ -49,6 +49,24 @@ tw-story[tags~="staticBG"] {
     filter: blur(1px); */ 
 }
 
+tw-story[tags~="staticBG2"] {  
+  background-repeat: no-repeat;
+  background-color: Black;
+  /* background: url("Static1k.gif"); */
+  background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
+  background-size: cover;
+  /*background-position: center top; */
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 0;
+ /* position: absolute; */
+  /* top: 0;
+  	left: 0;
+    filter: blur(1px); */ 
+}
+
 /*Remove Sidebar*/
 tw-sidebar {display: none;}
 
@@ -756,77 +774,106 @@ animation-delay: -1s;
 
 //`${offset}%`
 
+//document.addEventListener('DOMContentLoaded', function(event) {
+  //the event occurred
+//})
 setInterval(
   function(){ 
     var pill = document.getElementById("pill");
+    
+    if (pill) {
     var offset = Math.random() * 100;
     pill.style.left = `${offset}%`;
-    console.log("boop", pill.style.left); 
+    console.log("boop", pill.style.left);
+    }
 }, 20000);
+
 
 setInterval(
   function(){ 
     var pill2 = document.getElementById("pill2");
+    
+    if (pill2) {
     var offset = Math.random() * 100;
     pill2.style.left = `${offset}%`;
-    console.log("boop2", pill2.style.left); 
+  }
 }, 12000);
 
+
+ 
 setInterval(
   function(){ 
     var pill3 = document.getElementById("pill3");
+    
+    if (pill3) {
     var offset = Math.random() * 100;
     pill3.style.left = `${offset}%`;
-    console.log("boop2", pill3.style.left); 
+    } 
 }, 14000);
+
+
+
 
 setInterval(
   function(){ 
     var pill4 = document.getElementById("pill4");
+    
+    if (pill4) {
     var offset = Math.random() * 100;
     pill4.style.left = `${offset}%`;
-    console.log("boop2", pill4.style.left); 
+  }
 }, 10000);
 
+  
 setInterval(
   function(){ 
     var pill5 = document.getElementById("pill5");
+    
+    if (pill5) {
     var offset = Math.random() * 100;
     pill5.style.left = `${offset}%`;
-    console.log("boop2", pill5.style.left); 
+    }
 }, 13000);
 
 
 setInterval(
   function(){ 
     var clock = document.getElementById("clock");
+    
+    if (clock) {
     var offset = Math.random() * 100;
     clock.style.left = `${offset}%`;
-    console.log("boop2", clock.style.left); 
+    }
 }, 12000);
 
 setInterval(
   function(){ 
     var clock2 = document.getElementById("clock2");
+    
+    if (clock2) {
     var offset = Math.random() * 100;
     clock2.style.left = `${offset}%`;
-    console.log("boop2", clock2.style.left); 
+  } 
 }, 10000);
 
 setInterval(
   function(){ 
     var clock3 = document.getElementById("clock3");
+    
+    if (clock3) {
     var offset = Math.random() * 100;
     clock3.style.left = `${offset}%`;
-    console.log("boop2", clock3.style.left); 
+  } 
 }, 12000);
 
 setInterval(
   function(){ 
     var clock4 = document.getElementById("clock4");
+    
+    if (clock4) {
     var offset = Math.random() * 100;
     clock4.style.left = `${offset}%`;
-    console.log("boop2", clock4.style.left); 
+    } 
 }, 12000);
 
 
@@ -838,41 +885,53 @@ setInterval(
 setInterval(
   function(){ 
     var pill2_1 = document.getElementById("pill2_1");
+    
+    if (pill2_1) {
     var offset = Math.random() * 100;
     pill2_1.style.left = `${offset}%`;
-    console.log("boop2", pill2_1.style.left); 
+    } 
 }, 10000);
 
 setInterval(
   function(){ 
     var pill2_2 = document.getElementById("pill2_2");
+    
+    if (pill2_2) {
     var offset = Math.random() * 100;
     pill2_2.style.left = `${offset}%`;
-    console.log("boop2", pill2_2.style.left); 
+  }
 }, 10000);
 
+
+
 setInterval(
-  function(){ 
-    var pill2_3 = document.getElementById("pill2_3");
-    var offset = Math.random() * 100;
-    pill2_3.style.left = `${offset}%`;
-    console.log("boop2", pill2_3.style.left); 
+  function () {
+	var pill2_3 = document.getElementById('pill2_3');
+    
+	if (pill2_3) {
+		var offset = Math.random() * 100;
+		pill2_3.style.left = `${offset}%`;
+	}
 }, 8000);
 
 setInterval(
   function(){ 
     var clock2_1 = document.getElementById("clock2_1");
+    
+    if (clock2_1) {
     var offset = Math.random() * 100;
     clock2_1.style.left = `${offset}%`;
-    console.log("boop2", clock2_1.style.left); 
+    }
 }, 12000);
 
 setInterval(
   function(){ 
     var clock2_2 = document.getElementById("clock2_2");
+    
+    if (clock2_2) {
     var offset = Math.random() * 100;
     clock2_2.style.left = `${offset}%`;
-    console.log("boop2", clock2_2.style.left); 
+    }
 }, 8000);
 </script><tw-passagedata pid="1" name="titleOLD" tags="" position="1074,6" size="100,100">*DEFICIT*
 
@@ -1971,7 +2030,81 @@ It&#39;s on a Very Important Topic, directly relavent to your interests.&lt;/br&
    &lt;/div&gt;
 
                   
-&lt;/section&gt;</tw-passagedata><tw-passagedata pid="39" name="Untitled Passage 1" tags="staticBG" position="1940.0000000000002,27.5" size="100,100">
+&lt;/section&gt;</tw-passagedata><tw-passagedata pid="39" name="Untitled Passage 1" tags="staticBG2" position="1940.0000000000002,27.5" size="100,100">
+
+&lt;div style=&quot;position:absolute; margin: 0% 0% 0% 45%&quot;&gt;
+|title)[Click To Start]
+&lt;/div&gt;
+
+&lt;section style=&quot;position:relative;&quot;&gt; 
+
+
+[&lt;div class=&quot;centre&quot; style=&quot;margin: 12% 0% 0% 0%&quot;&gt;
+&lt;p class=&quot;hover&quot; style=&quot;text-shadow:3px 3px 20px #b9b9b9;&quot;&gt;[**D**]&lt;/p&gt;\
+\&lt;p class=&quot;hover2&quot;&gt;[**E**]&lt;/p&gt;\
+\&lt;p class=&quot;hover3&quot;&gt;[**F**]&lt;/p&gt;\
+\&lt;p class=&quot;hover2&quot;&gt;[**I**]&lt;/p&gt;\
+\&lt;p class=&quot;hover&quot; style=&quot;text-shadow:3px 3px 20px #b9b9b9;&quot;&gt;[**C**]&lt;/p&gt;\
+\&lt;p class=&quot;hover3&quot;&gt;[**I**]&lt;/p&gt;\
+\&lt;p class=&quot;hover&quot; style=&quot;text-shadow:3px 3px 20px #b9b9b9;&quot;&gt;[**T**]&lt;/p&gt;
+&lt;/div&gt;]
+
+&lt;div class=&quot;set&quot;&gt;
+ &lt;!-- style=&quot;position:absolute;&quot; --&gt;
+ 
+&lt;div id=&quot;pill&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Pills.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+  
+&lt;div id=&quot;pill2&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Pills.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;  
+
+&lt;div id=&quot;pill3&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Pills.png&quot;&gt;&lt;/img&gt;&lt;/div&gt; 
+
+&lt;div id=&quot;pill4&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Pills.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+
+&lt;div id=&quot;pill5&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Pills.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+  
+&lt;div id=&quot;clock&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock1.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+
+&lt;div id=&quot;clock2&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock1.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+
+&lt;div id=&quot;clock3&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock1.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+
+&lt;div id=&quot;clock4&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock1.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class=&quot;set2&quot; style=&quot;position:relative;&quot;&gt;
+
+&lt;div id=&quot;pill2_1&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Pills.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+
+&lt;div id=&quot;pill2_2&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Pills.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+
+
+
+&lt;div id=&quot;clock2_1&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock1.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+
+&lt;div id=&quot;clock2_2&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock1.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;
+
+
+
+
+
+&lt;/div&gt;
+
+
+&lt;/section&gt;
+
+
+{
+	(live:0.65s)[
+	(show: ?title)
+	]
+	[(stop:)
+	]	
+}
+{
+(click: ?title)[(go-to: &quot;fadeTitle&quot;)]
+}</tw-passagedata><tw-passagedata pid="40" name="Untitled Passage 2" tags="" position="2063.3333333333335,134.16666666666669" size="100,100">
 
 &lt;div style=&quot;position:absolute; margin: 0% 0% 0% 45%&quot;&gt;
 |title)[Click To Start]

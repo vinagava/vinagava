@@ -683,43 +683,64 @@ margin: 0% 15% 0 5%;
 #pill{
   animation: animate 20s linear infinite;
   animation-delay: -7s;
+  left: 12%;
 }
 
 #pill2{
   animation: animate 12s linear infinite;
 animation-delay: -2s;
+   left: 25%;
 }
 
 #pill3{
   animation: animate 14s linear infinite;
 animation-delay: -4s;
+   left: 36%;
 }
 
 #pill4{
   animation: animate 10s linear infinite;
 animation-delay: -8s;
+   left: 60%;
 }
 
 #pill5{
   animation: animate 13s linear infinite;
 animation-delay: -1s;
+   left: 78%;
+}
+
+#pill6{
+  animation: animate 8s linear infinite;
+animation-delay: -2s;
+   left: 12%;
+}
+
+#pill7{
+  animation: animate 10s linear infinite;
+animation-delay: -4s;
+   left: 92%;
 }
 
 #clock{
   animation: animate 12s linear infinite;
   animation-delay: -3s;
+   left: 10%;
 }
 #clock2{
   animation: animate 10s linear infinite;
   animation-delay: -5s;
+   left: 22%;
 }
 #clock3{
   animation: animate 12s linear infinite;
   animation-delay: -2s;
+   left: 80%;
 }
 #clock4{
   animation: animate 11s linear infinite;
   animation-delay: -3s;
+   left: 38%;
 }
 
 
@@ -727,25 +748,54 @@ animation-delay: -1s;
 #pill2_1{
   animation: animate 10s linear infinite;
   animation-delay: -8s;
+   left: 5%;
 }
 
 #pill2_2{
   animation: animate 10s linear infinite;
   animation-delay: -2s;
+   left: 82%;
 }
 
 #pill2_3{
   animation: animate 8s linear infinite;
   animation-delay: -5s;
+   left: 42%;
+}
+
+#pill2_4{
+  animation: animate 6s linear infinite;
+  animation-delay: -1s;
+   left: 21%;
+}
+
+#pill2_5{
+  animation: animate 12s linear infinite;
+  animation-delay: -2s;
+   left: 75%;
 }
 
 #clock2_1{
   animation: animate 12s linear infinite;
   animation-delay: -3s;
+   left: 28%;
 }
 #clock2_2{
   animation: animate 8s linear infinite;
   animation-delay: -6s;
+   left: 44%;
+}
+
+#clock2_3{
+  animation: animate 10s linear infinite;
+  animation-delay: -5s;
+   left: 57%;
+}
+
+#clock2_4{
+  animation: animate 11s linear infinite;
+  animation-delay: -9s;
+   left: 34%;
 }
 
 
@@ -757,8 +807,6 @@ animation-delay: -1s;
   95%  {opacity: 1;}
 	100% {top: 110%; -webkit-transform: rotate(360deg); opacity: 0;}
 }
-
-
 
 
 
@@ -786,7 +834,7 @@ setInterval(
     pill.style.left = `${offset}%`;
     console.log("boop", pill.style.left);
     }
-}, 20000);
+}-7000, 20000);
 
 
 setInterval(
@@ -797,7 +845,7 @@ setInterval(
     var offset = Math.random() * 100;
     pill2.style.left = `${offset}%`;
   }
-}, 12000);
+}-2000, 12000);
 
 
  
@@ -809,7 +857,7 @@ setInterval(
     var offset = Math.random() * 100;
     pill3.style.left = `${offset}%`;
     } 
-}, 14000);
+}-4000, 14000);
 
 
 
@@ -822,7 +870,7 @@ setInterval(
     var offset = Math.random() * 100;
     pill4.style.left = `${offset}%`;
   }
-}, 10000);
+}-8000, 10000);
 
   
 setInterval(
@@ -833,8 +881,27 @@ setInterval(
     var offset = Math.random() * 100;
     pill5.style.left = `${offset}%`;
     }
-}, 13000);
+}-1000, 13000);
 
+setInterval(
+  function(){ 
+    var pill6 = document.getElementById("pill6");
+    
+    if (pill6) {
+    var offset = Math.random() * 100;
+    pill6.style.left = `${offset}%`;
+    }
+}-2000, 8000);
+
+setInterval(
+  function(){ 
+    var pill7 = document.getElementById("pill7");
+    
+    if (pill7) {
+    var offset = Math.random() * 100;
+    pill7.style.left = `${offset}%`;
+    }
+}-4000, 10000);
 
 setInterval(
   function(){ 
@@ -844,7 +911,7 @@ setInterval(
     var offset = Math.random() * 100;
     clock.style.left = `${offset}%`;
     }
-}, 12000);
+}-3000, 12000);
 
 setInterval(
   function(){ 
@@ -854,7 +921,7 @@ setInterval(
     var offset = Math.random() * 100;
     clock2.style.left = `${offset}%`;
   } 
-}, 10000);
+}-5000, 10000);
 
 setInterval(
   function(){ 
@@ -864,7 +931,7 @@ setInterval(
     var offset = Math.random() * 100;
     clock3.style.left = `${offset}%`;
   } 
-}, 12000);
+}-2000, 12000);
 
 setInterval(
   function(){ 
@@ -874,7 +941,7 @@ setInterval(
     var offset = Math.random() * 100;
     clock4.style.left = `${offset}%`;
     } 
-}, 12000);
+}-3000, 12000);
 
 
 
@@ -890,7 +957,7 @@ setInterval(
     var offset = Math.random() * 100;
     pill2_1.style.left = `${offset}%`;
     } 
-}, 10000);
+}-8000, 10000);
 
 setInterval(
   function(){ 
@@ -900,7 +967,7 @@ setInterval(
     var offset = Math.random() * 100;
     pill2_2.style.left = `${offset}%`;
   }
-}, 10000);
+}-2000, 10000);
 
 
 
@@ -912,7 +979,27 @@ setInterval(
 		var offset = Math.random() * 100;
 		pill2_3.style.left = `${offset}%`;
 	}
-}, 8000);
+}-5000, 8000);
+
+setInterval(
+  function () {
+	var pill2_4 = document.getElementById('pill2_4');
+    
+	if (pill2_4) {
+		var offset = Math.random() * 100;
+		pill2_4.style.left = `${offset}%`;
+	}
+}-1000, 6000);
+
+setInterval(
+  function () {
+	var pill2_5 = document.getElementById('pill2_5');
+    
+	if (pill2_5) {
+		var offset = Math.random() * 100;
+		pill2_5.style.left = `${offset}%`;
+	}
+}-2000, 12000);
 
 setInterval(
   function(){ 
@@ -922,7 +1009,7 @@ setInterval(
     var offset = Math.random() * 100;
     clock2_1.style.left = `${offset}%`;
     }
-}, 12000);
+}-3000, 12000);
 
 setInterval(
   function(){ 
@@ -932,7 +1019,29 @@ setInterval(
     var offset = Math.random() * 100;
     clock2_2.style.left = `${offset}%`;
     }
-}, 8000);
+}-6000, 8000);
+
+
+setInterval(
+  function(){ 
+    var clock2_3 = document.getElementById("clock2_3");
+    
+    if (clock2_3) {
+    var offset = Math.random() * 100;
+    clock2_3.style.left = `${offset}%`;
+    }
+}-5000, 10000);
+
+
+setInterval(
+  function(){ 
+    var clock2_4 = document.getElementById("clock2_4");
+    
+    if (clock2_4) {
+    var offset = Math.random() * 100;
+    clock2_4.style.left = `${offset}%`;
+    }
+}-9000, 11000);
 </script><tw-passagedata pid="1" name="titleOLD" tags="" position="1074,6" size="100,100">*DEFICIT*
 
 **PRE-ALPHA PROTOTYPE**

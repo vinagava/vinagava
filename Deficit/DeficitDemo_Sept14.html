@@ -5949,6 +5949,246 @@ gsfgdghdlghdgdgd</tw-passagedata><tw-passagedata pid="84" name="Untitled Passage
 
 
 
+&lt;div style=&quot;display:flex;&quot;&gt;
+|clothes)[]
+|game)[]
+|odds)[]
+|cup)[]&lt;/div&gt;
+|pill)[PILLS
+PILLS
+PILLS
+PILLS
+PILLS
+PILLS
+PILLS
+PILLS
+PILLS
+PILLS]
+
+\|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;&lt;/hr&gt;]]\
+\|inv)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Inventory]]
+
+&lt;div style=&quot;display:flex;&quot;&gt;
+|inv1)[]
+|inv2)[]
+|inv3)[]&lt;/div&gt;
+
+{
+(live:1s)[
+	(set: $tick to it + 1)
+	(set: $cup to 0)(set: $clothes to 0)(set: $odds to 0)(set:$game to 0)
+	(set: $slot to 0)
+	(if: $tick is 1 and $reset is 0)[
+		(replace:?text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Your room is messy.]]
+		(replace:?text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You should tidy up.]]
+		]
+	(else-if: $tick is 1 and $reset is 1)[
+		(replace:?text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*You dropped them all! What gives?*]]
+		(replace:?text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Oops. Try picking them up again.]]
+		]
+	(else-if: $tick is 1 and $reset is 2)[
+		(replace:?text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[The items in your arms tumble back down to the floor.]]
+		(replace:?text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*Why can&#39;t I pick anything up??*]]
+		]
+	(else-if: $tick is 1 and $reset is 3)[
+		(replace:?text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*ThE dREAmsCapE rEfleCTs rEALiTy*]]
+		(replace:?text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*wh-???*]]
+		]
+	(else-if: $tick is 2)[
+		(replace:?clothes)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_clothes256.png&quot;&gt;&lt;/img&gt;]]
+		(replace:?game)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_game256.png&quot;&gt;&lt;/img&gt;]]
+		(replace:?odds)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_odds256.png&quot;&gt;&lt;/img&gt;]]
+		(replace:?cup)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_cup256.png&quot;&gt;&lt;/img&gt;]]
+		(show:?line)(show:?inv)(stop:)
+	]
+	
+]
+}
+
+{
+(click:?clothes)[
+	(if: $clothes is 0 and $reset is not 3 and $slot is 0)[
+		(set: $clothes to 1)(set: $slot to 1)
+		(replace:?clothes)[]
+		(replace:?inv1)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_clothes256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $clothes is 0 and $reset is not 3 and $slot is 1)[
+		(set: $clothes to 1)(set: $slot to 2)
+		(replace:?clothes)[]
+		(replace:?inv2)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_clothes256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $clothes is 0 and $reset is not 3 and $slot is 2)[
+		(set: $clothes to 1)(set: $slot to 3)
+		(replace:?clothes)[]
+		(replace:?inv3)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_clothes256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $clothes is 0 and $reset is not 3 and $slot is 3)[
+		(set: $tick to 0)(set:$reset to it +1)
+		(go-to:&quot;dreamGP&quot;)
+	]
+	(else-if: $clothes is 0 and $reset is 3 and $slot is 0)[
+		(replace: ?cup)[PILLS]
+		(replace: ?clothes)[PILLS]
+		(replace: ?odds)[PILLS]
+		(replace: ?game)[PILLS]
+		(show: ?pill)
+			(live:3s)[
+				(set: $tick to 0)
+				(go-to:&quot;afterDream&quot;)
+			]
+	]
+	
+]
+
+(click:?game)[
+	(if: $game is 0 and $reset is not 3 and $slot is 0)[
+		(set: $game to 1)(set: $slot to 1)
+		(replace:?game)[]
+		(replace:?inv1)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_game256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $game is 0 and $reset is not 3 and $slot is 1)[
+		(set: $game to 1)(set: $slot to 2)
+		(replace:?game)[]
+		(replace:?inv2)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_game256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $game is 0 and $reset is not 3 and $slot is 2)[
+		(set: $game to 1)(set: $slot to 3)
+		(replace:?game)[]
+		(replace:?inv3)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_game256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $game is 0 and $reset is not 3 and $slot is 3)[
+		(set: $tick to 0)(set:$reset to it +1)
+		(go-to:&quot;dreamGP&quot;)
+	]
+	(else-if: $game is 0 and $reset is 3 and $slot is 0)[
+		(replace: ?cup)[PILLS]
+		(replace: ?clothes)[PILLS]
+		(replace: ?odds)[PILLS]
+		(replace: ?game)[PILLS]
+		(show: ?pill)
+			(live:3s)[
+				(set: $tick to 0)
+				(go-to:&quot;afterDream&quot;)
+			]
+	]
+	
+]
+
+
+(click:?odds)[
+	(if: $odds is 0 and $reset is not 3 and $slot is 0)[
+		(set: $odds to 1)(set: $slot to 1)
+		(replace:?odds)[]
+		(replace:?inv1)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_odds256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $odds is 0 and $reset is not 3 and $slot is 1)[
+		(set: $odds to 1)(set: $slot to 2)
+		(replace:?odds)[]
+		(replace:?inv2)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_odds256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $odds is 0 and $reset is not 3 and $slot is 2)[
+		(set: $odds to 1)(set: $slot to 3)
+		(replace:?odds)[]
+		(replace:?inv3)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_odds256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $odds is 0 and $reset is not 3 and $slot is 3)[
+		(set: $tick to 0)(set:$reset to it +1)
+		(go-to:&quot;dreamGP&quot;)
+	]
+	(else-if: $odds is 0 and $reset is 3 and $slot is 0)[
+		(replace: ?cup)[PILLS]
+		(replace: ?clothes)[PILLS]
+		(replace: ?odds)[PILLS]
+		(replace: ?game)[PILLS]
+		(show: ?pill)
+			(live:3s)[
+				(set: $tick to 0)
+				(go-to:&quot;afterDream&quot;)
+			]
+	]
+	
+	
+]
+
+(click:?cup)[
+	(if: $cup is 0 and $reset is not 3 and $slot is 0)[
+		(set: $cup to 1)(set: $slot to 1)
+		(replace:?cup)[]
+		(replace:?inv1)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_cup256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $cup is 0 and $reset is not 3 and $slot is 1)[
+		(set: $cup to 1)(set: $slot to 2)
+		(replace:?cup)[]
+		(replace:?inv2)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_cup256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $cup is 0 and $reset is not 3 and $slot is 2)[
+		(set: $cup to 1)(set: $slot to 3)
+		(replace:?cup)[]
+		(replace:?inv3)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_cup256.png&quot;&gt;&lt;/img&gt;]
+	]
+	(else-if: $cup is 0 and $reset is not 3 and $slot is 3)[
+		(set: $tick to 0)(set:$reset to it +1)
+		(go-to:&quot;dreamGP&quot;)
+	]
+	(else-if: $cup is 0 and $reset is 3 and $slot is 0)[
+		(replace: ?cup)[PILLS]
+		(replace: ?clothes)[PILLS]
+		(replace: ?odds)[PILLS]
+		(replace: ?game)[PILLS]
+		(show: ?pill)
+			(live:3s)[
+				(set: $tick to 0)
+				(go-to:&quot;afterDream&quot;)
+			]
+	]
+]
+
+
+}
+
+{(click:?pill)[]}</tw-passagedata><tw-passagedata pid="89" name="afterDream" tags="vignetteBG" position="992,1706" size="100,100">
+&lt;div style=&quot;display:ruby;&quot;&gt;
+|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You blink your eyes open.]] |text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You&#39;re on the couch in your living room, disoriented.]]
+&lt;/div&gt;
+|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[There&#39;s some drool on your arm.]]
+&lt;/br&gt;
+|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Dreams can reveal facets of reality - but was it *really* about your messy room?]] 
+|text5)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*Or--* were the items you kept trying to hold onto like your thoughts: fleeting, and prone to |textdis&gt;[disrupt-]]]
+
+
+|text6)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*Your phone buzzes with a notification, and the thought vanishes.* It&#39;s almost time for your favourite stream!]]
+
+{
+(live: 1s)[
+	(set: $tick to it + 1)
+	(if: $tick is 1)[
+		(show:?text1)
+	]
+	(else-if: $tick is 3)[
+		(show:?text2)
+	]
+	(else-if: $tick is 5)[
+		(show:?text3)
+	]
+	(else-if: $tick is 7)[
+		(show:?text4)
+	]
+	(else-if: $tick is 9)[
+		(show:?text5)
+	]
+	(else-if: $tick is 11)[
+		(replace:?textdis)[(text-style: &quot;rumble&quot;)[*disrupt-*]]
+	]
+	(else-if: $tick is 12)[
+		(show:?text6)(stop:)(set:$tick to 0)
+	]
+]
+}
+{(click:&quot;stream&quot;)[(go-to:&quot;exeDys&quot;)]}</tw-passagedata><tw-passagedata pid="90" name="Untitled Passage 15" tags="" position="980,1475" size="100,100">&lt;div class=&quot;sunglow&quot;&gt;Test test hello HENLO o hi there okay thank&lt;/div&gt;</tw-passagedata><tw-passagedata pid="91" name="dreamsbackup" tags="vignetteblue" position="1454,1601" size="100,100">|text1)[]
+|text2)[]
+
+
+
 
 |clothes)[]
 |game)[]
@@ -5995,7 +6235,7 @@ PILLS]
 		(replace:?text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*wh-???*]]
 		]
 	(else-if: $tick is 2)[
-		(replace:?clothes)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[CLOTHES]]
+		(replace:?clothes)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_clothes256.png&quot;&gt;&lt;/img&gt;]]
 		(replace:?game)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[GAME]]
 		(replace:?odds)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[ODDS N ENDS]]
 		(replace:?cup)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[CUP]]
@@ -6010,17 +6250,17 @@ PILLS]
 	(if: $clothes is 0 and $reset is not 3 and $slot is 0)[
 		(set: $clothes to 1)(set: $slot to 1)
 		(replace:?clothes)[]
-		(replace:?inv1)[CLOTHES]
+		(replace:?inv1)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_clothes256.png&quot;&gt;&lt;/img&gt;]
 	]
 	(else-if: $clothes is 0 and $reset is not 3 and $slot is 1)[
 		(set: $clothes to 1)(set: $slot to 2)
 		(replace:?clothes)[]
-		(replace:?inv2)[CLOTHES]
+		(replace:?inv2)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_clothes256.png&quot;&gt;&lt;/img&gt;]
 	]
 	(else-if: $clothes is 0 and $reset is not 3 and $slot is 2)[
 		(set: $clothes to 1)(set: $slot to 3)
 		(replace:?clothes)[]
-		(replace:?inv3)[CLOTHES]
+		(replace:?inv3)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_clothes256.png&quot;&gt;&lt;/img&gt;]
 	]
 	(else-if: $clothes is 0 and $reset is not 3 and $slot is 3)[
 		(set: $tick to 0)(set:$reset to it +1)
@@ -6146,45 +6386,7 @@ PILLS]
 
 }
 
-{(click:?pill)[]}</tw-passagedata><tw-passagedata pid="89" name="afterDream" tags="vignetteBG" position="992,1706" size="100,100">
-&lt;div style=&quot;display:ruby;&quot;&gt;
-|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You blink your eyes open.]] |text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You&#39;re on the couch in your living room, disoriented.]]
-&lt;/div&gt;
-|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[There&#39;s some drool on your arm.]]
-&lt;/br&gt;
-|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Dreams can reveal facets of reality - but was it *really* about your messy room?]] 
-|text5)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*Or--* were the items you kept trying to hold onto like your thoughts: fleeting, and prone to |textdis&gt;[disrupt-]]]
-
-
-|text6)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*Your phone buzzes with a notification, and the thought vanishes.* It&#39;s almost time for your favourite stream!]]
-
-{
-(live: 1s)[
-	(set: $tick to it + 1)
-	(if: $tick is 1)[
-		(show:?text1)
-	]
-	(else-if: $tick is 3)[
-		(show:?text2)
-	]
-	(else-if: $tick is 5)[
-		(show:?text3)
-	]
-	(else-if: $tick is 7)[
-		(show:?text4)
-	]
-	(else-if: $tick is 9)[
-		(show:?text5)
-	]
-	(else-if: $tick is 11)[
-		(replace:?textdis)[(text-style: &quot;rumble&quot;)[*disrupt-*]]
-	]
-	(else-if: $tick is 12)[
-		(show:?text6)(stop:)(set:$tick to 0)
-	]
-]
-}
-{(click:&quot;stream&quot;)[(go-to:&quot;exeDys&quot;)]}</tw-passagedata><tw-passagedata pid="90" name="Untitled Passage 15" tags="" position="980,1475" size="100,100">&lt;div class=&quot;sunglow&quot;&gt;Test test hello HENLO o hi there okay thank&lt;/div&gt;</tw-passagedata></tw-storydata>
+{(click:?pill)[]}</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

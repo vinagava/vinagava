@@ -1,15 +1,11 @@
 
 
 body{
-background-color: 	#6B8E23;
-background-image: url("https://gavinsarafian.files.wordpress.com/2020/02/background1.png");
-background-position: center top;
-background-size: auto;
-background-repeat: no-repeat;
-background-attachment: fixed;
+	background: rgb(14,0,28);
+	background: linear-gradient(90deg, rgba(14,0,28,1) 0%, rgba(1,0,2,1) 15%, rgba(0,0,0,1) 85%, rgba(14,0,28,1) 100%); 
 	margin-left: 100px;
-margin-right: 100px;
-margin-top: 25px;
+	margin-right: 100px;
+	margin-top: 25px;
 	
 }
 

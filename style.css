@@ -1,0 +1,73 @@
+body{
+  background-color:black;
+}
+
+.defbox{             background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif"); 
+  border: 1px solid green;
+  height:150px;
+  width:50%;
+  margin-left:25%;
+  color:white;
+  text-align:center;
+  z-index:1;
+}
+
+.boxtext{
+   text-shadow:3px 3px 20px #b9b9b9;
+   font-family: helvetica;
+   font-size: 60px;
+   font-weight:bold;
+   margin: 25px 25px;   
+   display:ruby;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:50px;
+}
+
+/*Hovering Text*/
+.hover {
+        -webkit-animation: action 2s ease-in-out infinite  alternate;
+        animation: action 2s ease-in-out infinite  alternate;
+}
+
+.hover2 {
+        -webkit-animation: action2 2s ease-in-out infinite  alternate;
+        animation: action2 1600ms ease-in-out infinite  alternate;
+} 
+
+
+.hover3 {
+        -webkit-animation: action3 3s ease-in-out infinite alternate;
+        animation: action3 3s ease-in-out infinite alternate;
+}
+
+/*Pills*/
+.pill{
+  animation: pillspin 24s linear infinite;
+}
+
+.pill2{
+  animation: pillspin 26s linear infinite;
+  animation-delay:500ms;
+}
+
+@keyframes pillspin{  
+  0%   {-webkit-transform: rotate(0deg);}
+	50%  {-webkit-transform: rotate(180deg); }
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes action {
+        0% {transform: translateY(-0.5em);}
+      100% { transform: translateY(-0.3em); }  
+    }
+
+@keyframes action2 {
+        0% { transform: translateY(-0.5em);}
+        100% { transform: translateY(-0.35em); }
+}
+
+@keyframes action3 {
+        0% { transform: translateY(-0.6em);}
+        100% { transform: translateY(-0.3em); }
+}

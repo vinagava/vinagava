@@ -67,12 +67,12 @@ h6{
 
 /*Pills*/
 .pill{
-	top:-50px;
+	position:relative;
   animation: pillspin 24s linear infinite;
 }
 
 .pill2{
-	top:-50px;
+	position:relative;
   animation: pillspin 26s linear infinite;
   animation-delay:500ms;
 }

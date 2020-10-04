@@ -67,12 +67,10 @@ h6{
 
 /*Pills*/
 .pill{
-	position:relative;
   animation: pillspin 24s linear infinite;
 }
 
 .pill2{
-	position:relative;
   animation: pillspin 26s linear infinite;
   animation-delay:500ms;
 }
@@ -84,16 +82,16 @@ h6{
 }
 
 @keyframes action {
-        0% {transform: translateY(-0.5em);}
-      100% { transform: translateY(-0.3em); }  
+        0% {transform: translateY(-0.7em);}
+      100% { transform: translateY(-0.5em); }
     }
 
 @keyframes action2 {
-        0% { transform: translateY(-0.5em);}
-        100% { transform: translateY(-0.35em); }
+        0% { transform: translateY(-0.6em);}
+        100% { transform: translateY(-0.45em); }
 }
 
 @keyframes action3 {
-        0% { transform: translateY(-0.6em);}
-        100% { transform: translateY(-0.3em); }
+         0% { transform: translateY(-0.75em);}
+        100% { transform: translateY(-0.5em); }
 }

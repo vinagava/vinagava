@@ -3,8 +3,8 @@
 body{
 	background: rgb(14,0,28);
 	background: linear-gradient(90deg, rgba(14,0,28,1) 0%, rgba(1,0,2,1) 15%, rgba(0,0,0,1) 85%, rgba(14,0,28,1) 100%); 
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 200px;
+	margin-right: 200px;
 	margin-top: 25px;
 	
 }
@@ -24,14 +24,16 @@ h6{
 }
 
 
-.defbox{             background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif"); 
-  border: 1px solid green;
-  height:150px;
-  width:50%;
-  margin-left:25%;
-  color:white;
-  text-align:center;
-  z-index:1;
+.defbox{  
+	background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
+	border: 1px solid green;
+	height:150px;
+	width:800px;
+	margin-left:10%;
+	margin-right:10%;
+	color:white;
+	text-align:center;
+	z-index:1;
 }
 
 .boxtext{

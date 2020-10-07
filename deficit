@@ -1,0 +1,53 @@
+<html>
+<style type="text/css" media="all">
+   @import "style.css";
+</style>
+   <head>
+      <title>Gav Sarafian - Level & Narrative Designer</title>
+     
+   </head>
+
+<header>
+    <div class="container">
+      <h1 class="logo"><a href="#">Gav Sarafian</a><a2>Level & Narrative Designer</a2></h1>
+
+      <nav>
+        <ul>
+          <li><a href="https://gavsarafian.com/">Level Design</a></li>
+          <li><a href="narrative.html">Narrative</a></li>
+          <li><a href="3dart.html">3D Art</a></li>
+          <li><a href="https://github.com/vinagava/vinagava/raw/master/Portfolio/gavsarafian-resume.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  </br>
+</br>
+</br>
+<h4><i>Deficit</i> is blahblahblah..........</h4>
+<p>Link to game</p>
+<p> Deficit is roughly a 15 minute experience. Best experienced in Chrome or Firefox on a laptop or desktop, in fullscreen mode (F11, or Function + F11)</p>
+
+</br>
+</br>
+</br>
+</br>
+<hr>
+</br>
+</br>
+</br>
+
+<h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nibh magna, maximus id fringilla at, pharetra et justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent non purus vel arcu vestibulum lobortis. Vestibulum eu nulla eget quam ornare imperdiet. Donec sollicitudin felis vitae semper dignissim. Quisque luctus orci vel sapien condimentum, vel malesuada mauris blandit. Donec suscipit feugiat massa. 
+</h1>
+
+<h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nibh magna, maximus id fringilla at, pharetra et justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent non purus vel arcu vestibulum lobortis. Vestibulum eu nulla eget quam ornare imperdiet. Donec sollicitudin felis vitae semper dignissim. Quisque luctus orci vel sapien condimentum, vel malesuada mauris blandit. Donec suscipit feugiat massa. 
+</h2>
+
+<h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nibh magna, maximus id fringilla at, pharetra et justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent non purus vel arcu vestibulum lobortis. Vestibulum eu nulla eget quam ornare imperdiet. Donec sollicitudin felis vitae semper dignissim. Quisque luctus orci vel sapien condimentum, vel malesuada mauris blandit. Donec suscipit feugiat massa. 
+</h3>
+
+<h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nibh magna, maximus id fringilla at, pharetra et justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent non purus vel arcu vestibulum lobortis. Vestibulum eu nulla eget quam ornare imperdiet. Donec sollicitudin felis vitae semper dignissim. Quisque luctus orci vel sapien condimentum, vel malesuada mauris blandit. Donec suscipit feugiat massa. 
+</h4>
+  
+</html>

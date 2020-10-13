@@ -13,8 +13,31 @@
 
 <tw-storydata name="Deficit" startnode="45" creator="Twine" creator-version="2.3.5" ifid="00466DC6-8106-4807-98B0-A5A03DC6770A" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">	/*GLOBAL TWINE CHANGES*/
 
+
+
 /*Remove Sidebar*/
-tw-sidebar {display: none;}
+/*tw-sidebar {display: none;}*/
+
+
+/* Highlighter Effect used in Executive Dysfunction*/
+.highlighter {
+  width:10%;
+  background: linear-gradient(270deg, black, black, yellow);
+  background-size: 900% 400%;
+  animation: hilite 3s ease; /*, hiliteOpacity 1s ease;*/
+ /* animation-delay:1s, 0s;*/
+  color:black;
+}
+
+@keyframes hilite {
+    0%{background-position:100%}
+    100%{background-position:0%}
+}
+
+@keyframes hiliteOpacity {
+    0% {opacity: 1;}
+	100% {opacity: 0;} 
+}
 
 /*falling Pills for Taste*/
 .setTaste{
@@ -491,27 +514,6 @@ text-shadow:
   11px 20px 1px #000000;
 color: #E0E0E0;
 font-family: "Impact";
-}
-
-/* Highlighter Effect used in Executive Dysfunction*/
-.highlighter {
-  width:10%;
-  background: linear-gradient(270deg, black, black, yellow);
-  background-size: 900% 400%;
-  /*height: 200px;*/
- /* background-image:-webkit-repeating-linear-gradient(black, yellow); */
-/*  background-size: 20% 20%;*/
- /*-webkit-background-clip: text;*/
- /*-webkit-text-fill-color: transparent;*/
-  /*font-size: 32px;*/
-  animation: hilite 3s ease;
- /* animation-delay:1s;*/
-  color:black;
-}
-
-@keyframes hilite {
-    0%{background-position:100%}
-    100%{background-position:0%}
 }
 
 
@@ -1602,7 +1604,7 @@ animation-delay: -4s;
   5%   {opacity: 1;}
 	50%  {-webkit-transform: rotate(180deg); }
   95%  {opacity: 1;}
-	100% {top: 110%; -webkit-transform: rotate(360deg); opacity: 0;}
+	100% {top: 125%; -webkit-transform: rotate(360deg); opacity: 0;}
 }
 
 
@@ -2649,7 +2651,7 @@ margin-right: -50px;&quot;&gt;*Made in Twine 2, Harlowe 3.1.0. Special thanks to
 |title)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; id=&quot;executiveFont&quot;&gt;EXECUTIVE DYSFUNCTION&lt;/div&gt;]]&lt;/br&gt;
 |text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Those with ADHD often have trouble prioritizing tasks. Every task feels just as important, or as insignificant, as every other task.]]&lt;/br&gt;
 &lt;div style=&quot;left:10%;&quot;&gt;
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*What do you do when* ]] |light1)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*every*&lt;/div&gt;]]|light2)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*word*&lt;/div&gt;]]|light3)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:4%;&quot;&gt;*on*&lt;/div&gt;]]|light4)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:12%;&quot;&gt;*the page*&lt;/div&gt;]]|light5)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:20%;&quot;&gt;*is highlighted?*&lt;/div&gt;]]&lt;/div&gt;&lt;/br&gt;
+|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*What do you do when* ]] |light1)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*every*&lt;/div&gt;]|light2)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*word*&lt;/div&gt;]|light3)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:4%;&quot;&gt;*on*&lt;/div&gt;]|light4)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:12%;&quot;&gt;*the page*&lt;/div&gt;]|light5)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:20%;&quot;&gt;*is highlighted?*&lt;/div&gt;]&lt;/div&gt;&lt;/br&gt;
 |text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Often, nothing. You freeze. You&#39;re stuck. You cannot function. There is no start point. *At least Sisyphus had a clear direction.*&lt;/div&gt;]]
 |text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt; You may have no idea why this happens to you. Why can&#39;t you just *FOCUS*?&lt;/div&gt;]]
 {
@@ -4195,7 +4197,7 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 	]
 ]
 }
-{(click:&quot;stream&quot;)[(go-to:&quot;exeDys&quot;)]}</tw-passagedata><tw-passagedata pid="48" name="attentionbackup" tags="" position="651,133.33333333333331" size="100,100">
+{(click:&quot;stream&quot;)[(go-to:&quot;exeDys&quot;)]}</tw-passagedata><tw-passagedata pid="48" name="attentionbackup" tags="" position="651,133" size="100,100">
 
 |thought1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Thoughts bubble in your mind... too quickly to focus on.]]|thought1off)[|fade-out&gt;[Thoughts bubble in your mind... too quickly to focus on.]]
 |thought2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You think about:]]|thought2off)[|fade-out&gt;[You think about:]]
@@ -4359,7 +4361,7 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 }
 {
 (click:&quot;Probably.&quot;)[(set:$set0 to 0)(go-to: &quot;move&quot;)]
-}</tw-passagedata><tw-passagedata pid="49" name="tasteBackup" tags="vignetteBG" position="2108.6666666666665,654" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="49" name="tasteBackup" tags="vignetteBG" position="2108,654" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
 &lt;div id=&quot;tastepill1&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/PillBlue.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
@@ -4392,7 +4394,7 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 (click:&quot;normal&quot;)[
 	(set:$tick to 0)(goto:&quot;preChop&quot;)	
 	]	
-}</tw-passagedata><tw-passagedata pid="50" name="tasteExperiment1" tags="vignetteBG" position="2105.3333333333335,896.6666666666666" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="50" name="tasteExperiment1" tags="vignetteBG" position="2105,896" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
 &lt;div id=&quot;tastepill1&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/PillBlue.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
@@ -4623,7 +4625,7 @@ margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is 
 &lt;/container&gt;]]]
 &lt;/section&gt;
 
-
+|pillsfall&gt;[
 &lt;div class=&quot;setTaste&quot;&gt;
 &lt;div class=&quot;set&quot; style=&quot;position: absolute;z-index: 2; height:600px; top:-300px;&quot;&gt;
  &lt;!-- style=&quot;position:absolute; left: 0; top: 0;&quot; --&gt;
@@ -4685,7 +4687,7 @@ margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is 
 
 &lt;/div&gt;
 &lt;/div&gt;
-
+]
 
 
 
@@ -4704,7 +4706,7 @@ margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is 
 	(live:12s)[(go-to:&quot;START&quot;)] 
 		[(stop:)
 		]
-}</tw-passagedata><tw-passagedata pid="55" name="exeDysAfterOld" tags="vignetteBG" position="979,1914.1666666666667" size="100,100">
+}</tw-passagedata><tw-passagedata pid="55" name="exeDysAfterOld" tags="vignetteBG" position="979,1914" size="100,100">
 |title)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; id=&quot;executiveFont&quot;&gt;EXECUTIVE DYSFUNCTION&lt;/div&gt;]]
 
 
@@ -4752,7 +4754,7 @@ margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is 
 	]
 ]
 }	
-{(click:&quot;FOCUS&quot;)[(go-to:&quot;preHyperfocus&quot;)]}</tw-passagedata><tw-passagedata pid="56" name="titleNewBackup" tags="vignetteAnimBG2" position="523.3333333333335,8.666666666666629" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static&gt;[(transition: &quot;dissolve&quot;) + (transition-time: 10s)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;|staticfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;
+{(click:&quot;FOCUS&quot;)[(go-to:&quot;preHyperfocus&quot;)]}</tw-passagedata><tw-passagedata pid="56" name="titleNewBackup" tags="vignetteAnimBG2" position="523,8" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static&gt;[(transition: &quot;dissolve&quot;) + (transition-time: 10s)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;|staticfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;
 
 &lt;container class=&quot;container_row&quot;&gt;
 |title)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot;&gt;**D E F I C I T**&lt;/div&gt;]]&lt;/container&gt;|titlefade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot;&gt;**D E F I C I T**&lt;/div&gt;]]
@@ -4807,7 +4809,7 @@ margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is 
 (click: ?about)[
 		(go-to: &quot;ABOUT&quot;)
 		]
-}</tw-passagedata><tw-passagedata pid="57" name="take in backup" tags="vignetteBG" position="520.0000000000001,122" size="100,100">
+}</tw-passagedata><tw-passagedata pid="57" name="take in backup" tags="vignetteBG" position="520,122" size="100,100">
 |text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Okay. Let&#39;s take a pause. You&#39;ve been here before.
 Let&#39;s try some techniques to bring our attention back:]]
 |line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;]]
@@ -4867,7 +4869,7 @@ Let&#39;s try some techniques to bring our attention back:]]
 		(stop:)
 		]
 ]
-}</tw-passagedata><tw-passagedata pid="58" name="moveDoneBackup" tags="vignetteBG" position="643.3333333333334,18.66666666666663" size="100,100">
+}</tw-passagedata><tw-passagedata pid="58" name="moveDoneBackup" tags="vignetteBG" position="643,18" size="100,100">
 
 
 |first)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;hoverplain&quot; style=&quot;margin-top:-20px;&quot;&gt;Your thoughts knit together into a thick cloud.] &lt;/div&gt;]
@@ -4953,7 +4955,7 @@ Let&#39;s try some techniques to bring our attention back:]]
 (click:&quot;Sight&quot;)[(set:$varSight to 1)(set: $varSenses to it +1)(goto:&quot;SIGHT&quot;)]
 (click:&quot;Taste&quot;)[(set:$varTaste to 1)(set: $varSenses to it +1)(goto:&quot;TASTE&quot;)]
 (click:&quot;NEXTT&quot;)[(goto:&quot;nextone&quot;)]
-}}</tw-passagedata><tw-passagedata pid="59" name="tasteBackup2" tags="vignetteBG" position="1999.0000000000002,791.3333333333334" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
+}}</tw-passagedata><tw-passagedata pid="59" name="tasteBackup2" tags="vignetteBG" position="1999,791" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
 &lt;div id=&quot;tastepill1&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/PillBlue.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
@@ -4998,7 +5000,7 @@ Let&#39;s try some techniques to bring our attention back:]]
 (click:&quot;normal&quot;)[
 	(set:$tick to 0)(goto:&quot;preChop&quot;)	
 	]	
-}</tw-passagedata><tw-passagedata pid="60" name="endBackup" tags="" position="728.3333333333333,2397.5" size="100,100">|static)[(transition: &quot;dissolve&quot;) + (transition-time: 10s)[&lt;p class=&quot;bulletFont&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;
+}</tw-passagedata><tw-passagedata pid="60" name="endBackup" tags="" position="728,2397" size="100,100">|static)[(transition: &quot;dissolve&quot;) + (transition-time: 10s)[&lt;p class=&quot;bulletFont&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;
       &lt;div class=&quot;staticimgfull&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;
 &lt;/section&gt;]&lt;/p&gt;]]
 &lt;div style=&quot;top:-20%;&quot;&gt;
@@ -5039,7 +5041,85 @@ Let&#39;s try some techniques to bring our attention back:]]
 		(stop:)(set:$tick to 0)(go-to:&quot;endAfter&quot;)
 	]
 ]
-} </tw-passagedata></tw-storydata>
+} </tw-passagedata><tw-passagedata pid="61" name="highlighterbackup" tags="vignetteBG" position="767,1885" size="100,100">
+|title)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; id=&quot;executiveFont&quot;&gt;EXECUTIVE DYSFUNCTION&lt;/div&gt;]]&lt;/br&gt;
+|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Those with ADHD often have trouble prioritizing tasks. Every task feels just as important, or as insignificant, as every other task.]]&lt;/br&gt;
+&lt;div style=&quot;left:10%;&quot;&gt;
+|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*What do you do when* ]] |light1)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*every*&lt;/div&gt;]]|light2)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*word*&lt;/div&gt;]]|light3)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:4%;&quot;&gt;*on*&lt;/div&gt;]]|light4)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:12%;&quot;&gt;*the page*&lt;/div&gt;]]|light5)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:20%;&quot;&gt;*is highlighted?*&lt;/div&gt;]]&lt;/div&gt;&lt;/br&gt;
+|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Often, nothing. You freeze. You&#39;re stuck. You cannot function. There is no start point. *At least Sisyphus had a clear direction.*&lt;/div&gt;]]
+|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt; You may have no idea why this happens to you. Why can&#39;t you just *FOCUS*?&lt;/div&gt;]]
+{
+(live:1s)[
+	(set: $tick to it +1)
+	(if:$tick is 1)[
+		(show:?title)
+	]
+	(else-if:$tick is 3)[
+		(show:?text1)
+	]
+	(else-if:$tick is 6)[
+		(show:?text2)(show:?light1)
+	]
+	(else-if:$tick is 7)[
+		(show:?light2)
+	]
+	(else-if:$tick is 8)[
+		(show:?light3)
+	]
+	(else-if:$tick is 9)[
+		(show:?light4)
+	]
+	(else-if:$tick is 10)[
+		(show:?light5)
+	]
+	(else-if:$tick is 13)[
+		(show:?text3)
+	]
+	(else-if:$tick is 16)[
+		(show:?text4)(stop:)(set:$tick to 0)
+	]
+]
+}	
+{(click:&quot;FOCUS&quot;)[(go-to:&quot;preHyperfocus&quot;)]}</tw-passagedata><tw-passagedata pid="62" name="Untitled Passage" tags="vignetteBG" position="585,2100" size="100,100">
+|title)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; id=&quot;executiveFont&quot;&gt;EXECUTIVE DYSFUNCTION&lt;/div&gt;]]&lt;/br&gt;
+|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Those with ADHD often have trouble prioritizing tasks. Every task feels just as important, or as insignificant, as every other task.]]&lt;/br&gt;
+&lt;div style=&quot;left:10%;&quot;&gt;
+|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*What do you do when* ]] |light1)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*every*&lt;/div&gt;]|light2)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*word*&lt;/div&gt;]|light3)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:4%;&quot;&gt;*on*&lt;/div&gt;]|light4)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:12%;&quot;&gt;*the page*&lt;/div&gt;]|light5)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:20%;&quot;&gt;*is highlighted?*&lt;/div&gt;]&lt;/div&gt;&lt;/br&gt;
+|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Often, nothing. You freeze. You&#39;re stuck. You cannot function. There is no start point. *At least Sisyphus had a clear direction.*&lt;/div&gt;]]
+|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt; You may have no idea why this happens to you. Why can&#39;t you just *FOCUS*?&lt;/div&gt;]]
+{
+(live:1s)[
+	(set: $tick to it +1)
+	(if:$tick is 1)[
+		(show:?title)
+	]
+	(else-if:$tick is 3)[
+		(show:?text1)
+	]
+	(else-if:$tick is 6)[
+		(show:?text2)(show:?light1)
+	]
+	(else-if:$tick is 7)[
+		(show:?light2)
+	]
+	(else-if:$tick is 8)[
+		(show:?light3)
+	]
+	(else-if:$tick is 9)[
+		(show:?light4)
+	]
+	(else-if:$tick is 10)[
+		(show:?light5)
+	]
+	(else-if:$tick is 13)[
+		(show:?text3)
+	]
+	(else-if:$tick is 16)[
+		(show:?text4)(stop:)(set:$tick to 0)
+	]
+]
+}	
+{(click:&quot;FOCUS&quot;)[(go-to:&quot;preHyperfocus&quot;)]}</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

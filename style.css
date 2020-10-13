@@ -130,10 +130,13 @@ nav a:hover::before {
    font-size: 80px;
    font-weight:bold;
    margin: 25px 25px;   
-   display:ruby;
+   /*display:ruby;*/
+   display: inline-flex;
   margin-left:50px;
   margin-right:50px;
-  margin-top:50px;
+   /*margin-top:50px;*/
+    margin-top: -0.5%;
+  letter-spacing: 30px;
 }
 
 /*Hovering Text*/

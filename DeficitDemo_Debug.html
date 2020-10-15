@@ -13,10 +13,54 @@
 
 <tw-storydata name="Deficit" startnode="45" creator="Twine" creator-version="2.3.5" ifid="00466DC6-8106-4807-98B0-A5A03DC6770A" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">	/*GLOBAL TWINE CHANGES*/
 
-
-
 /*Remove Sidebar*/
 /*tw-sidebar {display: none;}*/
+
+
+/*Fade for Chrome*/
+tw-hook[name="fade1s"] {
+	-webkit-animation-name: fade-out;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-name: fade-out;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+  	animation-delay:1s;
+}
+
+/*Chrome Fade In for CW*/
+.cwFadeIn{
+ 	text-align: center;
+  	/*left:18%;
+	font-size:30px;
+	font-weight:bold;
+  	text-shadow:0px 0px 6px #000, 1px 1px 8px #000, 2px 2px 10px #000;*/
+  	animation: endOpacity 2s ease;
+  	animation-fill-mode: forwards;
+}
+
+/*Experiment with Fade Ins for Chrome*/
+#divFade1s {
+  animation: divFade 1s linear;
+}
+
+#divFade2s {
+  animation: divFade 2s linear;
+}
+
+#divFade3s {
+  animation: divFade 3s linear;
+}
+
+#divFade10s {
+  animation: divFade 10s linear;
+}
+
+@keyframes divFade {
+    0% {opacity: 0;}
+	100% {opacity: 1;} 
+}
+
 
 
 /* Highlighter Effect used in Executive Dysfunction*/
@@ -1234,12 +1278,11 @@ tw-hook[name="fadefast"] {
 
 .hoverStill{
   		font-family: helvetica;
-  		font-size: 80px;
+  		font-size: 90px;
   		font-style: bold;
   		/*margin: 0 5px;*/
   		text-align: center;
-        /*display:inline-block; */
-  		text-shadow: 2px 2px 8px #b9b9b9;
+  		text-shadow: 2px 2px 8px #b9b9b9, 2px 2px 12px #808080;
   		transform: skewX(-10deg);
     }
   
@@ -1941,12 +1984,12 @@ setInterval(
 //const style = window.getComputedStyle(boxgreen)
 //const {x, y, z} = getTranslateValues(boxgreen);
 //}</script><tw-passagedata pid="1" name="TOUCH" tags="vignetteBG" position="1401,798" size="100,100">
-|text0)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Winter; city. You&#39;re not from here. The frosty handle on the door contrasts with the sudden gust of warmth from inside. You shake off the snow, and step inside.&lt;/div&gt;]]
+|text0)[&lt;div id=&quot;divFade1s&quot;&gt;Winter; city. You&#39;re not from here. The frosty handle on the door contrasts with the sudden gust of warmth from inside. You shake off the snow, and step inside.&lt;/div&gt;]
 
-|bob)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;font-size:30px; text-align:center;&quot;&gt;***&lt;/div&gt;]]
+|bob)[&lt;div style=&quot;font-size:30px; text-align:center;&quot; id=&quot;divFade1s&quot;&gt;***&lt;/div&gt;]
 |text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Fancy hotel; front desk. Your work is paying for your stay—an investment in your capacity as a human memory unit. The clerk kindly asks for your information as you stroll up to the reception counter.]]
 
-\|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;&lt;/hr&gt;]]
+\|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]
 |option1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[‣Tell them your Credentials]]
 |option2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[‣Touch the counter&#39;s Fabric Facade]]
 {
@@ -1981,11 +2024,11 @@ setInterval(
 	]
 }</tw-passagedata><tw-passagedata pid="2" name="CREDENTIALS" tags="checkerBG" position="1362,1028" size="100,100">You saunter up to the counter, and smoothly convey your credentials. 
 
-|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot;&gt;*You also find yourself pawing the material that frames the front of the counter.*&lt;/div&gt;]] 
+|text1)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot; id=&quot;divFade1s&quot;&gt;*You also find yourself pawing the material that frames the front of the counter.*&lt;/div&gt;]
 
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot;&gt;You&#39;re pretty sure nobody is watching, but you also really can&#39;t help yourself. It feels so *soft*! This was definitely made by someone who knows their stims and wanted to set up every neurodivergent fool who came across it.&lt;/div&gt;]] 
-|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot;&gt;It&#39;s a luxurious mix of alternating glossy and felt checkerboard, and your fingers *sing* across it. Quietly. To themselves, as the rest of you attempts to get through this transaction before anybody notices.&lt;/div&gt;]] 
-|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot;&gt;You finish petting the furniture when the clerk hands you the keys. You think you remember the room number.&lt;/div&gt;]]
+|text2)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot; id=&quot;divFade1s&quot;&gt;You&#39;re pretty sure nobody is watching, but you also really can&#39;t help yourself. It feels so *soft*! This was definitely made by someone who knows their stims and wanted to set up every neurodivergent fool who came across it.&lt;/div&gt;]
+|text3)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot; id=&quot;divFade1s&quot;&gt;It&#39;s a luxurious mix of alternating glossy and felt checkerboard, and your fingers *sing* across it. Quietly. To themselves, as the rest of you attempts to get through this transaction before anybody notices.&lt;/div&gt;]
+|text4)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot; id=&quot;divFade1s&quot;&gt;You finish petting the furniture when the clerk hands you the keys. You think you remember the room number.&lt;/div&gt;]
 {
 (live: 1s)[
 	(set: $tick to it + 1)
@@ -2011,9 +2054,9 @@ setInterval(
 }</tw-passagedata><tw-passagedata pid="3" name="FABRIC FACADE" tags="checkerBG" position="1476,1032" size="100,100">You knew what would happen as soon as you saw it. The entire front of the counter is a two-tone matte-and-gloss checkerboard wonderland, just waiting for your mitts to caress it. 
 
 
-|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot;&gt;The alternating squares are available in **flat**, and *raised with slits*, and they&#39;re just begging for you to stroke them. Subtly.&lt;/div&gt;]]
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot;&gt;You&#39;re halfway through exchanging credentials with the clerk and are quietly asserting that yes, you *probably are* being smooth about this. About as smooth as every other square. It feels implausibly *luxurious*. Did you notice the matte squares are a soft *felt* material??&lt;/div&gt;]]
-|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot;&gt;You finish petting the furniture when the clerk hands you the keys. You think you remember the room number.&lt;/div&gt;]]
+|text1)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot; id=&quot;divFade1s&quot;&gt;The alternating squares are available in **flat**, and *raised with slits*, and they&#39;re just begging for you to stroke them. Subtly.&lt;/div&gt;]
+|text2)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot; id=&quot;divFade1s&quot;&gt;You&#39;re halfway through exchanging credentials with the clerk and are quietly asserting that yes, you *probably are* being smooth about this. About as smooth as every other square. It feels implausibly *luxurious*. Did you notice the matte squares are a soft *felt* material??&lt;/div&gt;]
+|text3)[&lt;div style=&quot;text-shadow: 1px 1px 4px black;&quot; id=&quot;divFade1s&quot;&gt;You finish petting the furniture when the clerk hands you the keys. You think you remember the room number.&lt;/div&gt;]
 {
 (live: 1s)[
 	(set: $tick to it + 1)
@@ -2128,13 +2171,13 @@ setInterval(
 	(else-if: $varSenses is 4)[(goto:&quot;ReflectB&quot;)]
 	(else-if: $varSenses is 5)[(goto:&quot;pre-overstim&quot;)]
 	]
-}</tw-passagedata><tw-passagedata pid="6" name="Interloper" tags="vignetteBG" position="1057,1033" size="100,100">|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Turns out, they were just asking where they could find a washroom.&lt;/div&gt;]]
+}</tw-passagedata><tw-passagedata pid="6" name="Interloper" tags="vignetteBG" position="1057,1033" size="100,100">|text1)[&lt;div id=&quot;divFade1s&quot;&gt;Turns out, they were just asking where they could find a washroom.&lt;/div&gt;]
 
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;*Cute and Charming* says they can show them; they were just about to head that way anyway. *C&amp;C* gives you a smile as they stroll away, while you quietly scream inside. That wasn&#39;t *awful*, but it definitely didn&#39;t feel good, either.&lt;/div&gt;]] 
+|text2)[&lt;div id=&quot;divFade1s&quot;&gt;*Cute and Charming* says they can show them; they were just about to head that way anyway. *C&amp;C* gives you a smile as they stroll away, while you quietly scream inside. That wasn&#39;t *awful*, but it definitely didn&#39;t feel good, either.&lt;/div&gt;]
 
-|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Oh well, just another conversational casualty in the battle of social interaction.  It&#39;s probably for the best. You make a note to check in on *C&amp;C* later on. As you grab another can of cider from the fridge, you are drawn into a conversation about Animal Crossing and Astrology.&lt;/div&gt;]]
+|text3)[&lt;div id=&quot;divFade1s&quot;&gt;Oh well, just another conversational casualty in the battle of social interaction.  It&#39;s probably for the best. You make a note to check in on *C&amp;C* later on. As you grab another can of cider from the fridge, you are drawn into a conversation about Animal Crossing and Astrology.&lt;/div&gt;]
 
-|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;The party music transitions to another track, and so do you.&lt;/div&gt;]]
+|text4)[&lt;div id=&quot;divFade1s&quot;&gt;The party music transitions to another track, and so do you.&lt;/div&gt;]
 {
 (live: 1s)[
 	(set: $tick to it + 1)
@@ -2159,11 +2202,11 @@ setInterval(
 	]
 }
 
-</tw-passagedata><tw-passagedata pid="7" name="BAIL" tags="vignetteBG" position="1180,1033" size="100,100">|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;You make up an excuse, which you are unsure either of them heard or understood. Either way, you&#39;re now free of *that* conversational crossfire.&lt;/div&gt;]]
+</tw-passagedata><tw-passagedata pid="7" name="BAIL" tags="vignetteBG" position="1180,1033" size="100,100">|text1)[&lt;div id=&quot;divFade1s&quot;&gt;You make up an excuse, which you are unsure either of them heard or understood. Either way, you&#39;re now free of *that* conversational crossfire.&lt;/div&gt;]
 
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;You find yourself in the kitchen, grabbing another can of cider. You don&#39;t necessarily even drink a lot, but it&#39;s a wonderful social tool. You crack it open, and take a deep breath.&lt;/div&gt;]] 
+|text2)[&lt;div id=&quot;divFade1s&quot;&gt;You find yourself in the kitchen, grabbing another can of cider. You don&#39;t necessarily even drink a lot, but it&#39;s a wonderful social tool. You crack it open, and take a deep breath.&lt;/div&gt;] 
 
-|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;You know, the music at the party *is* pretty loud— it&#39;s not unreasonable for anyone to have a hard time hearing others. You make a mental note to find *Cute and Charming* sometime later in the evening, as you are drawn into a conversation about Animal Crossing and Astrology.&lt;/div&gt;]]
+|text3)[&lt;div id=&quot;divFade1s&quot;&gt;You know, the music at the party *is* pretty loud— it&#39;s not unreasonable for anyone to have a hard time hearing others. You make a mental note to find *Cute and Charming* sometime later in the evening, as you are drawn into a conversation about Animal Crossing and Astrology.&lt;/div&gt;]
 {
 (live:1s)[
 	(set:$tick to it +1)
@@ -2187,13 +2230,13 @@ setInterval(
 	(else-if: $varSenses is 4)[(goto:&quot;ReflectB&quot;)]
 	(else-if: $varSenses is 5)[(goto:&quot;pre-overstim&quot;)]
 	]
-}</tw-passagedata><tw-passagedata pid="8" name="SMELL" tags="vignetteBG" position="402,801" size="100,100">|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div class=&quot;centre&quot;&gt;Your nose is irresistably filled with *the scent* as you cross the threshold.&lt;/div&gt;]]
+}</tw-passagedata><tw-passagedata pid="8" name="SMELL" tags="vignetteBG" position="402,801" size="100,100">|text1)[&lt;div class=&quot;centre&quot; id=&quot;divFade2s&quot;&gt;Your nose is irresistably filled with *the scent* as you cross the threshold.&lt;/div&gt;]
 
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div class=&quot;centre&quot;&gt;*Ahh... *&lt;div style=&quot;font-size:26px; display:inline-block;&quot;&gt;***COFFEE***&lt;/div&gt;. Delicious hot bean water of the gods.&lt;/div&gt;]]
+|text2)[&lt;div class=&quot;centre&quot; id=&quot;divFade2s&quot;&gt;*Ahh... *&lt;div style=&quot;font-size:26px; display:inline-block;&quot;&gt;***COFFEE***&lt;/div&gt;. Delicious hot bean water of the gods.&lt;/div&gt;]
 
 |text3)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[A senior colleague has invited you to the cafe. It&#39;s a beautiful day; the local spot is just down the street. On the way, he tells you about his fancy new coffee tumbler. He *loves* coffee. You nod along to his description, thinking about the elixir. It fuels the world—]]
 
-|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div class=&quot;centre&quot;&gt;[Except, however, for you.]&lt;/div&gt;]]
+|text4)[&lt;div class=&quot;centre&quot; id=&quot;divFade1s&quot;&gt;[Except, however, for you.]&lt;/div&gt;]
 |text5)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[Half the time it actually puts you to sleep. Do you drink it anyway? All your coworkers do; some multiple times a day. You, though— It makes you [sleepy]. It&#39;s also not recommended to take any stimulants when you&#39;re medicated.]]
 
 {
@@ -2205,10 +2248,10 @@ setInterval(
 		(show:?text2)]
 	(else-if: $tick is 3)[
 		(show:?text3)]
-	(else-if: $tick is 4)[
+	(else-if: $tick is 5)[
 		(show:?text4)
 		]
-	(else-if: $tick is 5)[
+	(else-if: $tick is 7)[
 		(show:?text5)(stop:)]
 ]
 }
@@ -2220,7 +2263,7 @@ setInterval(
 |second)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;hoverplain2&quot;&gt;A million points of data demand your attention equally, somehow.]&lt;/div&gt;]
 |third)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;hoverplain3&quot;&gt;It&#39;s overwhelming.] &lt;/div&gt;]
 
-|line)[(transition: &quot;dissolve&quot;) + (transition-time: 6s)[&lt;hr&gt;&lt;/hr&gt;]]
+|line)[&lt;hr id=&quot;divFade2s&quot;&gt;]
 |fourth)[(transition: &quot;dissolve&quot;) + (transition-time: 5s)[Some say the experience of having ADHD is that of being constantly, simultaneously over-and-under-stimulated. You have all this input, but no way to prioritize any of it. So you &#39;do&#39; nothing, while your brain is &lt;div class=&quot;qmarkmove&quot;&gt;[*]&lt;/div&gt;(text-style: &quot;rumble&quot;)[*gunning*]&lt;div class=&quot;qmarkmove&quot;&gt;[*]&lt;/div&gt; it.]]
 
 |fifth)[(transition: &quot;dissolve&quot;) + (transition-time: 5s)[It&#39;s not like you can pay attention to the presentation, anyway. *Remember? You&#39;re at a presentation?* Your brain-cloud locks onto your senses, and you space out to their associated memories.]]
@@ -2232,7 +2275,7 @@ setInterval(
     &lt;td&gt;|linksmell)[]&lt;/td&gt;
   &lt;/tr&gt;&lt;tr&gt;
     &lt;td&gt;|linksight)[]&lt;/td&gt;
-    &lt;td&gt;|clock)[&lt;div&gt;&lt;img style=&quot;height:15%; width:15%; margin-bottom:-5%; margin-top:-5px;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;]&lt;/td&gt;
+    &lt;td&gt;|clock)[&lt;div id=&quot;divFade1s&quot;&gt;&lt;img style=&quot;height:15%; width:15%; margin-bottom:-5%; margin-top:-5px;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;]&lt;/td&gt;
     &lt;td&gt;|linktaste)[]&lt;/td&gt;
   &lt;/tr&gt;&lt;/table&gt;}
 {{	(live:0.65s)[
@@ -2254,27 +2297,27 @@ setInterval(
 }
 {(live:5s)[
 	(if:$varHear is 0)[
-	[(replace:?linkhear) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Hear&lt;/div&gt;]]&lt;/br&gt;](stop:)
+	[(replace:?linkhear)[&lt;div id=&quot;divFade1s&quot;&gt;Hear&lt;/div&gt;]&lt;/br&gt;](stop:)
 		]
 		(else-if: $varHear is 1)[(replace: ?linkhear)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;&lt;/br&gt;]
 		]
 		(if:$varTouch is 0)[
-	[(replace:?linktouch)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Touch&lt;/div&gt;]]&lt;/br&gt;](stop:)
+	[(replace:?linktouch)[&lt;div id=&quot;divFade1s&quot;&gt;Touch&lt;/div&gt;]&lt;/br&gt;](stop:)
 		]
 		(else-if: $varTouch is 1)[(replace: ?linktouch)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;&lt;/br&gt;]]
 		(if:$varSmell is 0)[
-		[(replace:?linksmell)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Smell&lt;/div&gt;]]&lt;/br&gt;](stop:)
+		[(replace:?linksmell)[&lt;div id=&quot;divFade1s&quot;&gt;Smell&lt;/div&gt;]&lt;/br&gt;](stop:)
 		]
 		(else-if: $varSmell is 1)[(replace: ?linksmell)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;&lt;/br&gt;]](stop:)
 		[
 		(if:$varSight is 0)[
-	[(replace:?linksight)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Sight&lt;/div&gt;]]&lt;/br&gt;](stop:)
+	[(replace:?linksight)[&lt;div id=&quot;divFade1s&quot;&gt;Sight&lt;/div&gt;]&lt;/br&gt;](stop:)
 		]
 		(else-if: $varSight is 1)[(replace: ?linkSight)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;]]
 		(stop:)
 		]
 		(if:$varTaste is 0)[
-		[(replace:?linkTaste)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Taste&lt;/div&gt;]](stop:)&lt;/br&gt;(show:?clock)]
+		[(replace:?linkTaste)[&lt;div id=&quot;divFade1s&quot;&gt;Taste&lt;/div&gt;](stop:)&lt;/br&gt;(show:?clock)]
 		]
 		(else-if: $varTaste is 1)[(replace: ?linktaste)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;]&lt;/br&gt;]
 		(stop:)
@@ -2450,7 +2493,7 @@ setInterval(
 }</tw-passagedata><tw-passagedata pid="11" name="take in" tags="vignetteBG" position="515,446" size="100,100">
 |text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Okay. Let&#39;s take a pause. You&#39;ve been here before.
 Let&#39;s try some techniques to bring our attention back:]]
-|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;]]
+|line)[&lt;hr id=&quot;divFade2s&quot;&gt;]
 
 |breath)[]\
 
@@ -2470,21 +2513,22 @@ Let&#39;s try some techniques to bring our attention back:]]
 		(show:?line)
 	]
 	(else-if:$vartick is 3)[
-		(replace:?breath)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;‣ Take a deep breath&lt;/div&gt;]]
-			(click:&quot;Take a deep breath&quot;)[
-				(replace:?breath)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;Okay, you did that — you still can&#39;t pay attention...&lt;/div&gt;]]
-				(set:$varnext to it+1)
-				(if:$varnext is 3)[
-					(live:1s)[
-						(show:?end)(set:$vartick to 0)(set:$varnext to 0)
-					]
+		(replace:?breath)[&lt;div style=&quot;margin: 0.5% 0 0 4%;&quot; id=&quot;divFade2s&quot;&gt;‣ Take a deep breath&lt;/div&gt;]
+		(click:&quot;Take a deep breath&quot;)[
+			(replace:?breath)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%;&quot; id=&quot;divFade1s&quot;&gt;Okay, you did that — you still can&#39;t pay attention...&lt;/div&gt;]
+			(set:$varnext to it+1)
+			(if:$varnext is 3)[
+				(live:1s)[
+					(show:?end)(set:$vartick to 0)(set:$varnext to 0)
 				]
 			]
+		]
 	]
 	(else-if:$vartick is 4)[
-		(show:?line)
-		(replace:?repeat)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;‣ Repeat the lecturer&#39;s words back in your mind&lt;/div&gt;]]
-		(click:&quot;Repeat the lecturer&#39;s words back in your mind&quot;)[(replace:?repeat)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;The words fall through the cracks of your mind like sand...&lt;/div&gt;]]
+			(show:?line)
+		(replace:?repeat)[&lt;div style=&quot;margin: 0.5% 0 0 4%;&quot; id=&quot;divFade2s&quot;&gt;‣ Repeat the lecturer&#39;s words back in your mind&lt;/div&gt;]
+		(click:&quot;Repeat the lecturer&#39;s words back in your mind&quot;)[
+			(replace:?repeat)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%;&quot; id=&quot;divFade1s&quot;&gt;The words fall through the cracks of your mind like sand...&lt;/div&gt;]
 			(set:$varnext to it+1)
 			(if:$varnext is 3)[
 				(live:1s)[
@@ -2494,9 +2538,10 @@ Let&#39;s try some techniques to bring our attention back:]]
 		]
 	]		
 		(else-if:$vartick is 5)[
-		(replace:?write)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;‣ Write down notes from the slide&lt;/div&gt;]]
+		(replace:?write)[&lt;div style=&quot;margin: 0.5% 0 0 4%;&quot; id=&quot;divFade2s&quot;&gt;‣ Write down notes from the slide&lt;/div&gt;]
 		
-		(click:&quot;Write down notes from the slide&quot;)[(replace:?write)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;As you begin to write, the lecturer moves onto the next slide...&lt;/div&gt;]]
+		(click:&quot;Write down notes from the slide&quot;)[
+			(replace:?write)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%;&quot; id=&quot;divFade1s&quot;&gt;As you begin to write, the lecturer moves onto the next slide...&lt;/div&gt;]
 		(set:$varnext to it+1)
 		(if:$varnext is 3)[
 			(live:1s)[
@@ -2507,8 +2552,8 @@ Let&#39;s try some techniques to bring our attention back:]]
 		(stop:)
 		]
 ]
-}</tw-passagedata><tw-passagedata pid="12" name="SIGHT" tags="bluewaveBG" position="702,801" size="100,100">|title)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;p class=&quot;centre&quot;&gt;*The ocean, the sea.*&lt;/p&gt;]]\
-\|title2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;p class=&quot;centre&quot;&gt;*The foam; waves crashing, cresting, one on top of the other, endlessly.*&lt;/p&gt;]]
+}</tw-passagedata><tw-passagedata pid="12" name="SIGHT" tags="bluewaveBG" position="702,801" size="100,100">|title)[&lt;p class=&quot;centre&quot; id=&quot;divFade1s&quot;&gt;*The ocean; the sea.*&lt;/p&gt;]\
+\|title2)[&lt;p class=&quot;centre&quot; id=&quot;divFade1s&quot;&gt;*The foam; waves crashing, cresting, one on top of the other, endlessly.*&lt;/p&gt;]
 &lt;/br&gt;
 {
 |section1)[]|section2)[]|section3)[]|section4)[]
@@ -2523,7 +2568,7 @@ Let&#39;s try some techniques to bring our attention back:]]
 	(else-if: $set0 is 4)[
 		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Waves lapping at the shore of consciousness,]&lt;/p&gt;]]]
 	(else-if: $set0 is 5)[
-		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Each, a thought, a feeling, a direction.]&lt;/p&gt;]]]
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Each a thought, a feeling, a direction.]&lt;/p&gt;]]]
 	(else-if: $set0 is 6)[
 		(replace: ?section3) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Storm-chaser, and tempest toss’d,]&lt;/p&gt;]]]
 	(else-if: $set0 is 7)[
@@ -2589,9 +2634,9 @@ Let&#39;s try some techniques to bring our attention back:]]
 	(else-if: $varSenses is 4)[(goto:&quot;ReflectB&quot;)]
 	(else-if: $varSenses is 5)[(goto:&quot;pre-overstim&quot;)]
 	]
-}</tw-passagedata><tw-passagedata pid="13" name="end" tags="wBG" position="1100,2400" size="100,100">|static)[(transition: &quot;dissolve&quot;) + (transition-time: 10s)[&lt;p class=&quot;bulletFont&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;
+}</tw-passagedata><tw-passagedata pid="13" name="end" tags="wBG" position="1100,2400" size="100,100">|static)[&lt;p class=&quot;bulletFont&quot; id=&quot;divFade10s&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;
       &lt;div class=&quot;staticimgfull&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;
-&lt;/section&gt;]&lt;/p&gt;]]
+&lt;/section&gt;]&lt;/p&gt;]
 &lt;div style=&quot;top:-20%; white-space:nowrap;&quot;&gt;
 |text1)[|fade5s&gt;[&lt;div class=&quot;textEndOne&quot;&gt;a SNOWSTORM of &lt;div style=&quot;font-size:40px;&quot;&gt;*STATIC*&lt;/div&gt; takes up the screen. The fog rolls in.&lt;/div&gt;]]
 |text2)[|fade5s&gt;[&lt;div class=&quot;textEndTwo&quot;&gt;You are LOST in it. Close your eyes.&lt;/div&gt;]]
@@ -2652,8 +2697,8 @@ margin-right: -50px;&quot;&gt;*Made in Twine 2, Harlowe 3.1.0. Special thanks to
 |text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Those with ADHD often have trouble prioritizing tasks. Every task feels just as important, or as insignificant, as every other task.]]&lt;/br&gt;
 &lt;div style=&quot;left:10%;&quot;&gt;
 |text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*What do you do when* ]] |light1)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*every*&lt;/div&gt;]|light2)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:8%;&quot;&gt;*word*&lt;/div&gt;]|light3)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:4%;&quot;&gt;*on*&lt;/div&gt;]|light4)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:12%;&quot;&gt;*the page*&lt;/div&gt;]|light5)[&lt;div class=&quot;highlighter&quot; style=&quot;display: inline-block; width:20%;&quot;&gt;*is highlighted?*&lt;/div&gt;]&lt;/div&gt;&lt;/br&gt;
-|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Often, nothing. You freeze. You&#39;re stuck. You cannot function. There is no start point. *At least Sisyphus had a clear direction.*&lt;/div&gt;]]
-|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt; You may have no idea why this happens to you. Why can&#39;t you just *FOCUS*?&lt;/div&gt;]]
+|text3)[&lt;div id=&quot;divFade1s&quot;&gt;Often, nothing. You freeze. You&#39;re stuck. You cannot function. There is no start point. *At least Sisyphus had a clear direction.*&lt;/div&gt;]
+|text4)[&lt;div id=&quot;divFade1s&quot;&gt; You may have no idea why this happens to you. Why can&#39;t you just *FOCUS*?&lt;/div&gt;]
 {
 (live:1s)[
 	(set: $tick to it +1)
@@ -2753,16 +2798,16 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
 		(replace: ?intro2) + (transition: &quot;dissolve&quot;) + (transition-time: 4s)[You try to focus on the presenter...&lt;/br&gt;]
 		]
 		(else-if: $vartick is 5)[
-			(replace: ?passage0) + (transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%; margin-top: -20px; padding-bottom: 5px;&quot;&gt;•But there&#39;s construction outside.&lt;/div&gt;]
+			(replace: ?passage0)[&lt;div id=&quot;divFade2s&quot;&gt;&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%; margin-top: -20px; padding-bottom: 5px;&quot;&gt;•But there&#39;s construction outside.&lt;/div&gt;&lt;/div&gt;]
 		]
 		(else-if: $vartick is 6)[
-			(replace: ?passage1) + (transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%; margin-top: 5px; padding-bottom: 5px;&quot;&gt;•You&#39;re thirsty. Your bottle is empty. Your throat itches.&lt;/div&gt;]
+			(replace: ?passage1)[&lt;div id=&quot;divFade2s&quot;&gt;&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%; margin-top: 5px; padding-bottom: 5px;&quot;&gt;•You&#39;re thirsty. Your bottle is empty. Your throat itches.&lt;/div&gt;&lt;/div&gt;]
 		]
 		(else-if: $vartick is 7)[
-			(replace: ?passage2) + (transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 6%; margin-top: 5px; padding-bottom: 5px;&quot;&gt;•You can hear every chair creaking, every keystroke in the room...&lt;/div&gt;]
+			(replace: ?passage2)[&lt;div id=&quot;divFade2s&quot;&gt;&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 6%; margin-top: 5px; padding-bottom: 5px;&quot;&gt;•You can hear every chair creaking, every keystroke in the room...&lt;/div&gt;&lt;/div&gt;]
 		]
 		(else-if: $vartick is 8)[
-			(replace: ?passage3) + (transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 9%; margin-top: 5px; padding-bottom: 5px;&quot;&gt;•Footsteps ring outside in the hallway...&lt;/div&gt;]
+			(replace: ?passage3)[&lt;div id=&quot;divFade2s&quot;&gt;&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 9%; margin-top: 5px; padding-bottom: 5px;&quot;&gt;•Footsteps ring outside in the hallway...&lt;/div&gt;&lt;/div&gt;]
 		]
 		(else-if: $vartick is 10)[
 			(replace: ?passage4) + (transition: &quot;dissolve&quot;) + (transition-time: 7s)[The talk is interesting and relevant to your interests, but somehow your attention eludes capture — You struggle to [[take in]] any of it.] 
@@ -2877,8 +2922,8 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
 &lt;div class=&quot;setTaste&quot; style=&quot;top:-40px;&quot;&gt;
 &lt;div id=&quot;tastepill6&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/PillCircle.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
-|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Most ADHD medications are stimulants.&lt;/div&gt;]]
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;These go by many brand names, including *Ritalin, Vyvanse*, and *Adderall*. Many of these are a variation of amphetamine. There are many reasons people take these drugs — jet pilots take them as “go pills” to keep them alert; party people take them to stay up all night and dance; students and others take them to be more productive.&lt;/div&gt;]]
+|text1)[&lt;div id=&quot;divFade1s&quot;&gt;Most ADHD medications are stimulants.&lt;/div&gt;]
+|text2)[&lt;div id=&quot;divFade1s&quot;&gt;These go by many brand names, including *Ritalin, Vyvanse*, and *Adderall*. Many of these are a variation of amphetamine. There are many reasons people take these drugs — jet pilots take them as “go pills” to keep them alert; party people take them to stay up all night and dance; students and others take them to be more productive.&lt;/div&gt;]
 &lt;/br&gt;
 &lt;div style=&quot;display:inline; top:-90px;&quot;&gt;
 |tastepill1)[&lt;div style=&quot;left:10%; top:2%;&quot;&gt;&lt;div class=&quot;setTaste&quot;&gt;&lt;div class=&quot;set&quot;&gt;&lt;div id=&quot;pillspin&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/PillBlue.png&quot;&gt;&lt;/img&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;]
@@ -2906,15 +2951,15 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
 (click:&quot;normal&quot;)[
 	(set:$tick to 0)(goto:&quot;preChop&quot;)	
 	]	
-}</tw-passagedata><tw-passagedata pid="20" name="pre-overstim" tags="vignetteBG" position="1097,1300" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -18%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimg_splash&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;
+}</tw-passagedata><tw-passagedata pid="20" name="pre-overstim" tags="vignetteBG" position="1097,1300" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -18%;&quot; id=&quot;divFade1s&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimg_splash&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]&lt;/container&gt;
 
-|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;text-align:center; margin-top: -15%; text-shadow:1px 1px 8px black, 2px 2px 10px black;&quot;&gt;[Your perception smash-cuts back to &lt;div style=&quot;color:gold; text-shadow:1px 1px 20px #E3A616BA; font-size:25px; display:contents;&quot;&gt;***Reality***.&lt;/div&gt;] You look around you.]&lt;/div&gt;]
+|text1)[&lt;div style=&quot;text-align:center; margin-top: -15%; text-shadow:1px 1px 8px black, 2px 2px 10px black;&quot; id=&quot;divFade1s&quot;&gt;[Your perception smash-cuts back to &lt;div style=&quot;color:gold; text-shadow:1px 1px 20px #E3A616BA; font-size:25px; display:contents;&quot;&gt;***Reality***.&lt;/div&gt;] You look around you.&lt;/div&gt;]
 
 
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;text-shadow:1px 1px 10px black, 2px 2px 10px black;&quot;&gt;[The Conference room feels &lt;div style=&quot;font-size:24px; font-weight:bold; display:contents;&quot;&gt;cavernous&lt;/div&gt;] now — &lt;div style=&quot;font-size:28px; display:contents;&quot;&gt;*unknowably*&lt;/div&gt; &lt;div style=&quot;font-size:36px; font-weight:bold; text-shadow:1px 1px 20px #FFFFFFBA; display:contents;&quot;&gt;*large.*&lt;/div&gt;]&lt;/div&gt;]
+|text2)[&lt;div style=&quot;text-shadow:1px 1px 10px black, 2px 2px 10px black;&quot; id=&quot;divFade1s&quot;&gt;[The Conference room feels &lt;div style=&quot;font-size:24px; font-weight:bold; display:contents;&quot;&gt;cavernous&lt;/div&gt;] now — &lt;div style=&quot;font-size:28px; display:contents;&quot;&gt;*unknowably*&lt;/div&gt; &lt;div style=&quot;font-size:36px; font-weight:bold; text-shadow:1px 1px 20px #FFFFFFBA; display:contents;&quot;&gt;*large.*&lt;/div&gt;&lt;/div&gt;]
 |text3)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;text-shadow:1px 1px 10px black, 2px 2px 10px black; display: inherit;&quot;&gt;The Lecturer&#39;s&lt;/div&gt; &lt;div class=&quot;overstim&quot; style=&quot;font-weight: bold; display:inherit;&quot;&gt;voice is singing in three different languages&lt;/div&gt;&lt;div style=&quot;text-shadow:1px 1px 10px black, 2px 2px 10px black; display: inherit;&quot;&gt;, through a loudspeaker. *Each laptop |textDis&gt;[keystroke lands as an artillery strike],* smashing a castle parapet during a siege. *It crumbles, topping down between the desks to the laminate floor-chasm below.* You watch it explode into a million darting starlings, lifting the roof off and exposing the room to an &lt;div class=&quot;sunglow&quot; style=&quot;font-size:25px; display:contents;&quot;&gt; *infinite* &lt;/div&gt;&lt;div class=&quot;sunglow&quot; style=&quot;display:contents;&quot;&gt;***sun***.&lt;/div&gt;&lt;/div&gt;]&lt;/div&gt;]
 &lt;/br&gt;
-|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;text-align:center; text-shadow:1px 1px 10px black, 2px 2px 10px black;&quot;&gt;[It&#39;s hard to see, let alone think, in this all-encompassing &lt;div style=&quot;font-size:26px; font-weight:bold; display:inherit;&quot;&gt;noise.&lt;/div&gt;]&lt;/div&gt;]]
+|text4)[&lt;div style=&quot;text-align:center; text-shadow:1px 1px 10px black, 2px 2px 10px black;&quot; id=&quot;divFade1s&quot;&gt;[It&#39;s hard to see, let alone think, in this all-encompassing &lt;div style=&quot;font-size:26px; font-weight:bold; display:inherit;&quot;&gt;noise.&lt;/div&gt;]&lt;/div&gt;]
 
 
 {
@@ -2947,7 +2992,7 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
 |second)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;hoverplain2&quot;&gt;A million points of data demand your attention equally, somehow.]&lt;/div&gt;]
 |third)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;hoverplain3&quot;&gt;It&#39;s overwhelming.] &lt;/div&gt;]
 
-|line)[(transition: &quot;dissolve&quot;) + (transition-time: 6s)[&lt;hr&gt;&lt;/hr&gt;]]
+|line)[&lt;hr id=&quot;divFade2s&quot;&gt;]
 
 |fifth)[&lt;div class=&quot;centre&quot; style= &quot;margin-top:-20px; margin-bottom:-20px;&quot;&gt;(transition: &quot;dissolve&quot;) + (transition-time: 5s)[The tangent-spanning multiverse within your mind returns you to the crossroads. Pick a direction of travel.]&lt;/div&gt;]
 {&lt;table class=&quot;sturdy&quot; style=&quot;margin-left:10%; margin-right:10%; margin-bottom:10%;&quot;&gt;
@@ -2958,7 +3003,7 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;|linksight)[]&lt;/td&gt;
-    &lt;td&gt;|clock)[&lt;div&gt;&lt;img style=&quot;height:15%; width:15%; margin-bottom:-5%; margin-top:-5px;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;]&lt;/td&gt;
+    &lt;td&gt;|clock)[&lt;div id=&quot;divFade1s&quot;&gt;&lt;img style=&quot;height:15%; width:15%; margin-bottom:-5%; margin-top:-5px;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;]&lt;/td&gt;
     &lt;td&gt;|linktaste)[]&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;&lt;/br&gt;}
@@ -2985,27 +3030,27 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
 {
 	(live:3s)[
 		(if:$varHear is 0)[
-	[(replace:?linkhear) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Hear&lt;/div&gt;]]&lt;/br&gt;](stop:)(show:?clock)
+	[(replace:?linkhear) [&lt;div id=&quot;divFade1s&quot;&gt;Hear&lt;/div&gt;]&lt;/br&gt;](stop:)(show:?clock)
 		]
 		(else-if: $varHear is 1)[(replace: ?linkhear)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;HEAR&lt;/div&gt;&lt;/br&gt;](show:?clock)
 		]
 		(if:$varTouch is 0)[
-	[(replace:?linktouch)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Touch&lt;/div&gt;]]&lt;/br&gt;](stop:)
+	[(replace:?linktouch)[&lt;div id=&quot;divFade1s&quot;&gt;Touch&lt;/div&gt;]&lt;/br&gt;](stop:)
 		]
 		(else-if: $varTouch is 1)[(replace: ?linktouch)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;TOUCH&lt;/div&gt;&lt;/br&gt;]]
 		(if:$varSmell is 0)[
-		[(replace:?linksmell)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Smell&lt;/div&gt;]]&lt;/br&gt;](stop:)
+		[(replace:?linksmell)[&lt;div id=&quot;divFade1s&quot;&gt;Smell&lt;/div&gt;]&lt;/br&gt;](stop:)
 		]
 		(else-if: $varSmell is 1)[(replace: ?linksmell)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;SMELL&lt;/div&gt;&lt;/br&gt;]](stop:)
 		[
 		(if:$varSight is 0)[
-	[(replace:?linksight)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Sight&lt;/div&gt;]]&lt;/br&gt;](stop:)
+	[(replace:?linksight)[&lt;div id=&quot;divFade1s&quot;&gt;Sight&lt;/div&gt;]&lt;/br&gt;](stop:)
 		]
 		(else-if: $varSight is 1)[(replace: ?linkSight)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;SIGHT&lt;/div&gt;]]
 		(stop:)
 		]
 		(if:$varTaste is 0)[
-		[(replace:?linkTaste)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Taste&lt;/div&gt;]](stop:)&lt;/br&gt;]
+		[(replace:?linkTaste)[&lt;div id=&quot;divFade1s&quot;&gt;Taste&lt;/div&gt;](stop:)&lt;/br&gt;]
 		]
 		(else-if: $varTaste is 1)[(replace: ?linktaste)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;TASTE&lt;/div&gt;]&lt;/br&gt;]
 		(stop:)
@@ -3027,7 +3072,7 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
 (click:&quot;Taste&quot;)[(set:$varTaste to 1)(set: $varSenses to it +1)(goto:&quot;TASTE&quot;)]
 (click:&quot;NEXTT&quot;)[(goto:&quot;nextone&quot;)]
 }}</tw-passagedata><tw-passagedata pid="22" name="ReflectA" tags="vignetteBG" position="802,1201" size="100,100">|title)[&lt;div style= &quot;line-height:0.15em; margin-top:-10px;&quot;&gt;(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*Interlude-*]&lt;/div&gt;]
-|title2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;h2 style=&quot;line-height:0.1em;&quot; margin-bottom: 14px;&gt;What does ADHD feel like?&lt;/h2&gt;]]
+|title2)[&lt;h2 style=&quot;line-height:0.1em;&quot; margin-bottom: 14px; id=&quot;divFade1s&quot;&gt;What does ADHD feel like?&lt;/h2&gt;]
 |line1)[&lt;div style=&quot;margin-top: -5px; margin-bottom:-7px;&quot;&gt;(transition: &quot;dissolve&quot;) + (transition-time: 1s)[My therapist tells me that neurotypical people operate on another level than I do. The drugs that people take to be more productive, stay alert, or to party is the medication that makes me feel &quot;normal&quot;. The drugs allow me to manage my symptoms — to have a semblence of &quot;normal&quot;. Otherwise, my ability to focus is hamstrung compared to others.]&lt;/div&gt;]
 
 |line3)[&lt;div class=&quot;centre&quot; style=&quot;margin-top:-5px; margin-bottom:-5px;&quot;&gt;(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*Managing ADHD is making sure you eat when you take your drugs or your stomach will hurt. It&#39;s making sure you&#39;re hydrated, or you will feel like ****death****.*]&lt;/div&gt;]
@@ -3057,7 +3102,7 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
 |text1)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[You close your eyes and take a deep breath.]]
 
 |text2)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[Your eyelids droop; you grow weary, and finally surrender to sleep.]] 
-|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;&lt;/hr&gt;]]
+|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]
 
 |text3)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[You wake up in your bedroom. How did you get here? Was the Conference a dream? You rise, and step on something - a loose sock.]]
 
@@ -3082,13 +3127,13 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
 	]
 ]
 }
-{(click: &quot;tidy up&quot;)[(go-to:&quot;dreamGP&quot;)]}</tw-passagedata><tw-passagedata pid="24" name="epilogue" tags="vignetteBG" position="1102,2696" size="100,100">|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div&gt;ADHD isn&#39;t a horrible affliction.  While this fiction explored some negative situations, there are just as many wonderful ways it expresses itself as well.&lt;/div&gt;]]
+{(click: &quot;tidy up&quot;)[(go-to:&quot;dreamGP&quot;)]}</tw-passagedata><tw-passagedata pid="24" name="epilogue" tags="vignetteBG" position="1102,2696" size="100,100">|text1)[&lt;div id=&quot;divFade1s&quot;&gt;ADHD isn&#39;t a horrible affliction.  While this fiction explored some negative situations, there are just as many wonderful ways it expresses itself as well.&lt;/div&gt;]
 
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div&gt;You may find you reach for answers others haven&#39;t considered; or that you naturally think &quot;out of the box&quot;. While these gifts, among many, are part of having ADHD, they often are outshadowed by the stigma associated with the disorder.&lt;/div&gt;]] 
+|text2)[&lt;div id=&quot;divFade1s&quot;&gt;You may find you reach for answers others haven&#39;t considered; or that you naturally think &quot;out of the box&quot;. While these gifts, among many, are part of having ADHD, they often are outshadowed by the stigma associated with the disorder.&lt;/div&gt;]
 
-|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div&gt;It&#39;s not *you* who has a problem- the systems we live under are often not designed with neurodivergence in mind. Our structures are not set up to accomodate you.&lt;/div&gt;]]
+|text3)[&lt;div id=&quot;divFade1s&quot;&gt;It&#39;s not *you* who has a problem- the systems we live under are often not designed with neurodivergence in mind. Our structures are not set up to accomodate you.&lt;/div&gt;]
 
-|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div&gt;Let&#39;s un-learn stigma, and create a safe environment for neurodivergent people to be themselves.&lt;/div&gt;]]
+|text4)[&lt;div id=&quot;divFade1s&quot;&gt;Let&#39;s un-learn stigma, and create a safe environment for neurodivergent people to be themselves.&lt;/div&gt;]
 
 {
 (live:1s)[
@@ -3116,27 +3161,27 @@ It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&
 	(live:1s)[
 		(set:$tick to it+1)
 		(if:$tick is 2)[
-			(replace:?text1)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div style=&quot;text-align:center;&quot;&gt;*Deficit* is based off my personal experiences having Inattentive type ADHD; others will have vastly different stories to tell. Thank you for playing!&lt;/div&gt;]]
+			(replace:?text1)[&lt;div style=&quot;text-align:center;&quot; id=&quot;divFade3s&quot;&gt;*Deficit* is based off my personal experiences having Inattentive type ADHD; others will have vastly different stories to tell. Thank you for playing!&lt;/div&gt;]
 		]
 		(else-if:$tick is 3)[
-			(replace:?text2)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div style=&quot;text-align:center;&quot;&gt;Looking for Resources? (Will restart game)&lt;/div&gt;]]
+			(replace:?text2)[&lt;div style=&quot;text-align:center;&quot; id=&quot;divFade3s&quot;&gt;Looking for Resources? (Will restart game)&lt;/div&gt;]
 		]
 		(else-if:$tick is 4)[
-			(replace:?text3)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;h1 style=&quot;text-align:center; margin-top: 25px;&quot;&gt;Restart?&lt;/h1&gt;]]
+			(replace:?text3)[&lt;h1 style=&quot;text-align:center; margin-top: 25px;&quot; id=&quot;divFade3s&quot;&gt;Restart?&lt;/h1&gt;]
 		]
 		(else-if:$tick is 5)[
-			(replace:?text4)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;text-align:center; font-weight:bold; top:-30px;&quot;&gt;&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSfJ7EVs9ACfUnXzAFhxxQhuBjGKt4GzOgQuNc0-jzLvWVavjQ/viewform&quot;&gt;*Have Feedback?*&lt;/a&gt;&lt;div&gt;]]
+			(replace:?text4)[&lt;div style=&quot;text-align:center; font-weight:bold; top:-30px;&quot; id=&quot;divFade1s&quot;&gt;&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSfJ7EVs9ACfUnXzAFhxxQhuBjGKt4GzOgQuNc0-jzLvWVavjQ/viewform&quot;&gt;*Have Feedback?*&lt;/a&gt;&lt;div&gt;]
 			(stop:)(set:$tick to 0)
 		]
 	]
 ]
 }
 {(click:&quot;Restart?&quot;)[(reload:)]}
-{(click:&quot;Resources&quot;)[(go-to:&quot;Resources&quot;)]}</tw-passagedata><tw-passagedata pid="25" name="focus" tags="vignetteBG" position="738,439" size="100,100">|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;text-align:center;&quot;&gt;[&lt;div style=&quot;color:gold; text-shadow:0px 0px 12px #E3A616BA; font-size:25px; display:contents;&quot;&gt;***Attention***&lt;/div&gt;] is the most valuable currency known to civilization.]&lt;/div&gt;]&lt;/br&gt;
+{(click:&quot;Resources&quot;)[(go-to:&quot;Resources&quot;)]}</tw-passagedata><tw-passagedata pid="25" name="focus" tags="vignetteBG" position="738,439" size="100,100">|text1)[&lt;div style=&quot;text-align:center;&quot; id=&quot;divFade2s&quot;&gt;&lt;div style=&quot;color:gold; text-shadow:0px 0px 12px #E3A616BA; font-size:25px; display:contents;&quot;&gt;***Attention***&lt;/div&gt; is the most valuable currency known to civilization.&lt;/div&gt;]&lt;/br&gt;
 |text2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[In an information society, retaining engagement with an audience is one of the most important aspects of a platform. If someone is watching your content, that means they are not watching your competitors&#39;.]]&lt;/br&gt;
 |text3)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[From a young age, it is instilled in us that in order to succeed, you must &lt;u&gt;focus&lt;/u&gt;. However, the cost is often hidden, and the ability to handle this seemingly basic task is assumed. For many, the deficit will always be too high.]]&lt;/br&gt;
-|text4)[&lt;div style=&quot;display: block; text-align:center&quot;;&gt;[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;display: block; text-align:center;&quot;&gt;[The truth is, like many with ADHD,
-You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&quot; style=&quot;display: inline-block; font-size:25px; text-shadow: 0px 0px 1px #4169E1BA; margin:auto&quot;;&gt;[*PAY ATTENTION*]&lt;/div&gt;&lt;/div&gt;]]&lt;/div&gt;]
+|text4)[&lt;div style=&quot;display: block; text-align:center&quot;; id=&quot;divFade2s&quot;&gt;[&lt;div style=&quot;display: block; text-align:center;&quot;&gt;[The truth is, like many with ADHD,
+You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&quot; style=&quot;display: inline-block; font-size:25px; text-shadow: 0px 0px 1px #4169E1BA; margin:auto&quot;;&gt;[*PAY ATTENTION*]&lt;/div&gt;&lt;/div&gt;]&lt;/div&gt;]
 {
 (live:1s)[
 		(set:$tick to it +1)
@@ -3189,7 +3234,7 @@ You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&qu
 	]
 ]
 }</tw-passagedata><tw-passagedata pid="27" name="ReflectB" tags="vignetteBG" position="1299,1201" size="100,100">|title)[&lt;div style= &quot;line-height:0.15em; margin-top:-10px;&quot;&gt;(transition: &quot;dissolve&quot;) + (transition-time: 1s)[*Interlude-*]&lt;/div&gt;]
-|title2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;h2 style=&quot;line-height:0.1em;&quot; margin-bottom: 14px;&gt;ADHD As An Adult&lt;/h2&gt;]]
+|title2)[&lt;h2 style=&quot;line-height:0.1em;&quot; margin-bottom: 14px; id=&quot;divFade1s&quot;&gt;ADHD As An Adult&lt;/h2&gt;]
 |line1)[&lt;div style=&quot;margin-top: -5px; margin-bottom:-7px;&quot;&gt;(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Coming to terms with being ADHD as an adult can be difficult. Maybe a diagnosis was unavailable when you were younger, or perhaps you were simply labelled impulsive, lazy, or slow.]]
 
 |line2)[&lt;div&gt;(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You may be saddled with self esteem issues. You&#39;ve wondered your whole life why it feels like you try so hard, only to end up feeling like a slacker compared to everyone else. You might even feel like those labels are true.]]
@@ -3243,7 +3288,7 @@ You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&qu
 }</tw-passagedata><tw-passagedata pid="28" name="exeDys" tags="vignetteBG" position="1099,1748" size="100,100">
 |text2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[You sit up. This shouldn&#39;t be too hard — you just need to plug the HDMI cable from your PC into the TV. Hold up — you remember that the HDMI cable&#39;s housing is broken and should be taped up; otherwise, the signal will cut out.]]
 
-|line)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;hr&gt;&lt;/hr&gt;]]
+|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]
 |text3)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[You could fix it now, or you could make tea. You&#39;ve got a few minutes before the stream starts.]]
 
 |choice1)[]
@@ -3273,7 +3318,7 @@ You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&qu
 |text1)[]
 
 |text2)[]\
-\|line)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;hr&gt;&lt;/hr&gt;]]
+\|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]
 
 |choice1)[]
 |choice2)[]
@@ -3372,14 +3417,14 @@ You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&qu
 }</tw-passagedata><tw-passagedata pid="30" name="HypeAfter" tags="starBG" position="1102,2252" size="100,100">
 
 
-|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;font-size:26px; font-weight: bold;&quot;&gt;You *did* it!!&lt;/div&gt;]]\
+|text1)[&lt;div style=&quot;font-size:26px; font-weight: bold;&quot; id=&quot;divFade1s&quot;&gt;You *did* it!!&lt;/div&gt;]\
 \|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You achieved ***HYPERFOCUS***, the Legendary ADHD Superpower! Let&#39;s see how you did:]]
 &lt;/br&gt;
 |text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;pzero&quot;&gt;Looks like you were successful!&lt;/div&gt;]]
 |text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[
 ...At deep-cleaning your apartment for six hours, instead of the work you needed to do. Which really would only have taken 30 minutes. Whoops.]]&lt;/br&gt;
 
-|text5)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=font-size:22px;&gt;*Does this ever [[end]]?*&lt;/div&gt;]]
+|text5)[&lt;div style=font-size:22px; id=&quot;divFade1s&quot;&gt;*Does this ever [[end]]?*&lt;/div&gt;]
 
 {
 (live:1s)[
@@ -3401,9 +3446,9 @@ You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&qu
 	]
 ]
 }</tw-passagedata><tw-passagedata pid="31" name="preHyperfocus" tags="vignetteBG" position="1102,2100" size="100,100">
-|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;You glance at your phone.&lt;/div&gt;]]
+|text1)[&lt;div id=&quot;divFade1s&quot;&gt;You glance at your phone.&lt;/div&gt;]
 
-|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;The notification was a reminder to reply to some emails. You&#39;ve been putting these off for a while, and they have to get done. You decide to watch the stream later; this has to be done *now*, or you&#39;ll never do it. You freeze up. There must be a way. You just need to... concentrate. Or something.&lt;/div&gt;]]
+|text2)[&lt;div id=&quot;divFade1s&quot;&gt;The notification was a reminder to reply to some emails. You&#39;ve been putting these off for a while, and they have to get done. You decide to watch the stream later; this has to be done *now*, or you&#39;ll never do it. You freeze up. There must be a way. You just need to... concentrate. Or something.&lt;/div&gt;]
 &lt;div style=&quot;white-space: nowrap;&quot;&gt;|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[But... *how*? ]]|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Aha! Let&#39;s try to use that famous ADHD *Superpower* — ***HYPERFOCUS!***]]&lt;/div&gt;
 
 {
@@ -3428,9 +3473,8 @@ You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&qu
 &quot;Oh, sure! No worries&quot; he shrugs, taking a sip, and the conversation moves on. 
 
 
-|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;&lt;/hr&gt;]]
+|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]
 |line1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[It didn&#39;t matter in the end, but you still had to think about the outcome to every response.]]
-
 
 &lt;/br&gt;
 |sip)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You take a sip. It&#39;s delicious.]]
@@ -3455,7 +3499,7 @@ You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&qu
 }</tw-passagedata><tw-passagedata pid="33" name="americano" tags="vignetteBG" position="292,1135" size="100,100"> The barista skillfully pours your drinks, finishing your colleague&#39;s mug with a pretty flower design. Your colleague pays, and you take your drinks to a nearby counter. As the conversation picks up, you take in the room. Nearly everyone is drinking some variation of coffee, and you can&#39;t help but consider how ingrained this habit is, culturally. 
  
 |line1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[ You take a sip. It&#39;s bitter, but tasty. You actually *like* coffee, but it can play havoc with your energy levels. You take a stroll back to the studio, enjoying the nice weather. So far, you feel okay!]]
- |line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;&lt;/hr&gt;]] 
+|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]
 |line2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[ As you sit at your desk, you feel a weight descend on your eyelids. It gets hard to focus on your tasks, and your head begins to nod. You&#39;re definitely sleepy, and spend the next hour in a fog. Oops.]]
 {
 (live: 1s)[
@@ -3481,7 +3525,7 @@ You literally can&#39;t afford to]&lt;/div&gt; &lt;div class=&quot;staticfont&qu
 
 You meet your colleague over at a counter and take a seat. He looks like he&#39;s very much enjoying his coffee. You blow away the steam rising from your mug, and take a sip. 
 
-|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;&lt;/hr&gt;]]
+|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]
 |line1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Heading back to your workplace, you can&#39;t tell if the caffeine in the tea has perked you up at all, or is slowing you down. It didn&#39;t matter in the end, but you still had to think about the outcome to every response.]]
 {
 (live: 1s)[
@@ -3505,8 +3549,8 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 
 
 </tw-passagedata><tw-passagedata pid="35" name="sleepy" tags="vignetteBG" position="406,1021" size="100,100">&lt;p style=&quot;font-size:18px;&quot;&gt;*While not true for* everyone *with ADHD, many report feeling calm or sleepy after drinking coffee — as if it awakens the brain enough for it to realize how exhausted it is.* &lt;/p&gt;\
-\|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;p&gt;You get to the counter. He orders a fancy drink — a cortado? He says he&#39;ll get yours, too. What do you want? &lt;/p&gt;]]\
-\|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;&lt;/hr&gt;]]
+\|text1)[&lt;p id=&quot;divFade1s&quot;&gt;You get to the counter. He orders a fancy drink — a cortado? He says he&#39;ll get yours, too. What do you want? &lt;/p&gt;]\
+\|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]
 |option1)[&lt;div style=&quot;left:30px; margin-top:-5px; margin-bottom:-5px;&quot;&gt;(transition: &quot;dissolve&quot;) + (transition-time: 1s)[‣ You feel pressured to engage in societal expectations, even if this is a low-risk environment. You order a medium americano.]&lt;/div&gt;]
 |option2)[&lt;div style=&quot;left:30px; margin-top:-5px; margin-bottom:-5px;&quot;&gt;(transition: &quot;dissolve&quot;) + (transition-time: 1s)[‣ You order a black tea, and take a chance on something with less caffeine.]&lt;/div&gt;]
 |option3)[&lt;div style=&quot;left:30px; margin-top:-5px; margin-bottom:-5px;&quot;&gt;(transition: &quot;dissolve&quot;) + (transition-time: 1s)[‣ You ask the barista if they can recommend any non-caffeinated teas. You order an almond tea.]&lt;/div&gt;]
@@ -3539,11 +3583,11 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 	(set:$tick to 0)(goto:&quot;almond&quot;)	
 	]	
 }
-&lt;!-- |text2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[Roll the dice - it might give you a jittery boost, but it may also shut you down!]] --&gt;</tw-passagedata><tw-passagedata pid="36" name="heartwo" tags="vignetteBG" position="1059,927" size="100,100">|passage1)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div&gt;You take a swig as they eagerly share a story. They grin, about to speak, when-&lt;/div&gt;]]
-|passage2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div&gt;With cruel timing, fate draws another mirth-maker past you. They stop to ask you a question, right as *Cute and Charming* was probably making a pass at you.&lt;/div&gt;]] 
-|passage3)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div&gt;It doesn&#39;t matter though, because you&#39;re now between two worlds. They both keep talking— your eyes don&#39;t know which to focus on. Half-formed words tumble from your gaping mouth. You *think* you reply to both at the same time, which makes them both pause.&lt;/div&gt;]]
-|passage4)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div&gt;Who do you try to focus on?&lt;/div&gt;]]\
-\|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;&lt;/hr&gt;]]
+&lt;!-- |text2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[Roll the dice - it might give you a jittery boost, but it may also shut you down!]] --&gt;</tw-passagedata><tw-passagedata pid="36" name="heartwo" tags="vignetteBG" position="1059,927" size="100,100">|passage1)[&lt;div id=&quot;divFade2s&quot;&gt;You take a swig as they eagerly share a story. They grin, about to speak, when-&lt;/div&gt;]
+|passage2)[&lt;div id=&quot;divFade2s&quot;&gt;With cruel timing, fate draws another mirth-maker past you. They stop to ask you a question, right as *Cute and Charming* was probably making a pass at you.&lt;/div&gt;]
+|passage3)[&lt;div id=&quot;divFade2s&quot;&gt;It doesn&#39;t matter though, because you&#39;re now between two worlds. They both keep talking— your eyes don&#39;t know which to focus on. Half-formed words tumble from your gaping mouth. You *think* you reply to both at the same time, which makes them both pause.&lt;/div&gt;]
+|passage4)[&lt;div id=&quot;divFade2s&quot;&gt;Who do you try to focus on?&lt;/div&gt;]\
+\|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]
 |choice1)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[‣*Cute and Charming!*]]
 |choice2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[‣The curious Interloper]]
 |choice3)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[‣OMG BAIL]]
@@ -3620,7 +3664,7 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 	(else-if: $varSenses is 4)[(goto:&quot;ReflectB&quot;)]
 	(else-if: $varSenses is 5)[(goto:&quot;pre-overstim&quot;)]
 	]
-}</tw-passagedata><tw-passagedata pid="38" name="LogicThree" tags="" position="1816,1047" size="100,100">(set: $cycleit to it + 1)(set:$chopped to it+1)(if: $cycleit is 0)[&lt;img style=&quot;max-width:110%; max-height:110%;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Hand.png&quot;&gt;&lt;/img&gt;](else-if: $cycleit is 1)[&lt;img style=&quot;max-width:110%; max-height:110%;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Hand.png&quot;&gt;&lt;/img&gt;](else-if: $cycleit is 2)[&lt;img style=&quot;max-width:110%; max-height:110%;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Hand.png&quot;&gt;&lt;/img&gt;](else-if: $cycleit is 3)[&lt;img style=&quot;max-width:110%; max-height:110%&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Hand.png&quot;&gt;&lt;/img&gt;](click-replace: ?phrase2)[(display: &quot;LogicThree&quot;)]</tw-passagedata><tw-passagedata pid="39" name="Chop" tags="vignetteBG" position="1699,1036" size="100,100">|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot;&gt;*Instructions: Click The Hand.*&lt;/div&gt;]]|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot;&gt;You start to chop the powder, and split it into two piles.&lt;/div&gt;]]|text3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot;&gt;As you gaze down on the neat piles you’ve created...&lt;/div&gt;]]|text4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot;&gt;...a thought leans into your mind:&lt;/div&gt;]]|text5)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot;&gt;*&quot;What the hell am I doing??&quot;*&lt;/div&gt;]]
+}</tw-passagedata><tw-passagedata pid="38" name="LogicThree" tags="" position="1816,1047" size="100,100">(set: $cycleit to it + 1)(set:$chopped to it+1)(if: $cycleit is 0)[&lt;img style=&quot;max-width:110%; max-height:110%;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Hand.png&quot;&gt;&lt;/img&gt;](else-if: $cycleit is 1)[&lt;img style=&quot;max-width:110%; max-height:110%;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Hand.png&quot;&gt;&lt;/img&gt;](else-if: $cycleit is 2)[&lt;img style=&quot;max-width:110%; max-height:110%;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Hand.png&quot;&gt;&lt;/img&gt;](else-if: $cycleit is 3)[&lt;img style=&quot;max-width:110%; max-height:110%&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Hand.png&quot;&gt;&lt;/img&gt;](click-replace: ?phrase2)[(display: &quot;LogicThree&quot;)]</tw-passagedata><tw-passagedata pid="39" name="Chop" tags="vignetteBG" position="1699,1036" size="100,100">|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot;&gt;*Instructions: Click The Hand.*&lt;/div&gt;]]|text2)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot; id=&quot;divFade1s&quot;&gt;You start to chop the powder, and split it into two piles.&lt;/div&gt;]|text3)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot; id=&quot;divFade1s&quot;&gt;As you gaze down on the neat piles you’ve created...&lt;/div&gt;]|text4)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot; id=&quot;divFade1s&quot;&gt;...a thought leans into your mind:&lt;/div&gt;]|text5)[&lt;div class=&quot;centre&quot; style=&quot;margin:-15px 0 -30px 0;&quot; id=&quot;divFade1s&quot;&gt;*&quot;What the hell am I doing??&quot;*&lt;/div&gt;]
 |text6)[&lt;div class=&quot;centre&quot; style=&quot;margin: 15px 0 -30px 0;&quot;&gt;[  ]&lt;/div&gt;]\
 \|game)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;container&gt;
 &lt;div class=&quot;boxred&quot; id=&quot;boxred&quot; style=&quot;width:50vw&quot;;&gt;
@@ -3796,18 +3840,18 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 	]
 ]
 }
-{(click:&quot;Epilogue&quot;)[(go-to:&quot;epilogue&quot;)]}</tw-passagedata><tw-passagedata pid="45" name="titleNew" tags="vignetteAnimBG2" position="96,106" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static&gt;[(transition: &quot;dissolve&quot;) + (transition-time: 10s)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;|staticfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;&lt;/br&gt;
+{(click:&quot;Epilogue&quot;)[(go-to:&quot;epilogue&quot;)]}</tw-passagedata><tw-passagedata pid="45" name="titleNew" tags="vignetteAnimBG2" position="96,106" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot; id=&quot;divFade10s&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]&lt;/container&gt;|staticfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;&lt;/br&gt;
 &lt;container class=&quot;container_row&quot;&gt;
-|title)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot;&gt;**D E F I C I T**&lt;/div&gt;]]&lt;/container&gt;|titlefade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot;&gt;**D E F I C I T**&lt;/div&gt;]]
+|title)[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot; id=&quot;divFade1s&quot;&gt;**D E F I C I T**&lt;/div&gt;]&lt;/container&gt;|titlefade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot;&gt;**D E F I C I T**&lt;/div&gt;]]
 &lt;/container&gt;&lt;/br&gt;
 &lt;container class=&quot;container_row&quot;&gt;
-|start)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-align:center; margin-bottom: -30px; font-size:30px;&quot;&gt;START&lt;/div&gt;]]&lt;/container&gt;|startfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; margin-bottom: -30px; font-size:30px;&quot;&gt;START&lt;/div&gt;]]&lt;/container&gt;
-&lt;container class=&quot;container_row&quot;&gt;|about)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-align:center; font-size:30px;&quot;&gt;ABOUT&lt;/div&gt;]]&lt;/container&gt;|aboutfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; font-size:30px;&quot;&gt;ABOUT&lt;/div&gt;]]
+|start)[&lt;div style=&quot;text-align:center; margin-bottom: -30px; font-size:30px;&quot; id=&quot;divFade1s&quot;&gt;START&lt;/div&gt;]&lt;/container&gt;|startfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; margin-bottom: -30px; font-size:30px;&quot;&gt;START&lt;/div&gt;]]&lt;/container&gt;
+&lt;container class=&quot;container_row&quot;&gt;|about)[&lt;div style=&quot;text-align:center; font-size:30px;&quot; id=&quot;divFade1s&quot;&gt;ABOUT&lt;/div&gt;]&lt;/container&gt;|aboutfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; font-size:30px;&quot;&gt;ABOUT&lt;/div&gt;]]
 &lt;/container&gt;&lt;/br&gt;
-&lt;container class=&quot;container_row&quot;&gt;|cw)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-align:center; margin-bottom: -100px;&quot;&gt;*Content Warning: Flashing/blinking lights &amp; References to: ADHD, mental health, medication, drugs, self-esteem*&lt;/div&gt;]]&lt;/container&gt;|cwfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; margin-bottom: -100px;&quot;&gt;*Content Warning: Flashing/blinking lights &amp; References to: ADHD, mental health, medication, drugs, self-esteem*&lt;/div&gt;]]
+&lt;container class=&quot;container_row&quot;&gt;|cw)[&lt;div style=&quot;text-align:center; margin-bottom: -100px;&quot; id=&quot;divFade1s&quot;&gt;*Content Warning: Flashing/blinking lights &amp; References to: ADHD, mental health, medication, drugs, self-esteem*&lt;/div&gt;]&lt;/container&gt;|cwfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; margin-bottom: -100px;&quot;&gt;*Content Warning: Flashing/blinking lights &amp; References to: ADHD, mental health, medication, drugs, self-esteem*&lt;/div&gt;]]
 &lt;/container&gt;&lt;/br&gt;
 &lt;container class=&quot;container_row&quot;&gt;
-|name)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-align:center; font-size:18px;&quot;&gt;By Gav Sarafian, 2020&lt;/div&gt;]]&lt;/container&gt;|namefade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; font-size:18px;&quot;&gt;By Gav Sarafian, 2020&lt;/div&gt;]]
+|name)[&lt;div style=&quot;text-align:center; font-size:18px;&quot; id=&quot;divFade1s&quot;&gt;By Gav Sarafian, 2020&lt;/div&gt;]&lt;/container&gt;|namefade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; font-size:18px;&quot;&gt;By Gav Sarafian, 2020&lt;/div&gt;]]
 &lt;/container&gt;
 
 
@@ -3857,7 +3901,7 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 |cup)[]&lt;/div&gt;
 |pill)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]|pill2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]|pill3)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]|pill4)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]|pill5)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]|pill6)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]|pill7)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]|pill8)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]|pill9)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]|pill10)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;]]
 
-\|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;&lt;/hr&gt;]]\
+\|line)[&lt;hr id=&quot;divFade1s&quot;&gt;&lt;/hr&gt;]\
 \|inv)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Inventory]]
 
 &lt;div style=&quot;display:flex;&quot;&gt;
@@ -4197,7 +4241,7 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 	]
 ]
 }
-{(click:&quot;stream&quot;)[(go-to:&quot;exeDys&quot;)]}</tw-passagedata><tw-passagedata pid="48" name="attentionbackup" tags="" position="2684.3333333333335,176.33333333333334" size="100,100">
+{(click:&quot;stream&quot;)[(go-to:&quot;exeDys&quot;)]}</tw-passagedata><tw-passagedata pid="48" name="attentionbackup" tags="" position="2684,176" size="100,100">
 
 |thought1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Thoughts bubble in your mind... too quickly to focus on.]]|thought1off)[|fade-out&gt;[Thoughts bubble in your mind... too quickly to focus on.]]
 |thought2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You think about:]]|thought2off)[|fade-out&gt;[You think about:]]
@@ -4361,7 +4405,7 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 }
 {
 (click:&quot;Probably.&quot;)[(set:$set0 to 0)(go-to: &quot;move&quot;)]
-}</tw-passagedata><tw-passagedata pid="49" name="tasteBackup" tags="vignetteBG" position="2756.3333333333335,582.3333333333334" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="49" name="tasteBackup" tags="vignetteBG" position="2756,582" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
 &lt;div id=&quot;tastepill1&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/PillBlue.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
@@ -4394,7 +4438,7 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 (click:&quot;normal&quot;)[
 	(set:$tick to 0)(goto:&quot;preChop&quot;)	
 	]	
-}</tw-passagedata><tw-passagedata pid="50" name="tasteExperiment1" tags="vignetteBG" position="2753.3333333333335,824.3333333333334" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="50" name="tasteExperiment1" tags="vignetteBG" position="2753,824" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
 &lt;div id=&quot;tastepill1&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/PillBlue.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
@@ -4533,7 +4577,7 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 	(click:?choice1)[(set:$varChoice to it +1)(set: $tick to 0)(goto:&quot;recur&quot;)]
 	(click:?choice2)[(set:$varChoice to it +1)(set: $tick to 0)(goto:&quot;recur&quot;)]
 	(click:?choice3)[(set:$varChoice to 0)(set: $tick to 0)(goto:&quot;exedysAfter&quot;)]
-}</tw-passagedata><tw-passagedata pid="52" name="preoverstimBackup" tags="" position="1231,1342" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -18%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimg_splash&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;
+}</tw-passagedata><tw-passagedata pid="52" name="preoverstimBackup" tags="" position="1287.6666666666667,110.33333333333326" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -18%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimg_splash&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;
 |text1)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;text-align:center; margin-top: -15%;&quot;&gt;[Your perception smash-cuts back to &lt;div style=&quot;color:gold; text-shadow:1px 1px 20px #E3A616BA; font-size:25px; display:contents;&quot;&gt;***Reality***.&lt;/div&gt;] You look around you.]&lt;/div&gt;]
 
 
@@ -4567,13 +4611,12 @@ You meet your colleague over at a counter and take a seat. He looks like he&#39;
 ]
 }
 {(click:&quot;noise&quot;)[(set:$tick to 0)(go-to:&quot;Overstimulated&quot;)]}</tw-passagedata><tw-passagedata pid="53" name="cwPassage" tags="vignetteBG" position="98,218" size="100,100">
-
-&lt;container class=&quot;container_row&quot;&gt;|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-align:center; margin-left: -40px;
-margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is a neurological disorder that impacts the parts of the brain that help us plan, focus on, and execute tasks.*&lt;/div&gt;]]&lt;/container&gt;|text1fade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; margin-left: -40px;
-margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is a neurological disorder that impacts the parts of the brain that help us plan, focus on, and execute tasks.*&lt;/div&gt;]]&lt;/br&gt;
-&lt;container class=&quot;container_row&quot;&gt;|text2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-align:center;&quot;&gt; Deficit *takes place in the shoes of someone with ADHD, and is based on real-life experiences. This is not a comprehensive example of what life with ADHD is like -- everyone&#39;s life experiences vary greatly, and the lives of those with ADHD are no exception.*&lt;/div&gt;]]&lt;/container&gt;|text2fade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center;&quot;&gt; Deficit *takes place in the shoes of someone with ADHD, and is based on real-life experiences. This is not a comprehensive example of what life with ADHD is like -- everyone&#39;s life experiences vary greatly, and the lives of those with ADHD are no exception.*&lt;/div&gt;]]&lt;/br&gt;
-&lt;container class=&quot;container_row&quot;&gt;|cw)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;text-align:center;&quot;&gt;*Content Warning: This game contains Flashing and Blinking lights, and References to: ADHD, mental health, medication, drugs, trauma, and self-esteem. Some content may be distressing to some players.*&lt;/div&gt;]]&lt;/container&gt;|cwfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center;&quot;&gt;*Content Warning: This game contains Flashing and Blinking lights, and References to: ADHD, mental health, medication, drugs, trauma, and self-esteem. Some content may be distressing to some players.*&lt;/div&gt;]]
-&lt;container class=&quot;container_row&quot;&gt;|accept)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div style=&quot;font-size:30px; text-align:center;&quot;&gt;I understand.&lt;/div&gt;]]&lt;/container&gt;|acceptfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;font-size:30px; text-align:center;&quot;&gt;I understand.&lt;/div&gt;]]&lt;/container&gt;
+&lt;container class=&quot;container_row&quot;&gt;|text1)[&lt;div style=&quot;text-align:center; margin-left: -40px;
+margin-right: -40px;&quot; id=&quot;divFade1s&quot;&gt;*ADHD—Attention Deficit Hyperactive Disorder— is a neurological disorder which affects the ability of the brain to prioritize, focus on, and execute tasks.*&lt;/div&gt;]&lt;/container&gt;|text1fade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; margin-left: -40px;
+margin-right: -40px;&quot;&gt;*ADHD—Attention Deficit Hyperactive Disorder— is a neurological disorder which affects the ability of the brain to prioritize, focus on, and execute tasks.*&lt;/div&gt;]]&lt;/br&gt;
+&lt;container class=&quot;container_row&quot;&gt;|text2)[&lt;div style=&quot;text-align:center;&quot; id=&quot;divFade1s&quot;&gt; Deficit *takes place in the shoes of someone with ADHD, and is based on real-life experiences. This is not a comprehensive example of what life with ADHD is like -- everyone&#39;s life experiences vary greatly, and the lives of those with ADHD are no exception.*&lt;/div&gt;]&lt;/container&gt;|text2fade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center;&quot;&gt; Deficit *takes place in the shoes of someone with ADHD, and is based on real-life experiences. This is not a comprehensive example of what life with ADHD is like -- everyone&#39;s life experiences vary greatly, and the lives of those with ADHD are no exception.*&lt;/div&gt;]]&lt;/br&gt;
+&lt;container class=&quot;container_row&quot;&gt;|cw)[&lt;div style=&quot;text-align:center;&quot; id=&quot;divFade1s&quot;&gt;*Content Warning: This game contains Flashing and Blinking lights, and References to: ADHD, mental health, medication, drugs, trauma, and self-esteem. Some content may be distressing to some players.*&lt;/div&gt;]&lt;/container&gt;|cwfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center;&quot;&gt;*Content Warning: This game contains Flashing and Blinking lights, and References to: ADHD, mental health, medication, drugs, trauma, and self-esteem. Some content may be distressing to some players.*&lt;/div&gt;]]
+&lt;container class=&quot;container_row&quot;&gt;|accept)[&lt;div style=&quot;font-size:30px; text-align:center;&quot; id=&quot;divFade1s&quot;&gt;I understand.&lt;/div&gt;]&lt;/container&gt;|acceptfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;font-size:30px; text-align:center;&quot;&gt;I understand.&lt;/div&gt;]]&lt;/container&gt;
 
 
 {
@@ -4603,10 +4646,10 @@ margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is 
 		]
 		[(stop:)
 		]
-}</tw-passagedata><tw-passagedata pid="54" name="splashScreen" tags="staticBG3" position="91,325" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -18%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimg_splash&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;
+}</tw-passagedata><tw-passagedata pid="54" name="splashScreen" tags="staticBG3" position="91,325" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -18%;&quot; id=&quot;divFade1s&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimg_splash&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]&lt;/container&gt;
 &lt;div class=&quot;container_row&quot;&gt;
  &lt;!-- style=&quot;position:relative;&quot; --&gt;
-|titletest)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;centre&quot; style=&quot;margin: 12% 0% 0% 0% position: absolute;z-index: 1; left: 0;top: 0;height: 100%; top:10em&quot;&gt;[&lt;container&gt;
+|titletest)[&lt;div class=&quot;centre&quot; style=&quot;margin: 12% 0% 0% 0% position: absolute;z-index: 1; left: 0;top: 0;height: 100%; top:10em&quot; id=&quot;divFade1s&quot;&gt;[&lt;container&gt;
 &lt;p class=&quot;hover&quot; style=&quot;text-shadow:3px 3px 20px #b9b9b9;&quot;&gt;[**D**]&lt;/p&gt;\
 \&lt;p class=&quot;hover2&quot;&gt;[**E**]&lt;/p&gt;\
 \&lt;p class=&quot;hover3&quot;&gt;[**F**]&lt;/p&gt;\
@@ -4614,7 +4657,7 @@ margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is 
 \&lt;p class=&quot;hover&quot; style=&quot;text-shadow:3px 3px 20px #b9b9b9;&quot;&gt;[**C**]&lt;/p&gt;\
 \&lt;p class=&quot;hover3&quot;&gt;[**I**]&lt;/p&gt;\
 \&lt;p class=&quot;hover&quot; style=&quot;text-shadow:3px 3px 20px #b9b9b9;&quot;&gt;[**T**]&lt;/p&gt;
-&lt;/container&gt;]]&lt;/p&gt;]|titlefadetest)[&lt;div class=&quot;centre&quot; style=&quot;margin: 12% 0% 0% 0% position: absolute;z-index: 1; left: 0;top: 0;height: 100%; top:10em&quot;&gt;[|fadefast&gt;[&lt;container&gt;
+&lt;/container&gt;]&lt;/p&gt;]|titlefadetest)[&lt;div class=&quot;centre&quot; style=&quot;margin: 12% 0% 0% 0% position: absolute;z-index: 1; left: 0;top: 0;height: 100%; top:10em&quot;&gt;[|fadefast&gt;[&lt;container&gt;
 &lt;p class=&quot;hover&quot; style=&quot;text-shadow:3px 3px 20px #b9b9b9;&quot;&gt;[**D**]&lt;/p&gt;\
 \&lt;p class=&quot;hover2&quot;&gt;[**E**]&lt;/p&gt;\
 \&lt;p class=&quot;hover3&quot;&gt;[**F**]&lt;/p&gt;\
@@ -4754,7 +4797,7 @@ margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is 
 	]
 ]
 }	
-{(click:&quot;FOCUS&quot;)[(go-to:&quot;preHyperfocus&quot;)]}</tw-passagedata><tw-passagedata pid="56" name="titleNewBackup" tags="vignetteAnimBG2" position="2556.3333333333335,51.333333333333336" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static&gt;[(transition: &quot;dissolve&quot;) + (transition-time: 10s)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;|staticfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;
+{(click:&quot;FOCUS&quot;)[(go-to:&quot;preHyperfocus&quot;)]}</tw-passagedata><tw-passagedata pid="56" name="titleNewBackup" tags="vignetteAnimBG2" position="2556,51" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static&gt;[(transition: &quot;dissolve&quot;) + (transition-time: 10s)[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;|staticfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;
 
 &lt;container class=&quot;container_row&quot;&gt;
 |title)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot;&gt;**D E F I C I T**&lt;/div&gt;]]&lt;/container&gt;|titlefade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot;&gt;**D E F I C I T**&lt;/div&gt;]]
@@ -4809,7 +4852,7 @@ margin-right: -40px;&quot;&gt;*ADHD (Attention Deficit Hyperactive Disorder) is 
 (click: ?about)[
 		(go-to: &quot;ABOUT&quot;)
 		]
-}</tw-passagedata><tw-passagedata pid="57" name="take in backup" tags="vignetteBG" position="2553.3333333333335,165.33333333333334" size="100,100">
+}</tw-passagedata><tw-passagedata pid="57" name="take in backup" tags="vignetteBG" position="2553,165" size="100,100">
 |text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Okay. Let&#39;s take a pause. You&#39;ve been here before.
 Let&#39;s try some techniques to bring our attention back:]]
 |line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;]]
@@ -4869,7 +4912,7 @@ Let&#39;s try some techniques to bring our attention back:]]
 		(stop:)
 		]
 ]
-}</tw-passagedata><tw-passagedata pid="58" name="moveDoneBackup" tags="vignetteBG" position="2676.3333333333335,61.333333333333336" size="100,100">
+}</tw-passagedata><tw-passagedata pid="58" name="moveDoneBackup" tags="vignetteBG" position="2676,61" size="100,100">
 
 
 |first)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;hoverplain&quot; style=&quot;margin-top:-20px;&quot;&gt;Your thoughts knit together into a thick cloud.] &lt;/div&gt;]
@@ -4955,7 +4998,7 @@ Let&#39;s try some techniques to bring our attention back:]]
 (click:&quot;Sight&quot;)[(set:$varSight to 1)(set: $varSenses to it +1)(goto:&quot;SIGHT&quot;)]
 (click:&quot;Taste&quot;)[(set:$varTaste to 1)(set: $varSenses to it +1)(goto:&quot;TASTE&quot;)]
 (click:&quot;NEXTT&quot;)[(goto:&quot;nextone&quot;)]
-}}</tw-passagedata><tw-passagedata pid="59" name="tasteBackup2" tags="vignetteBG" position="2647.3333333333335,719.3333333333334" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
+}}</tw-passagedata><tw-passagedata pid="59" name="tasteBackup2" tags="vignetteBG" position="2647,719" size="100,100">&lt;div style=&quot;display:grid;&quot;&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
 &lt;div id=&quot;tastepill1&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/PillBlue.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;setTaste&quot;&gt;
@@ -5119,7 +5162,474 @@ Let&#39;s try some techniques to bring our attention back:]]
 	]
 ]
 }	
-{(click:&quot;FOCUS&quot;)[(go-to:&quot;preHyperfocus&quot;)]}</tw-passagedata></tw-storydata>
+{(click:&quot;FOCUS&quot;)[(go-to:&quot;preHyperfocus&quot;)]}</tw-passagedata><tw-passagedata pid="63" name="STARTbackup" tags="vignetteBG" position="601,97" size="100,100">
+|intro0&gt;[|blink05s&gt;[Blink your eyes open.]]
+
+[]&lt;intro1|
+
+[&lt;/br&gt;]&lt;intro2|&lt;/br&gt;
+
+[]&lt;passage0|\
+\[]&lt;passage1|\
+\[]&lt;passage2|\
+\[]&lt;passage3|
+
+[]&lt;passage4|\
+{(live:0.3s)[
+	(replace:?intro0)[Blink your eyes open.]
+	(stop:)
+	]}
+{(live: 1.5s)[
+	(replace: ?intro1) + (transition: &quot;dissolve&quot;) + (transition-time: 2s)[You are at a presentation at a Conference. 
+It&#39;s on a Very Important Topic, directly relevent to your interests.&lt;/br&gt;]
+	(stop:)
+	]}
+{
+	(live: 1s)[
+		(set: $vartick to it +1)
+		(if:$vartick is 3)[
+		(replace: ?intro2) + (transition: &quot;dissolve&quot;) + (transition-time: 4s)[You try to focus on the presenter...&lt;/br&gt;]
+		]
+		(else-if: $vartick is 5)[
+			(replace: ?passage0) + (transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%; margin-top: -20px; padding-bottom: 5px;&quot;&gt;•But there&#39;s construction outside.&lt;/div&gt;]
+		]
+		(else-if: $vartick is 6)[
+			(replace: ?passage1) + (transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%; margin-top: 5px; padding-bottom: 5px;&quot;&gt;•You&#39;re thirsty. Your bottle is empty. Your throat itches.&lt;/div&gt;]
+		]
+		(else-if: $vartick is 7)[
+			(replace: ?passage2) + (transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 6%; margin-top: 5px; padding-bottom: 5px;&quot;&gt;•You can hear every chair creaking, every keystroke in the room...&lt;/div&gt;]
+		]
+		(else-if: $vartick is 8)[
+			(replace: ?passage3) + (transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 9%; margin-top: 5px; padding-bottom: 5px;&quot;&gt;•Footsteps ring outside in the hallway...&lt;/div&gt;]
+		]
+		(else-if: $vartick is 10)[
+			(replace: ?passage4) + (transition: &quot;dissolve&quot;) + (transition-time: 7s)[The talk is interesting and relevant to your interests, but somehow your attention eludes capture — You struggle to [take in] any of it.] 
+		(stop:)(set: $vartick to 0)]
+		]
+}</tw-passagedata><tw-passagedata pid="64" name="take in backupp" tags="" position="703,98" size="100,100">
+|text1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[Okay. Let&#39;s take a pause. You&#39;ve been here before.
+Let&#39;s try some techniques to bring our attention back:]]
+|line)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;hr&gt;]]
+
+|breath)[]\
+
+|repeat)[]\
+
+|write)[]
+
+
+|end)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[...It&#39;s so *QUIET* in this room, and yet you hear so much. The din of traffic outside. The electric humming of the overhead lights. Your mind wanders - how do other people maintain their [focus]?]]
+{
+(live: 1s)[	
+	(set:$vartick to it +1)
+	(if:$vartick is 1)[
+		(show:?text1)
+	]
+	(else-if:$vartick is 2)[
+		(show:?line)
+	]
+	(else-if:$vartick is 3)[
+		(replace:?breath)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;‣ Take a deep breath&lt;/div&gt;]]
+			(click:&quot;Take a deep breath&quot;)[
+				(replace:?breath)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;Okay, you did that — you still can&#39;t pay attention...&lt;/div&gt;]]
+				(set:$varnext to it+1)
+				(if:$varnext is 3)[
+					(live:1s)[
+						(show:?end)(set:$vartick to 0)(set:$varnext to 0)
+					]
+				]
+			]
+	]
+	(else-if:$vartick is 4)[
+		(show:?line)
+		(replace:?repeat)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;‣ Repeat the lecturer&#39;s words back in your mind&lt;/div&gt;]]
+		(click:&quot;Repeat the lecturer&#39;s words back in your mind&quot;)[(replace:?repeat)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;The words fall through the cracks of your mind like sand...&lt;/div&gt;]]
+			(set:$varnext to it+1)
+			(if:$varnext is 3)[
+				(live:1s)[
+					(show:?end)(set:$vartick to 0)(set:$varnext to 0)
+				]
+			]
+		]
+	]		
+		(else-if:$vartick is 5)[
+		(replace:?write)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;div style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;‣ Write down notes from the slide&lt;/div&gt;]]
+		
+		(click:&quot;Write down notes from the slide&quot;)[(replace:?write)[(transition: &quot;dissolve&quot;) + (transition-time: 3s)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 4%;&quot;&gt;As you begin to write, the lecturer moves onto the next slide...&lt;/div&gt;]]
+		(set:$varnext to it+1)
+		(if:$varnext is 3)[
+			(live:1s)[
+				(show:?end)(set:$vartick to 0)(set:$varnext to 0)
+			]
+		]
+		]
+		(stop:)
+		]
+]
+}</tw-passagedata><tw-passagedata pid="65" name="attentionBackup" tags="" position="803,98" size="100,100">
+
+|thought1&gt;[Thoughts bubble in your mind... too quickly to focus on any one.]|thought1off)[|fade-out&gt;[Thoughts bubble in your mind... too quickly to focus on any one.]]
+|thought2)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[You think about:]]|thought2off)[|fade-out&gt;[You think about:]]
+
+
+|section1)[]\
+\|section2)[]|section3)[]\
+\|section4)[]
+
+
+[]&lt;elipses|[]&lt;elipses2|[]&lt;elipses3|[]&lt;elipses4|[]&lt;elipses5|[]&lt;meds|[]&lt;qmark|\
+
+
+
+\|moveon&gt;[]
+{
+(live: 500ms)[
+	(set: $set0 to it +0.5)
+	(if:$set0 is 1)[
+		(show: ?thought2)
+	]
+	(else-if: $set0 is 2)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[That DIY project you plan to work on.]&lt;/p&gt;]]]
+	(else-if: $set0 is 3)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[Plans for tonight.]&lt;/p&gt;]]]
+		(else-if: $set0 is 4)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[How behind you are on everything.]&lt;/p&gt;]]]
+		(else-if: $set0 is 5)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[How are you going to get your work done?]&lt;/p&gt;]]]
+		(else-if: $set0 is 6)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[It&#39;s so hard to concentrate...]&lt;/p&gt;]]]
+		(else-if: $set0 is 7)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[With all this **NOISE** in your head.]&lt;/p&gt;]]]
+		(else-if: $set0 is 9)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[*NOISE*]&lt;/p&gt;]]]
+		(else-if: $set0 is 9.5)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[**NOISE**]&lt;/p&gt;]]]
+		(else-if: $set0 is 10)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[***NOISE***]&lt;/p&gt;]]]
+		(else-if: $set0 is 10.5)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;div class=&quot;noisefont&quot; style=&quot;font-size: 22px;&quot;&gt;[***NOISE***]&lt;div&gt;]]]
+		(else-if: $set0 is 11)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[**??????**]&lt;/p&gt;]]]
+		(else-if: $set0 is 11.5)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;div class=&quot;noisefont&quot; style=&quot;font-size: 22px;&quot;&gt;[***??????***]&lt;div&gt;]]]
+		(else-if: $set0 is 12)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;div class=&quot;noisefont&quot; style=&quot;font-size: 28px;&quot;&gt;[***??̯̰????***]&lt;div&gt;]]]
+		(else-if: $set0 is 12.5)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)|fade-out&gt;[&lt;div class=&quot;noisefont&quot; style=&quot;font-size: 38px;&quot;&gt;[***??̠͈̯̹̘͓̰͎̬̞̩̕͜ͅ??̣̘?͕͓̬͠?***]&lt;div&gt;]]]
+		
+		
+		
+		(else-if: $set0 is 13)[
+		(replace: ?section2)[]
+		(replace: ?section1)[(transition: &quot;dissolve&quot;) + (transition-time:1ms)|fade-out&gt;[&lt;p class=&quot;bulletFontSkewMove&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39; style=&quot;width:200%; height:60vh; margin:0% -50%;&quot;&gt;
+      &lt;div class=&quot;staticimgfull&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;image-overlay&quot;&gt;
+        &lt;div class=&quot;staticfont&quot; style=&quot;font-size: 130px; margin:1% 0% 0% 25%;&quot;&gt;[***?̱͙!?̱̫̹̜͈͓͖ͥ̃͌́̚!̣͙?̭̫̮͑̏͑̿̿!̟͖̭̣̻̺͕̊̇̓̑?̏͑̆́̃ͤ̋!̯͓̙͓̔ͭͪ̚?̱͙̗̬̾̈̀͊̐!̝͇͓̘̠͆?̼̻̐̽͒ͮͅ***]&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;]&lt;/p&gt;]]]
+		
+			
+		(else-if: $set0 is 16)[
+		(replace: ?section1)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;p class=&quot;bulletFont&quot;&gt;[A series  of regrets:]&lt;/p&gt;]]]
+		
+		(else-if: $set0 is 17)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[(Should I have gone back to school for my degree?)]&lt;/p&gt;]]]
+		
+		(else-if: $set0 is 18)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[(Why can&#39;t I do better? Focus more?)]&lt;/p&gt;]]]
+		
+		(else-if: $set0 is 19)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[(Every misunderstanding...)]&lt;/p&gt;]]]
+		
+		(else-if: $set0 is 20)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[(Does *that person* hate you now?)]&lt;/p&gt;]]]
+		
+		(else-if: $set0 is 21)[
+		(replace: ?section2)[(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[(Remember being scolded for doodling during class?)]&lt;/p&gt;]]]
+				
+			(else-if: $set0 is 22)[
+		(replace: ?section2)[(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[(Remember when you made that teacher cry out of frustration?)]&lt;/p&gt;]]
+		]
+		
+		(else-if: $set0 is 23)[
+	    (replace: ?section2)[(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[(Remember all those times you didn&#39;t stand up for yourself?)]&lt;/p&gt;]]
+		(replace: ?section1)[(transition: &quot;dissolve&quot;) + (transition-time: 1ms)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[A series of regrets:]&lt;/p&gt;]]
+		(replace: ?thought1)[(show: ?thought1off)]
+		(replace: ?thought2)[(show: ?thought2off)]
+		]
+		
+		(else-if: $set0 is 27.5)[
+		(replace: ?section1)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)|fade5s&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;font-size:24px; margin-left:-15px; margin-right:25px; text-align:center;&quot;&gt;[***How long have you believed that you don&#39;t try hard enough...***]&lt;/p&gt;]]
+		]
+		
+		(else-if: $set0 is 28.5)[
+		(replace: ?section2)[(transition: &quot;dissolve&quot;) + (transition-time: 2s)|fade5s&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;font-size:24px; margin-left:-15px; margin-right:-60px; margin-top: 30px; text-align:center;&quot;&gt;[***...because report cards and performance evaluations say you don&#39;t?***]&lt;/p&gt;]]
+		]
+
+		(else-if: $set0 is 35.5)[
+		(replace:?section2)[]
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 500ms)[&lt;p class=&quot;bulletFont2&quot; style=&quot;font-size:26px; rotate:2deg&quot;;&gt;[You want to work on something productive *RIGHT NOW*, but ironically are too distracted to know how to start, and now you can&#39;t even focus on the thing in front of you, even if you did want to, and now-]&lt;/p&gt;]]]
+		
+		(else-if: $set0 is 39)[
+		(replace: ?section1)[(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)[&lt;p class=&quot;bulletFont&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39; style=&quot;width:250%; height:130vh; margin:-45% -65%;&quot;&gt;
+      &lt;div class=&quot;staticimgfull&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;image-overlay&quot;&gt;
+        &lt;div class=&quot;staticfont&quot; style=&quot;font-size:135px; text-align:center;&quot;&gt;[**S̢ͤ̈́̐̽͏  ̛ͣ́ͮͫ̀Ť̴ͧ̏̔͗́  ̧̛̿ͧ̏ͮͩAͫ̈́  ̷ͮ͌͐̚T̐ͯ̀́͟  ̶́͒̔́̕Į̧͑ͬͩ̆ͣ͋̀  ̢́ͣ͊͠C̷̀̇ͬͦ҉ **]&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;]&lt;/p&gt;]]]
+
+		(else-if: $set0 is 39.5)[
+		(replace: ?section1)[(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39; style=&quot;width:250%; height:130vh; margin:-45% -65%;&quot;&gt;
+      &lt;div class=&quot;staticstretch&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;image-overlay&quot;&gt;
+        &lt;div class=&quot;staticfont&quot; style=&quot;font-size:135px; transform: skew(-20deg); text-align:center;&quot;&gt;[(:̻̮̻̹̮:́ ̼͇͈ n̷̫͇ ̜͝O̩͍̰͎̩̦̝ ͓̺́i̱ ͏̖̹s̺̲͔̭͕̰͝ͅE̘̖̠͓̲̭ :̖͔͉͙͙:͉̝͓̭̣**)]&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;]&lt;/p&gt;]]]
+
+		(else-if: $set0 is 40)[
+		(replace: ?section1)[(transition: &quot;dissolve&quot;) + (transition-time: 0.1s)|fade-out&gt;[&lt;p class=&quot;bulletFont&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39; style=&quot;width:250%; height:130vh; margin:-45% -65%;&quot;&gt;
+      &lt;div class=&quot;staticimgfull&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;image-overlay&quot;&gt;
+        &lt;div class=&quot;staticfont&quot; style=&quot;font-size:135px; text-align: center;&quot;&gt;[(:̻̮̻̹̮:́  ̼͇͈n̷̫͇ ̜͝O̩͍̰͎̩̦̝ ͓̺́i̱ ͏̖̹s̺̲͔̭͕̰͝ͅE̘̖̠͓̲̭ :̖͔͉͙͙:͉̝͓̭̣**)]&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;]&lt;/p&gt;]]]
+		
+		(else-if: $set0 is 41)[
+		(replace: ?thoughts)|fade-out&gt;[&lt;p style=&quot;margin: 0 0 0 0&quot;;&gt;[Thoughts swirl in your head...]&lt;/p&gt;]]
+		
+		(else-if: $set0 is 43.5)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 2.5s)[&lt;p class=&quot;bulletFont&quot; style=&quot;transform: skew(-10deg);&quot;&gt;[Is your medication actually working...?]&lt;/p&gt;]]
+		]
+				
+		(else-if: $set0 is 44.5)[
+				(replace: ?elipses)[&lt;div style=&quot;display:inline-block;&quot;&gt;.&lt;/div&gt;]]
+		(else-if: $set0 is 45)[
+				(replace: ?elipses2)[&lt;div style=&quot;display:inline-block;&quot;&gt;.&lt;/div&gt;]]
+		(else-if: $set0 is 45.5)[
+				(replace: ?elipses3)[&lt;div style=&quot;display:inline-block;&quot;&gt;.&lt;/div&gt;]]
+		(else-if: $set0 is 46)[
+				(replace: ?elipses4)[&lt;div style=&quot;display:inline-block;&quot;&gt;.&lt;/div&gt;]]
+		(else-if: $set0 is 46.5)[
+				(replace: ?elipses5)[&lt;div style=&quot;display:inline-block;&quot;&gt;.&lt;/div&gt;]]		
+				
+		(else-if: $set0 is 47)[
+		(replace: ?meds)[&lt;div style=&quot;font-style: italic; display:inline-block;&quot;&gt;[**Is your medication actually working**]&lt;div class=&quot;qmarkmove&quot;&gt;[*??*]&lt;/div&gt;&lt;/div&gt;]
+		]
+		(else-if:$set0 is 48)[
+		(stop:)
+		]
+]		
+}
+{
+(live:1s)[
+	(if:$set0 is 48)[
+		(replace:?moveon)[(transition: &quot;dissolve&quot;) + (transition-time: 5s)[You feel totally removed from the Conference— like you&#39;re observing your body&#39;s sensory inputs on a separate, lower level than consciousness normally allows. Is this normal?  Maybe it&#39;s all in your head. You&#39;re probably fine. Probably.]](stop:)]		
+]
+}
+{
+(click:&quot;Probably.&quot;)[(set:$set0 to 0)(go-to: &quot;move&quot;)]
+}</tw-passagedata><tw-passagedata pid="66" name="Movebackup" tags="" position="923,103" size="100,100">|first)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;hoverplain&quot;&gt;Your thoughts knit together into a thick cloud.] &lt;/div&gt;]
+|second)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;hoverplain2&quot;&gt;A million points of data demand your attention equally, somehow.]&lt;/div&gt;]
+|third)[(transition: &quot;dissolve&quot;) + (transition-time: 4s)[&lt;div class=&quot;hoverplain3&quot;&gt;It&#39;s overwhelming.] &lt;/div&gt;]
+
+|line)[(transition: &quot;dissolve&quot;) + (transition-time: 6s)[&lt;hr&gt;&lt;/hr&gt;]]
+|fourth)[(transition: &quot;dissolve&quot;) + (transition-time: 5s)[Some say the experience of having ADHD is that of being constantly, simultaneously over-and-under-stimulated. You have all this input, but no way to prioritize any of it. So you &#39;do&#39; nothing, while your brain is &lt;div class=&quot;qmarkmove&quot;&gt;[*]&lt;/div&gt;(text-style: &quot;rumble&quot;)[*gunning*]&lt;div class=&quot;qmarkmove&quot;&gt;[*]&lt;/div&gt; it.]]
+
+|fifth)[(transition: &quot;dissolve&quot;) + (transition-time: 5s)[It&#39;s not like you can pay attention to the presentation, anyway. *Remember? You&#39;re at a presentation?* Your brain-cloud locks onto your senses, and you space out to their associated memories.]]
+
+{&lt;table class=&quot;sturdy&quot; style=&quot;margin-left:10%; margin-right:10%; margin-bottom:0%;&quot;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;|linkhear)[]&lt;/td&gt;
+    &lt;td&gt;|linktouch)[]&lt;/td&gt;
+    &lt;td&gt;|linksmell)[]&lt;/td&gt;
+  &lt;/tr&gt;&lt;tr&gt;
+    &lt;td&gt;|linksight)[]&lt;/td&gt;
+    &lt;td&gt;|clock)[&lt;div&gt;&lt;img style=&quot;height:15%; width:15%; margin-bottom:-5%; margin-top:-5px;&quot;src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Clock.png&quot;&gt;&lt;/img&gt;&lt;/div&gt;]&lt;/td&gt;
+    &lt;td&gt;|linktaste)[]&lt;/td&gt;
+  &lt;/tr&gt;&lt;/table&gt;}
+{{	(live:0.65s)[
+	(show: ?first)
+	(show: ?second) 
+	(show: ?third)
+	(stop:)
+	]}
+{	(live:1.2s)[
+	(show: ?line)
+	(stop:)
+	]}
+{	(live:4s)[
+		(if: $varSenses is 0)[
+			(show: ?fourth)
+			(show: ?fifth)
+		]
+	(stop:)]
+}
+{(live:5s)[
+	(if:$varHear is 0)[
+	[(replace:?linkhear) [(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Hear&lt;/div&gt;]]&lt;/br&gt;](stop:)
+		]
+		(else-if: $varHear is 1)[(replace: ?linkhear)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;&lt;/br&gt;]
+		]
+		(if:$varTouch is 0)[
+	[(replace:?linktouch)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Touch&lt;/div&gt;]]&lt;/br&gt;](stop:)
+		]
+		(else-if: $varTouch is 1)[(replace: ?linktouch)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;&lt;/br&gt;]]
+		(if:$varSmell is 0)[
+		[(replace:?linksmell)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Smell&lt;/div&gt;]]&lt;/br&gt;](stop:)
+		]
+		(else-if: $varSmell is 1)[(replace: ?linksmell)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;&lt;/br&gt;]](stop:)
+		[
+		(if:$varSight is 0)[
+	[(replace:?linksight)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Sight&lt;/div&gt;]]&lt;/br&gt;](stop:)
+		]
+		(else-if: $varSight is 1)[(replace: ?linkSight)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;]]
+		(stop:)
+		]
+		(if:$varTaste is 0)[
+		[(replace:?linkTaste)[(transition: &quot;dissolve&quot;) + (transition-time: 1s)[&lt;div&gt;Taste&lt;/div&gt;]](stop:)&lt;/br&gt;(show:?clock)]
+		]
+		(else-if: $varTaste is 1)[(replace: ?linktaste)[&lt;div class=&quot;staticfont&quot; style=&quot;margin: 0.5% 0 0 2%&quot;&gt;[This option is now unavailable]&lt;/div&gt;]&lt;/br&gt;]
+		(stop:)
+		]
+}
+{	(click:&quot;Hear&quot;)[(set:$varHear to 1)(set: $varSenses to it +1)(goto:&quot;HEAR&quot;)]
+	(click:&quot;Touch&quot;)[(set:$varTouch to 1)(set: $varSenses to it +1)(goto:&quot;TOUCH&quot;)]
+	(click:&quot;Smell&quot;)[(set:$varSmell to 1)(set: $varSenses to it +1)(goto:&quot;SMELL&quot;)]
+	(click:&quot;Sight&quot;)[(set:$varSight to 1)(set: $varSenses to it +1)(goto:&quot;SIGHT&quot;)]
+	(click:&quot;Taste&quot;)[(set:$varTaste to 1)(set: $varSenses to it +1)(goto:&quot;TASTE&quot;)]
+}}</tw-passagedata><tw-passagedata pid="67" name="sightbackup" tags="bluewaveBG" position="794,662.5" size="100,100">|title)[&lt;p class=&quot;centre&quot; id=&quot;divFade1s&quot;&gt;*The ocean, the sea.*&lt;/p&gt;]\
+\|title2)[&lt;p class=&quot;centre&quot; id=&quot;divFade1s&quot;&gt;*The foam; waves crashing, cresting, one on top of the other, endlessly.*&lt;/p&gt;]
+&lt;/br&gt;
+{
+|section1)[]|section2)[]|section3)[]|section4)[]
+}
+{
+(live: 1s)[
+	(set: $set0 to it +1)
+	(if: $set0 is 1)[
+		(show:?title)]
+	(else-if: $set0 is 2)[
+		(show:?title2)]
+	(else-if: $set0 is 4)[
+		(replace: ?section1)[&lt;p class=&quot;textfadeoutocean&quot; id=&quot;divFade2s&quot;&gt;[Waves lapping at the shore of consciousness,]&lt;/p&gt;]]
+	(else-if: $set0 is 5)[
+		(replace: ?section2) [&lt;p class=&quot;textfadeoutocean&quot; id=&quot;divFade2s&quot;&gt;[Each a thought, a feeling, a direction.]&lt;/p&gt;]]
+	(else-if: $set0 is 6)[
+		(replace: ?section3) [&lt;p class=&quot;textfadeoutocean&quot; id=&quot;divFade2s&quot;&gt;[Storm-chaser, and tempest toss’d,]&lt;/p&gt;]]
+	(else-if: $set0 is 7)[
+		(replace: ?section4)[&lt;p class=&quot;textfadeoutocean&quot; id=&quot;divFade2s&quot;&gt;[Siren-called; wayward, lost.]&lt;/p&gt;]]
+	(else-if: $set0 is 11)[
+		(replace: ?section1) [&lt;p class=&quot;textfadeoutocean&quot; id=&quot;divFade2s&quot;&gt;[At once, you are: A deep-sea research vessel--
+]&lt;/p&gt;&lt;/br&gt;]]
+	(else-if: $set0 is 12)[
+		(replace: ?section2) [&lt;p class=&quot;textfadeoutocean&quot; id=&quot;divFade2s&quot;&gt;[A pirate sloop in search of treasure--
+]&lt;/p&gt;&lt;/br&gt;]]
+	(else-if: $set0 is 13)[
+		(replace: ?section3)[&lt;p class=&quot;textfadeoutocean&quot; id=&quot;divFade2s&quot;&gt;[A tall ship, bowsprit proudly cresting--
+]&lt;/p&gt;&lt;/br&gt;]]
+	(else-if: $set0 is 14)[
+		(replace: ?section4) [&lt;p class=&quot;textfadeoutocean&quot; id=&quot;divFade2s&quot;&gt;[A castaway, clutching to driftwood...]&lt;/p&gt;]]
+	(else-if: $set0 is 18)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Though facedown in the drift,]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 19)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[On occasion, the tides bear gifts,
+]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 20)[
+		(replace: ?section3) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Glittering treasure hidden from sight--]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 21)[
+		(replace: ?section4) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Concealed from those who sleep through the night.]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 24)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Neptune, Poseidon, Tiamat--
+]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 25)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Names given to the great, unknowable depths.
+]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 26)[
+		(replace: ?section3) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[You peer over the edge, into the inky darkness--]&lt;/p&gt;&lt;/br&gt;]]
+		]
+	(else-if: $set0 is 27)[
+		(replace: ?section4) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Forever in motion.]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 31)[
+		(replace: ?section1) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[Through the eternal churn,
+]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 32)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot;&gt;[You dive, headstrong, into the next wave...]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 34)[
+		(replace: ?section3) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot; style=&quot;animation-delay: 2s;&quot;&gt;[And the next--]&lt;/p&gt;&lt;/br&gt;]]
+		(replace:?title)[&lt;p class=&quot;centre&quot;&gt;|fade-out&gt;[*The ocean, the sea.*]&lt;/p&gt;]
+		(replace:?title2)[&lt;p class=&quot;centre&quot;&gt;|fade-out&gt;[*The foam; waves crashing, cresting, one on top of the other, endlessly.*]&lt;/p&gt;]
+		]
+	(else-if: $set0 is 36)[
+		(replace: ?section4) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;textfadeoutocean&quot; style=&quot;animation-delay: 2s;&quot;&gt;[And the next…]&lt;/p&gt;&lt;/br&gt;]]]
+		
+		
+	(else-if: $set0 is 43)[
+		(replace: ?section2) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;pzero&quot;&gt;[*The real ocean is like a levithian god; uncaring, but not malevolent.*]&lt;/p&gt;&lt;/br&gt;]]]
+	(else-if: $set0 is 45)[
+		(replace: ?section4) [(transition: &quot;dissolve&quot;) + (transition-time: 2s)[&lt;p class=&quot;pzero&quot;&gt;[*The churn of the tides within your mind however, feels more chaotic.*]&lt;/p&gt;&lt;/br&gt;]](stop:)]
+]
+}
+{
+(click:&quot;chaotic&quot;)
+	[
+	(set: $set0 to 0)
+	(if: $varSenses is 1)[(goto:&quot;moveDone&quot;)]
+	(else-if: $varSenses is 2)[(goto:&quot;ReflectA&quot;)]
+	(else-if: $varSenses is 3)[(goto:&quot;moveDone&quot;)]
+	(else-if: $varSenses is 4)[(goto:&quot;ReflectB&quot;)]
+	(else-if: $varSenses is 5)[(goto:&quot;pre-overstim&quot;)]
+	]
+}</tw-passagedata><tw-passagedata pid="68" name="Untitled Passage 1" tags="vignetteAnimBG2" position="488.3333333333335,98.66666666666663" size="100,100">&lt;container class=&quot;container_row&quot;&gt;|static&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot; id=&quot;divFade10s&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]&lt;/container&gt;|staticfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;p class=&quot;bulletFont&quot; style=&quot;margin-bottom: -25%;&quot;&gt;[&lt;section id=&#39;waterBannerImage2&#39;&gt;&lt;div class=&quot;staticimgfulldark&quot; style=&quot;position:fixed;&quot;&gt;&lt;/div&gt;&lt;/section&gt;]&lt;/p&gt;]]&lt;/container&gt;&lt;/br&gt;
+&lt;container class=&quot;container_row&quot;&gt;
+|title)[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot; id=&quot;divFade1s&quot;&gt;**D E F I C I T**&lt;/div&gt;]&lt;/container&gt;|titlefade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div class=&quot;hoverStill&quot; style=&quot;text-align:center;&quot;&gt;**D E F I C I T**&lt;/div&gt;]]
+&lt;/container&gt;&lt;/br&gt;
+&lt;container class=&quot;container_row&quot;&gt;
+|start)[&lt;div style=&quot;text-align:center; margin-bottom: -30px; font-size:30px;&quot; id=&quot;divFade1s&quot;&gt;START&lt;/div&gt;]&lt;/container&gt;|startfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; margin-bottom: -30px; font-size:30px;&quot;&gt;START&lt;/div&gt;]]&lt;/container&gt;
+&lt;container class=&quot;container_row&quot;&gt;|about)[&lt;div style=&quot;text-align:center; font-size:30px;&quot; id=&quot;divFade1s&quot;&gt;ABOUT&lt;/div&gt;]&lt;/container&gt;|aboutfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; font-size:30px;&quot;&gt;ABOUT&lt;/div&gt;]]
+&lt;/container&gt;&lt;/br&gt;
+&lt;container class=&quot;container_row&quot;&gt;|cw)[&lt;div style=&quot;text-align:center; margin-bottom: -100px;&quot; id=&quot;divFade1s&quot;&gt;*Content Warning: Flashing/blinking lights &amp; References to: ADHD, mental health, medication, drugs, self-esteem*&lt;/div&gt;]&lt;/container&gt;|cwfade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; margin-bottom: -100px;&quot;&gt;*Content Warning: Flashing/blinking lights &amp; References to: ADHD, mental health, medication, drugs, self-esteem*&lt;/div&gt;]]
+&lt;/container&gt;&lt;/br&gt;
+&lt;container class=&quot;container_row&quot;&gt;
+|name)[&lt;div style=&quot;text-align:center; font-size:18px;&quot; id=&quot;divFade1s&quot;&gt;By Gav Sarafian, 2020&lt;/div&gt;]&lt;/container&gt;|namefade)[&lt;container class=&quot;container_row&quot;&gt;|fadefast&gt;[&lt;div style=&quot;text-align:center; font-size:18px;&quot;&gt;By Gav Sarafian, 2020&lt;/div&gt;]]
+&lt;/container&gt;
+
+
+
+
+
+
+
+
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder1.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder2.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder3.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder4.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder5.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hypetest.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_glow.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_1h.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_2y.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_3p.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_4e.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_5r.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_6f.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_7o.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_8c.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_9u.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/Hyperfocus/hype_10s.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_pills256.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_clothes256.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_game256.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_odds256.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/DreamIcons/dream_cup256.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/table1.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder1.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder2.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder3.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder4.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Powder5.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/ChopGame/Photo_Hand.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/CheckerBG3.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/StarBG.png&quot;&gt;&lt;/img&gt;&lt;img style=&quot;width:1px; height:1px;&quot; src=&quot;https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Graphics/CatPhotos/CatPhoto.png&quot;&gt;&lt;/img&gt;
+{
+	(live:0.65s)[
+	(show: ?title)(show:?name)(show: ?start)(show: ?about)(show:?cw)(stop:)
+	]	
+}
+{
+(click: ?start)[
+		(replace:?static)[(show:?staticfade)]
+		(replace: ?title) [(show: ?titlefade)]
+		(replace: ?name) [(show: ?namefade)]
+		(replace: ?start) [(show: ?startfade)]
+		(replace: ?about) [(show: ?aboutfade)]
+		(replace: ?cw) [(show: ?cwfade)]
+		(live: 6s) [(go-to: &quot;cwPassage&quot;)]
+		]
+		[(stop:)
+		]
+}
+{
+(click: ?about)[
+		(go-to: &quot;ABOUT&quot;)
+		]
+}</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

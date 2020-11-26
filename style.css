@@ -1,16 +1,10 @@
-
 body{
 	background: rgb(14,0,28);
 	background: linear-gradient(90deg, rgba(14,0,28,1) 0%, rgba(1,0,2,1) 15%, rgba(0,0,0,1) 85%, rgba(14,0,28,1) 100%);
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
 	margin-top: 25px;
 }
-
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-} 
 
 p,
 div,
@@ -124,6 +118,20 @@ nav a:hover::before {
 	z-index:1;
 }
 
+.boxstatic{
+  background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
+	/*height:150px;
+	width:800px;*/
+	/*margin-left:10%;
+	margin-right:10%;*/
+  	margin: auto;
+  	display: block;
+	color:white;
+	text-align:center;
+	/*z-index:1;*/
+}
+
+
 .boxtext{
    text-shadow:3px 3px 20px #b9b9b9;
    font-family: helvetica;
@@ -185,4 +193,37 @@ nav a:hover::before {
 @keyframes action3 {
          0% { transform: translateY(-0.75em);}
         100% { transform: translateY(-0.5em); }
+}
+
+#container{
+  display: flex;
+  /*border: 1px solid #333;*/
+}
+
+#container section {
+  padding: 8px;
+}
+
+.shortside{
+  background: #AAAAA;
+  width: 40%;
+}
+
+.longside{
+  background: #080808;
+  width: 70%;
+}
+
+.longsidestatic{
+  background: #AAAAA;
+  /*width: 70%;*/
+  /*width="768" height="432"*/
+  height:432px;
+  background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
+}
+
+.shortsidestatic{
+  background: #AAAAA;
+  width: 40%;
+  background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
 }

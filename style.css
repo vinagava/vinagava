@@ -205,6 +205,8 @@ nav a:hover::before {
 }
 
 .shortside{
+  margin-left:20px;
+  margin-right:20px;
   background: #AAAAA;
   width: 40%;
 }
@@ -218,7 +220,8 @@ nav a:hover::before {
   background: #AAAAA;
   /*width: 70%;*/
   /*width="768" height="432"*/
-  height:432px;
+  height:300px;
+  border: 8px solid #080808;
   background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
 }
 
@@ -227,5 +230,3 @@ nav a:hover::before {
   width: 40%;
   background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
 }
-
-.butt{}

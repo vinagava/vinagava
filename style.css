@@ -241,6 +241,4 @@ nav a:hover::before {
   width=768px;
   height=432px;
   border: 8px solid #080808;
-  background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Fortune_FolioTile2.png");
-  vertical-align:middle;
 }

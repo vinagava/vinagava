@@ -255,3 +255,10 @@ nav a:hover::before {
 .brclear{
   clear:both;
 }
+
+.staticbox{
+  height:300px;
+  width:700px;
+  border: 8px solid #080808;
+  background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
+}

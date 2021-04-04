@@ -26,41 +26,17 @@
    
    <br><br>
    
-  <h1><i>Fortune</i></h1>
+  <h1><i>Psylum</i></h1>
+  </br>
 
 <body>
-   
-   <h5><i>A short, dialogue driven experience with a fortune-telling robot in a neglected therapist's office.</i></h5>
-  <br>
-    
-   <p>  
-  <iframe class="floatright" src="https://itch.io/embed/849244?dark=true" width="700" height="220" frameborder="0"><a href="https://astralditz.itch.io/fortune">Fortune by Gav Sarafian</a></iframe>
-      
-   <div>Created with: Unreal Engine 4, 3DSMax, Substance Painter, Photoshop.
-   </br>
-   </br>
-  Creation time: Approx 3.5 months, over nights and weekends.</div>
-</br>
-<div><b>Videos: <a href="https://vimeo.com/521666228">Gameplay</a></b></div>
- 
-   <p><b><a href="https://vimeo.com/508244130">Level blockout (+ early dialogue)</a></b></p>
   
-   </p>
-   
-  
-
-</p>
-<br style="clear: both;" />
-
-</br>
-</br>
-
-<h3>What's this about?</h3>
-
  <div class="floatright" style="width:50%;">
     
     <div class="row">      
-      <div class="column-wrapper">        
+      <div class="column-wrapper">
+        
+        <iframe class="floatright" src="https://player.vimeo.com/video/369449463" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen><a href="https://vimeo.com/369449463">Psylum by Gav Sarafian</a></iframe>
       
         <a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/Lab1.png"><img style="max-width:100%; margin-bottom:20px;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/Lab1.png" </img></a>
         
@@ -86,21 +62,29 @@
     </div>
     </div>
 
+<h5><i>A full-featured level where you infiltrate an abandoned lab, in search of secret documents. Turning the power back on awakens more than just its experiments, however. Made with UDK, Maya, Photoshop, Flash, and Scaleform.</i></h5>
+  
+  </br>
 
-<p><i>Fortune</i> is a short first-person level where you have a conversation with a Fortune Teller robot, talk ajjjt existential subject matter, and maybe end up with a sweet new toy! </p>
-  <p>Created in Unreal Engine 4 over three months, <i>Fortune</i> was built to showcase skills with branching dialogue systems and scripting. All of the assets are entirely self-made (minus audio + base textures).</p>
+<hr></hr>
 
-<p>Designing <i>Fortune</i> started with a conscious effort to scope appropriately. I wanted to create a complete experience with a quick turnaround time, with an allowance for flexibility for unforeseen course corrections, as well as taking time required to learn and to debug into account. I made the level in passes to ensure I could focus my time effectively - starting with my intentions, features + sketches on paper; building a blockout with placeholder assets, and ensuring scripting + the moving parts of the level were functional before fleshing out the visual art elements.</p>
+<h2>What's this about?</h2>
 
+<p><i>Psylum</i> is a feature-rich standalone level. In it, you will search the environment for ways to access restricted areas, activate a dormant robot, crack a safe, and escape a deadly poison trap as well as a building which is beginning to become <i>aware</i> of your presence.</p>
+
+<p>Creating <i>Psylum</i> was my first attempt at creating a full-scale level. I wanted to expand my skills with designing a space which the player is meant to explore, as well as scripting - which is extensive in this level. My scope was ambitious, including designing a custom objectives UI, interactive puzzle, an NPC, and scripting that supported picking up an object in the game world.</p>
+  
 </br>
 <hr></hr>
 
 <h2>Design Intentions</h2>
-<p>My goals were to build and demonstrate skills with scripting and implementing a complex interaction with an NPC, complete with menus and a branching dialogue system. I wanted to show that I understand how to design an immersive space, all within a bite-sized experience that leaves players wanting to know more about the world.</p>
 
-<p>In order to keep scope small, I inteded to leverage assets from the Unreal Marketplace to fill out the space. However, in order to keep the level web-friendly, my target filesize had to be around 200mb or less. This meant requiring optimized, budget-conscious assets, a bar which unfortunately many ready-made assets did not meet. This meant expanding my scope - which had the side-effect of allowing me greater control over the thematic mood of the environment. I love environmental storytelling, so this ended up being a positive (despite pushing my original scope).</p>
+<p>I wanted to push what I knew about designing a linear level, while keeping it interesting for the player. I had been learning how to import Flash elements into UDK, and wanted to integrate that into the experience.</p>
 
-<p>Intentionally making a level with a small footprint meant that I could focus on details - I wanted to make the space feel like it had a history; a reliquary of sorts for the Fortune Teller. Adding visual effects like distance fog, dust mote particles, and an ambient audio track were simple but extremely effective. (Fun fact: to keep the filesize down, the background track is externally stored on my website and referenced when the level loads)</p>
+<p>Interaction was also a big focus for <i>Psylum</i>. I wanted the player to feel like this was more than just an environment to run through. I felt inspired by games like Deus Ex, and cyberpunk in general - especially grungy, low-tech machinery. The player encounters a robot blocking a door, and must give it a nearby battery in order for it to clear the way. The robot later helps them out of a lab that locks down and fills with poison after the player steals documents from a safe.</p> 
+<p>The safe itself opens a UI element where the player must enter the right combination to open it. During the final stretch of the level, the player also must turn a valve to overpressurize a pipe, which breaks open a wall and allows their escape. As you can imagine, this was a <i>LOT</i> of work!</p>
+
+
 
 </br>
 
@@ -108,22 +92,28 @@
 
 <h2>Challenges</h2>
 
-<p>Distributing content (<i>especially</i> playable game levels) can be a huge challenge, as having any sort of bar like having to download a package will turn away some players. </p>  
+<p>Scoping myself appropriately was not something I had a lot of experience with at this point in my career. My ambitions got the best of me, and while I pushed myself to flesh the level and art out to a great extent, it was at a severe cost to my work/life balance.</p>
 
-<p>My initial plan was to leverage itch.io's ability to play HTML5 games in browser, since Unreal 4 can make HTML5 packages... <i>however</i>, this turned out to be a bigger challenge than anticipated. Certain features (like audio and visual effects like decals and particles) do not work on mobile. Support for HTML5 packages is also depricated, which meant having to use an older build of the engine. </p>
+<p> The greatest lesson <i>Psylum</i> taught me was to scope myself realistically. I could have simplified and reduced the amount of art assets needed - or removed costly elements like the custom objectives UI. The safecracking puzzle could have been a simple interaction with an animated door; I could have removed the second half of the level where you overpressurize pipes to destroy a wall in order to escape. Implementing the scripting to allow the player to pick up the battery for the robot itself ate a lot of time.</p>
+
+<a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/PsylumBatteryKismet.jpg"><img style="max-width:35%; margin:auto; display:block;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/PsylumBatteryKismet.jpg" </img></a>
+
+<p>I like to think I'm a <i>lot</i> more informed about how to scope these days, and this project was a big lesson in exactly that.</p>
 
 </br>
 <hr class="hrstar">
 
-<p>Implementing a dialogue system took a lot of trial and error. While I could have bought a ready-made system from the Unreal marketplace, I chose the opportunity to craft my own. While it definitely taught me a lot about how Unreal scripting works—</p>
+<p>At the time, I wasn't entirely sure about my career focus - I was definitely interested in Level Design, but I also enjoyed creating the art and establishing the mood in spaces as well. I created every asset in the level, including the robot the player interacts with.</p>
 
 <a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/robro.png"><img style="max-width:35%; margin:auto; display:block;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/robro.png" </img></a>
 
+</br>
+
 <a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/safe.png"><img style="max-width:35%; margin:auto; display:block;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/safe.png" </img></a>
 
-<a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/PsylumBatteryKismet.jpg"><img style="max-width:35%; margin:auto; display:block;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/PsylumBatteryKismet.jpg" </img></a>
 
-<p>It also taught me that ensuring your systems can be easily modified and edited is <i>extremely</i> important. I ended up with a system that works under the hood, but is also unwieldy and difficult to make large changes with. A big win here was taking the time to learn how to import dialogue from a .csv file, which allowed me to iterate on the NPC's dialogue, despite the bottleneck of the dialogue system.</p>
+
+<p>It's easy to get carried away in the details, and to overlook a work as a whole. While I feel that I achieved something impressive all by myself, the level would have benefitted from a smaller, and tighter, scope. In the end, I was pleased to have learned as much as I did about so much — and now have a much better idea of how to approach projects. </p>
 
 </br>
 </br>
@@ -145,6 +135,8 @@
 <a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/Concept3.png"><img style="max-width:20%;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/Concept3.png" </img></a>
 
 <a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/LevelLayout.png"><img style="max-width:20%;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/LevelLayout.png" </img></a>
+
+<a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/Progress.gif"><img style="max-width:40%;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Psylum/Progress.gif" </img></a>
 
 <br style="clear: both;" />
 </br>

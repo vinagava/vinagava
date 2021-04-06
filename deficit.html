@@ -89,11 +89,11 @@ margin-left: 20px;"><i>Deficit is a Semi-Fictional Experiential ADHD Story, base
 
 <h2>Design Intentions</h2>
 
-<p>I wanted <i>Deficit</i> to be an accessible way for anyone (including non-gamers) to experience a slice of what ADHD life is like for some people. </p>
+<p>I wanted <i>Deficit</i> to be an accessible way for anyone (including non-gamers) to experience a slice of what ADHD life is like for some. There aren't many great examples of depictions of mental health in media - and those that do exist are often negative and harmful. In an industry which often struggles with representation, I wanted to contribute something that told a story, but also serves to educate and validate others' experiences.</p>
 
-<p></p> 
+<p>I played a lot of Choose-Your-Own-Adventure books as a kid, and loved text adventures. I wanted to capture the magic of both, but also distribute the game with as low a technological bar as possible. Twine was a natural choice, as was itch.io as a platform. With the only requirements being a device and an internet connection, I believe I was able to reach a very wide audience.</p> 
 
-<p></p>
+<p>A side-effect of working on this project was learning CSS and web development. Since Twine basically runs as a webpage in a browser, I had to learn HTML and CSS— knowledge which I used to make the website you're visiting!</p>
 
 
 
@@ -103,26 +103,22 @@ margin-left: 20px;"><i>Deficit is a Semi-Fictional Experiential ADHD Story, base
 
 <h2>Challenges</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae tortor at sem vulputate blandit. Phasellus ut posuere erat, aliquet dictum turpis. Donec tincidunt, mauris ac facilisis molestie, justo tellus pellentesque mi, vitae vulputate neque arcu eu dolor. Cras tempor in augue quis tincidunt.</p>
+<p>I originally intended to have more in-depth gameplay with some of the minigames. While others involved simple scripts that worked fine in Twine/CSS, one minigame required a <i>lot</i> more work than I had anticipated.</p>
 
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae tortor at sem vulputate blandit. Phasellus ut posuere erat, aliquet dictum turpis. Donec tincidunt, mauris ac facilisis molestie, justo tellus pellentesque mi, vitae vulputate neque arcu eu dolor. Cras tempor in augue quis tincidunt.</p>
+<p>The 'Chop' minigame has the player chopping up a pile of ADHD medication with a card - for this to work, however, I needed to know the position of the player's hand, which necessitated using Javascript. While I eventually made a working version (<a href="https://codepen.io/v3na/pen/QWyozWg">playable demo</a>), I had a much harder time implementing the Javascript into Twine. In the end, I simplified the gameplay enough for it to work in CSS/Twine— which actually still accomplished my goals.</p>
 
-<a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Deficit/TwineScreenshot.png"><img style="max-width:45%; margin:auto; display:block;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Deficit/TwineScreenshot.png" </img></a>
+</br>
 
-<p>I like to think I'm a <i>lot</i> more informed about how to scope these days, and this project was a big lesson in exactly that.</p>
+<a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Deficit/ChopGameSmall.gif"><img style="max-width:45%; margin:auto; display:block;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Deficit/ChopGameSmall.gif" </img></a>
+
+</br>
+
+<p>If I were to make another game like this, I would look into using Snowman (another version of Twine), which has better Javascript integration.</p>
 
 </br>
 <hr class="hrstar">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae tortor at sem vulputate blandit. Phasellus ut posuere erat, aliquet dictum turpis. Donec tincidunt, mauris ac facilisis molestie, justo tellus pellentesque mi, vitae vulputate neque arcu eu dolor. Cras tempor in augue quis tincidunt.</p>
-
-</br>
-
-<a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Deficit/VersionControlLol.png"><img style="max-width:45%; margin:auto; display:block;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Deficit/VersionControlLol.png" </img></a>
-
-
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae tortor at sem vulputate blandit. Phasellus ut posuere erat, aliquet dictum turpis. Donec tincidunt, mauris ac facilisis molestie, justo tellus pellentesque mi, vitae vulputate neque arcu eu dolor. Cras tempor in augue quis tincidunt. </p>
+<p>I also faced problems with packaging. I developed and tested primarily on Firefox— and did not realize until close to release that every browser parses CSS differently. Additionally, since Twine more or less runs as a website, Mobile was an additional hurdle. My scope had desktop play in mind, so Mobile suffered. <i>Deficit</i> is playable on Mobile, however— it just doesn't play as well!
 
 </br>
 </br>

@@ -92,7 +92,8 @@ Polish: 58 days
 
 <h3>What's this about?</h3>
 
-<p><i>Cave Drive</i> is a first-person level where you are invited to explore a subterranean environment, solve puzzles, and make off with a reward. A mysterious "Dr. F" challenges the player through a note to solve their gauntlet. There's talk of a prize - and also... <i> a car?</i> In the approximately 10-20 minutes of gameplay length, players will find themselves grappling up cliffs, dodging bullets, and of course, jumping their way through platforms. At the end of each challenge is a car battery, which are all needed to start a car engine, which in turn opens the door to a quest reward. Curious about the car? Play or watch the gameplay video to see what happens with it!</p>
+<p><i>Cave Drive</i> is a first-person level where you are invited to explore a subterranean environment, solve puzzles, and make off with a reward. A mysterious "Dr. F" challenges the player through a note to solve their gauntlet. There's talk of a prize - and also... <i> a car?</i></p>
+<p>In the approximately 10-20 minutes of gameplay length, players will find themselves grappling up cliffs, dodging bullets, and of course, jumping their way through platforms. At the end of each challenge is a car battery, which are all needed to start a car engine, which in turn opens the door to a quest reward. Curious about the car? Play or watch the gameplay video to see what happens with it!</p>
 
 </br>
 <hr></hr>
@@ -100,9 +101,13 @@ Polish: 58 days
 <h2>Design</h2>
 <p><i>Cave Drive</i> was originally a level made as part of a mentorship with two amazing colleagues at Ubisoft Toronto. Due to the nature of our work, I couldn't show that project outside of the studio. Naturally, I wanted to create a version that I could freely share, and so I took my design into Unreal. </p>
 
+<hr class="hrstar">
+
 <p>Having already made the level once was a huge boon - coming to Unreal with an established design with many iterations and feedback applied helped speed development time along considerably. I drew up a new papermap, scoped out my tech and asset needs, and started to get to work. </p>
 
-<a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/CaveDrive/Papermap.jpg"><img style="max-width:20%;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/CaveDrive/Papermap.jpg" </img></a>
+<br>
+<a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/CaveDrive/Papermap.jpg"><img style="style="max-width:35%; margin:auto; display:block;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/CaveDrive/Papermap.jpg" </img></a>
+   <br>
 
 <p>Going from having a raw design and lots of pre-made assets and features in the original level, to having a refined design and no features or assets was a challenge. Creating the blockout was fairly simple; I made sure to be consistent with metrics for walls, doors, etc, and tweaked the design where needed. After that, I spent time brushing up on Blueprint and many, many hours on YouTube finding tutorials for the various mechanics I needed. This included ladders, water dynamics/volumes, grapples, ziplines, a turret, and more. I customized the default Unreal FPS template to better suit my needs, and to accomodate the feel of the level.</p>
 
@@ -112,28 +117,16 @@ Polish: 58 days
 
 <hr class="hrstar">
 
-<p>Once I had a playable level, I worked on polish. This was the longest phase, and encompassed everything from Level Art to Audio Design. I could have made a bare-bones greybox, but I wanted something that would also look and feel appealing to everyone I showed the project to. Having a 'complete' feeling product is important to me, and even if it goes beyond the scope of Level Design, I believe it helps make me a stronger collaborator. I leveraged available assets from the Unreal Marketplace - I wanted to contain my scope (and most importantly did not want to spend time making rocks)! In the end, I needed certain key assets (like the batteries, consoles, and platforms), and created them myself. I believe my experience in 3D art helped expedite creating passable art assets.</p>
+<p>Once I had a playable level, I worked on polish. This was the longest phase, and encompassed everything from Level Art to Audio Design. I could have made a bare-bones greybox, but I wanted something that would also look and feel appealing to everyone I showed the project to. Having a 'complete' feeling product is important to me, and even if it goes beyond the scope of Level Design, I believe it helps make me a stronger collaborator.</p>
+<p>I leveraged available assets from the Unreal Marketplace - I wanted to contain my scope (and most importantly did not want to spend time making rocks)! In the end, I needed certain key assets (like the batteries, consoles, and platforms), and created them myself. I believe my experience in 3D art helped expedite creating passable art assets.</p>
 
+   <br>
 <a href="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/CaveDrive/Models.png"><img style="max-width:35%; margin:auto; display:block;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/CaveDrive/Models.png" </img></a>
-
+<br>
+   
 </br>
 
 <hr></hr>
-
-<h2>Challenges</h2>
-
-<p>Distributing content (<i>especially</i> playable game levels) can be a huge challenge, as having any sort of bar like having to download a package will turn away some players. </p>  
-
-<p>My initial plan was to leverage itch.io's ability to play HTML5 games in browser, since Unreal 4 can make HTML5 packages... <i>however</i>, this turned out to be a bigger challenge than anticipated. Certain features (like audio and visual effects like decals and particles) do not work on mobile. Support for HTML5 packages is also depricated, which meant having to use an older build of the engine. </p>
-
-</br>
-<hr class="hrstar">
-
-<p>Implementing a dialogue system took a lot of trial and error. While I could have bought a ready-made system from the Unreal marketplace, I chose the opportunity to craft my own. While it definitely taught me a lot about how Unreal scripting works—</p>
-
-
-
-<p>It also taught me that ensuring your systems can be easily modified and edited is <i>extremely</i> important. I ended up with a system that works under the hood, but is also unwieldy and difficult to make large changes with. A big win here was taking the time to learn how to import dialogue from a .csv file, which allowed me to iterate on the NPC's dialogue, despite the bottleneck of the dialogue system.</p>
 
 </br>
 </br>

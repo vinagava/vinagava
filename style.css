@@ -343,3 +343,12 @@ nav a:hover::before {
   width: 300px;
   height: 300px;
 }
+
+.linktext {
+  border-radius:20px; 
+  background: #CDCDCD; 
+  padding: 5px 30px 5px 30px;
+  text-align:center;
+  font-size: 18px;
+  font-weight: bold;
+}

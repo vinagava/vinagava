@@ -26,8 +26,7 @@ p{
 .container {
 	width: 90%;
 	margin: 0 auto;
-  display: flex;
-}
+  }
 
 .box  { flex: 1; box-sizing: border-box; min-height: 300px; margin-top: 5px; margin-bottom:5px;}
 

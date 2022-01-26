@@ -26,7 +26,37 @@ p{
 .container {
 	width: 90%;
 	margin: 0 auto;
+  display: flex;
 }
+
+.box  { flex: 1; box-sizing: border-box; min-height: 300px; margin-top: 5px; margin-bottom:5px;}
+
+.box1 { order: 1; }
+.box2 { order: 3; }
+.box3 { order: 2; }
+
+@media screen and (max-width: 992px) {
+    .container { flex-wrap: wrap; }                /* enable multi-line container */
+    .box1 { flex-grow: 2; }                        /* allow box1 to consume more space (as in image) */
+    .box3 { flex-basis: 100%; order: 4; }          /* box3 is forced to new line and ordered last (as in image) */
+}
+
+@media screen and (max-width: 768px) {
+    .box2 { flex-basis: 100%; }                    /* box 2 is forced to new line */
+    /* .container { flex-direction: column; } */   /* alternative method */
+  }
+
+/*.box {
+    height: 50px;
+    border: 1px solid #ccc;
+    display: flex;            
+    justify-content: center;                        /* center text horizontally */
+   /* align-items: center;                            /* center text vertically */
+   /* font-size: 1.2em;*/
+/*}
+/* .box1 { background-color: lightgreen; }
+.box2 { background-color: aqua; }
+.box3 { background-color: lightpink; }*/
 
 header {
   /*background: #55d6aa;*/

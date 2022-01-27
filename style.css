@@ -342,7 +342,7 @@ nav a:hover::before {
 }
 .square {
   margin: 10px 0;
-  margin-right:10px;
+  margin-right:5px;
   width: 300px;
   height: 300px;
 }

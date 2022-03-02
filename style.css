@@ -353,5 +353,12 @@ nav a:hover::before {
   padding: 5px 30px 5px 30px;
   font-weight: bold;*/
   text-align:center;
-  font-size: 20px;
+  font-size: 24px;
+  color: #7070ff;
+}
+
+.linktext:visited {
+  text-align:center;
+  font-size: 24px;
+  color: #93048a;
 }

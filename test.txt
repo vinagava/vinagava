@@ -1,8 +1,133 @@
-bl;arlaslfkhslghsdflghdg
+<html>
 
-ok thank
+<style type="text/css" media="all">
+   @import "styleTest.css";
+</style>
+
+  <body>
+  
+<nav>
+
+  <li><a href="about.html">About</a></li>
+  <li><a href="https://gavsarafian.com/">Work</a></li>
+  <li style="margin-left:3%; margin-right:1%;"><logo><a href="https://gavsarafian.com/">Gav Sarafian</a></logo></li>
+  <li><a href="https://gavsarafian.com/resume.html">Resume</a></li>
+  <li><a href="https://www.linkedin.com/in/gav-sarafian-97573b34/"><img style="max-width:15px;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Icons/linkedinicon.png"></img></a></li>
+  <li><a style="font-size:20px;" href="mailto:gavsarafian@gmail.com">✉</a></li>
+</nav>
+<div style="text-align:center;"><a2>Scriptwriter</a2></div>
+
+<br><br>
+
+<h1>Professional Work</h1>
+
+<br>
+
+<div style="margin: 0px 4% 0px 4%;">
+  
+ <p>  
+  <a href="https://www.ubisoft.com/en-us/game/assassins-creed/shadows"><img class="boxright" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Projects/ACShadows2.png"></a>
+  
+<h4 style="font-style:italic; margin-bottom:-1em;">(Currently Unreleased)</h4>
+<h2 style="text-transform: uppercase;">Assassin's Creed Shadows</h2>
+
+  <div style="margin: 0px 0px 0px 1%;">
+    <p>Created systemic barks for NPCs, names and descriptions for weapons, loot, collectibles, and more.</p>
+
+    <p>Referenced historic sources and worked with Narrative Director, Voice Designers and other roles to ensure that the unique context of the game's setting and story were adhered to and met the quality bar that is expected of the brand.</p>
+
+     <p style="font-style:italic;">(Description of work limited by unreleased status & NDA)</p>
+</div>
+</p>
 
 
 
+<br style="clear: both;">
 
-REVISION TEST OK1
+<p>  
+  <a href="https://toronto.ubisoft.com/games/splinter-cell-remake/"><img class="boxleft" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Projects/SCRemake2.jpg"></img></a>
+    
+ 
+  <h4 style="font-style:italic; margin-bottom:-1em;">(Currently Unreleased)</h4>
+  <h2 style="text-transform: uppercase;">Splinter Cell Remake</h2>   
+<div style="margin: 0px 3px 0px 53%;">
+<p>Wrote narrative content for three levels (including cinematics). Collaborated frequently with Narrative team to ensure story cohesion, quality, and to generate ideas & solutions for content. </p>
+
+<p>Wrote & developed in-game mission scripts, cinematics, NPC dialogue & barks, mission objectives, UI content, and more. Added content from proprietary scriptwriting software to engine & linked them to NPCs & other in-game elements. Often referenced original game via source material, as well as online & internal resources to balance quality expectations of a modern game, while retaining the flavour and memorable moments of the original.</p>
+
+<p style="font-style:italic;">(Description of work limited by unreleased status & NDA)</p>
+</div>
+
+</p>
+
+<br style="clear: both;">
+
+<br><br>
+
+</div>
+
+<hr class="hrstar"></hr>
+
+<h1>Independent Work</h1>
+
+<br>
+
+<div style="margin: 0px 4% 0px 4%;">
+
+ <p>  
+  <a href="https://gavsarafian.com/cavedrive.html"><img class="boxright" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/CaveDrive/Portfolio_Logo.png"></a>
+  
+  <h2 style="text-transform: uppercase;">Cave Drive</h2>  
+  
+  <div style="margin: 0px 0px 0px 1%;">
+  
+  <p><i>Cave Drive</i> is a feature-rich first-person platformer contained in a single level. Explore a detailed environment while solving puzzles, dodging bullets, and figuring out how to secure a reward! You'll find yourself swinging from grapple points, speeding down ziplines, and more.</p>
+  <p>Created in Unreal Engine 4 over two and a half months, <i>Cave Drive</i> challenges you to explore a subterranean environment, solve puzzles, and make off with a reward.</p>
+   </br>
+   <h3 style="text-align:center;"><a href="https://gavsarafian.com/cavedrive.html"><b>More information & playable build</b></a></h3>
+
+</p>
+</div>
+
+<br style="clear: both;">
+
+<p>  
+  <div class="staticbox" style=" float: left; margin: 0px 15px 15px 0px;">  
+  <a href="https://gavsarafian.com/deficit.html"><img style="position:relative; top:25%; height: auto; max-width: 100%;" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Deficit/Title_NoBG_Banner.png" width="650" height="220"></img></a>    
+  </div>
+  
+   <h2 style="text-transform: uppercase;">Deficit</h2>      
+<div style="margin: 0px 3px 0px 53%;">
+<p> A Semi-Fictional Experiential ADHD story, based on real-life experiences with ADHD. Navigate your way through several vignettes as you learn more about how structural barriers and attitudes can create a difficult environment for those whose brains work differently.  </p>
+  <br>
+  <p>Built in Twine over several months in 2020. Over 2000 plays to date! Read the <a href="http://www.firstpersonscholar.com/deficit/">Artist Statement here</a>.</p>
+</div>
+</p>
+
+<br style="clear: both;">
+
+
+<p>  
+  <a href="https://gavsarafian.com/fortune.html"><img class="boxright" src="https://raw.githubusercontent.com/vinagava/vinagava/master/Portfolio/Fortune_FolioTile3_small.png"></a>
+  
+  <h2>Fortune</h2>     
+
+<div style="margin: 0px 0px 0px 1%;">
+  <p><i>Fortune</i> is a short first-person experience - consult with a forlorn fortune telling machination, discuss existential subject matter, and perhaps it will deign you worthy of a new inventory item. </p>
+  <p>Created in Unreal Engine 4 over three months, <i>Fortune</i> was built to showcase skills with branching dialogue systems and scripting. Assets self-made (minus audio + base textures).</p>
+   </br>
+   <h3 style="text-align:center;"><a href="https://gavsarafian.com/fortune.html"><b>More information & in-browser playable build</b></a></h3>
+</div>
+</p>
+
+<br style="clear: both;">
+  
+</div>
+
+
+<br> 
+  
+  
+</body>
+
+</html>

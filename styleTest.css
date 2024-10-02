@@ -35,6 +35,10 @@ body{
         display: block;
         max-width: 100%;
        }
+	.selfie{
+    width: 65%;
+    margin-left: 35%;
+  }
   .staticbox{
         height:350px;
         width:625px;

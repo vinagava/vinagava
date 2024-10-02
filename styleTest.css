@@ -1,8 +1,7 @@
 body{
       background-color:#000;
-  margin-left: 15%;
+  	margin-left: 15%;
 	margin-right: 15%;
-	meta name="viewport" content="width=device-width, initial-scale=1"
 }
 
 @media screen and (max-width: 810px) {

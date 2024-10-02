@@ -1,8 +1,52 @@
 body{
-  background-color:#000;
-  /*background: linear-gradient(90deg, rgba(14,0,28,1) 0%, rgba(1,0,2,1) 15%, rgba(0,0,0,1) 85%, rgba(14,0,28,1) 100%);*/
+      background-color:#000;
   margin-left: 15%;
 	margin-right: 15%;
+}
+
+@media screen and (max-width: 768px) {
+        body {
+          display: flex;
+          flex-direction: column;
+        }
+    p {
+          font-size: 1.2rem;
+        }
+  h1    {
+          font-size:1.5rem;
+        }
+  img   {
+    width:100%;
+        }
+  .staticbox{
+    height:auto;
+    width:auto;
+        }
+  .boxleft {
+    width:auto;
+        }
+  .boxright {
+    width:auto;
+        }
+}
+
+@media screen and (min-width: 769px) {
+   img {
+        display: block;
+        max-width: 100%;
+       }
+  .staticbox{
+        height:350px;
+        width:625px;
+        }
+   .boxleft{
+          width:48%;
+          margin:0px 15px 15px 0px;
+        }
+  .boxright{
+          width:48%;
+          margin: 0px 0px 15px 15px;
+        } 
 }
 
 p{
@@ -15,7 +59,7 @@ h1, h2, h3, h4, h5, h6{
 	color:white;
 	font-family:Arial, Helvetica, sans-serif;
 }
-
+ 
 h4{
   color:#777;
 }
@@ -75,22 +119,8 @@ logo a:hover {
   color: #DDDDDD;
 }
 
-/*For floating boxes*/
-.boxleft{
-  float: left;
-  margin: 0px 15px 15px 0px;
-  height: auto; max-width: 50%;
-}
-
-.boxright{
-  float: right; margin: 0px 0px 15px 15px;
-  height: auto; max-width: 50%;
-}
-
 /*For the static effect behind the Deficit logo*/
 .staticbox{
-  height:350px;
-  width:625px;
   background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
 }
 

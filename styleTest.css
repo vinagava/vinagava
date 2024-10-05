@@ -35,6 +35,9 @@ body{
   .boxleft {
     width:auto;
         }
+ #resumebox {
+    width:100%;
+        } 
   .boxright {
     width:auto;
         }
@@ -54,13 +57,13 @@ body{
         max-width: 100%;
        }
   .staticbox{
-        height:100%;
-        width:auto;
+        height:350px;
+        width:625px;
         }
    .boxleft{
           width:48%;
           margin:0px 15px 15px 0px;
-        }
+        } 
   .boxright{
           width:48%;
           margin: 0px 0px 15px 15px;
@@ -175,3 +178,4 @@ logo a:hover {
     position: relative;
     top: -13px;
 }
+

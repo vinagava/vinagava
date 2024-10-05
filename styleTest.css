@@ -54,8 +54,8 @@ body{
         max-width: 100%;
        }
   .staticbox{
-        height:350px;
-        width:625px;
+        height:100%;
+        width:auto;
         }
    .boxleft{
           width:48%;
@@ -175,4 +175,3 @@ logo a:hover {
     position: relative;
     top: -13px;
 }
-

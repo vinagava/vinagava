@@ -18,6 +18,9 @@ body{
     height:auto;
     width:auto;
         }
+	#staticbanner{
+    margin:auto;
+        }
   .iframebox{
           margin: auto;
           display: block;
@@ -62,6 +65,11 @@ body{
   .staticbox{
         height:100%;
         width:auto;
+        }
+	#staticbanner{
+        margin-top:3em;
+        margin-left:12em;
+        margin-right:12em;
         }
    .boxleft{
           width:48%;

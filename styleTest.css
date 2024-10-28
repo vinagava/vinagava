@@ -97,7 +97,8 @@ body{
           margin-top:4em;
          }
   nav li {
-    margin-left:3%;
+    /*margin-left:3%;*/
+    /*padding-left:2%*/
          }
 }
 
@@ -193,4 +194,3 @@ logo a:hover {
     position: relative;
     top: -13px;
 }
-

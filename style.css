@@ -1,20 +1,130 @@
 body{
-	background: rgb(14,0,28);
-	background: linear-gradient(90deg, rgba(14,0,28,1) 0%, rgba(1,0,2,1) 15%, rgba(0,0,0,1) 85%, rgba(14,0,28,1) 100%);
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-top: 25px;
+      /*background-color:#1E1529;*/
+      background: #1b1424;
+      background: linear-gradient(90deg, rgba(27, 20, 36, 1) 0%, rgba(60, 46, 79, 1) 50%, rgba(27, 20, 36, 1) 100%);
+      margin-left: 15%;
+	    margin-right: 15%;
 }
 
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-	color:white;
-	font-family:Arial, Helvetica, sans-serif;
+/*For phone and mobile screens*/
+@media screen and (max-width: 1200px) {
+  body{
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  p {
+          font-size: 1.2rem;
+        }
+  h1    {
+          font-size:1.5rem;
+        }
+  img   {
+    width:100%;
+        }
+  .staticbox{
+    height:auto;
+    width:auto;
+        }
+	#staticbanner{
+    margin:auto;
+        }
+  .iframebox{
+          margin: auto;
+          display: block;
+          width:100%;
+        }
+  .iframeplayer{
+          width:100%;
+          height:200px;
+        }
+  .banner{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+         }
+  .boxleft {
+    width:auto;
+        }
+ #resumebox {
+    width:100%;
+        } 
+  .boxright {
+    width:auto;
+        }
+  nav{
+          gap:10%;
+  }
+  nav a{
+          font-size:14px;
+  }
+  nav li {
+    /*margin-left:5%;*/
+         }
+  logo a{
+          font-size:35px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+          display: flex;
+          flex-direction: column;
+        }
+  .selfie{
+    width: 65%;
+    margin-left: 25%;
+  }
+   img {
+        display: block;
+        max-width: 100%;
+       }
+  .staticbox{
+        height:100%;
+        width:auto;
+        }
+	#staticbanner{
+        margin-top:3em;
+        margin-left:12em;
+        margin-right:12em;
+        }
+   .boxleft{
+          width:48%;
+          margin:0px 15px 15px 0px;
+        } 
+  .boxright{
+          width:48%;
+          margin: 0px 0px 15px 15px;
+        }
+  .iframebox{
+          margin: auto;
+          display: block;
+          width: 50vw;
+          height: 450px;
+          max-width:100%;
+          max-height:100%;
+        }
+  .iframeplayer{
+          width:100%;
+        }
+  .banner{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top:4em;
+         }
+  nav{
+          gap:3%;
+  }
+  nav a{
+          font-size:14px;
+  }
+  nav li {
+    /*margin-left:3%;*/
+    /*padding-left:2%*/
+         }
+  logo a{
+    font-size:60px;
+  }
 }
 
 p{
@@ -23,95 +133,40 @@ p{
   line-height: 1.45;
 }
 
-.container {
-	width: 90%;
-	margin: 0 auto;
-  }
-
-.box  { flex: 1; box-sizing: border-box; min-height: 300px; margin-top: 5px; margin-bottom:5px;}
-
-.box1 { order: 1; }
-.box2 { order: 2; }
-.box3 { order: 3; }
-.box4 { order: 4; }
-.box5 { order: 5; }
-
-@media screen and (max-width: 992px) {
-    .container { flex-wrap: wrap; }                /* enable multi-line container */
-    .box1 { flex-grow: 2; }                        /* allow box1 to consume more space (as in image) */
-    .box3 { flex-basis: 100%; order: 4; }          /* box3 is forced to new line and ordered last (as in image) */
+h1, h2, h3, h4, h5, h6{
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+}
+ 
+h4{
+  color:#777;
 }
 
-@media screen and (max-width: 768px) {
-    .box2 { flex-basis: 100%; }                    /* box 2 is forced to new line */
-    /* .container { flex-direction: column; } */   /* alternative method */
-  }
-
-.box {
-   display: flex;            
-    justify-content: center;                        /* center text horizontally */
-   align-items: center;                            /* center text vertically */
-   }
-
-/* .box1 { background-color: lightgreen; }
-.box2 { background-color: aqua; }
-.box3 { background-color: lightpink; }*/
-
-header {
-  /*background: #55d6aa;*/
+a{
+  color:white;
 }
 
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  float: left;
-  /*padding: 10px 0;*/
-}
-
-/*Header Name*/
-h1 a{
-  text-decoration:none;
-  text-transform:uppercase;
-  font-size:24px;
-  margin: auto auto auto -45px;
+a2{
   color:#DDDDDD;
-}
-
-/*Header Description*/
-h1 a2{
-  text-decoration:none;
-  /*text-transform:uppercase;*/
-  font-size:12px;
-  margin: auto auto auto 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 2;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
 nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 15px;
-  padding-top: 23px;
-
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:1em;
 }
 
 nav a {
   color: #444;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  /*font-size: 14px;*/
   font-weight:bold;
   color:white;
 	font-family:Arial, Helvetica, sans-serif;
@@ -121,244 +176,65 @@ nav a:hover {
   color: #AFAFAF;
 }
 
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
+nav li {
+  display: inline-block;
+   /* margin-left: 2%;
+padding-top: 23px;*/
+  position: relative;
 }
 
-nav a:hover::before {
-  width: 100%;
+logo a {
+	/*font-size: 30px;*/
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-style: normal;
+	letter-spacing: 3px;
+	color: #DDDDDD;
+	line-height: 1.2em;
 }
 
-.defbox{  
-	background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
-	border: 1px solid green;
-	height:150px;
-	width:800px;
-	/*margin-left:10%;
-	margin-right:10%;*/
-  	margin: auto;
-  	display: block;
-	color:white;
-	text-align:center;
-	z-index:1;
+logo a:hover {
+  color: #DDDDDD;
 }
 
-.boxstatic{
-  background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
-	/*height:150px;
-	width:800px;*/
-	/*margin-left:10%;
-	margin-right:10%;*/
-  	margin: auto;
-  	display: block;
-	color:white;
-	text-align:center;
-	/*z-index:1;*/
-}
-
-
-.boxtext{
-   text-shadow:3px 3px 20px #b9b9b9;
-   font-family: helvetica;
-   font-size: 80px;
-   font-weight:bold;
-   margin: 25px 25px;   
-   /*display:ruby;*/
-   display: inline-flex;
-  margin-left:50px;
-  margin-right:50px;
-   /*margin-top:50px;*/
-    margin-top: -0.5%;
-  letter-spacing: 30px;
-}
-
-/*Hovering Text*/
-.hover {
-        -webkit-animation: action 2s ease-in-out infinite  alternate;
-        animation: action 2s ease-in-out infinite  alternate;
-}
-
-.hover2 {
-        -webkit-animation: action2 2s ease-in-out infinite  alternate;
-        animation: action2 1600ms ease-in-out infinite  alternate;
-} 
-
-
-.hover3 {
-        -webkit-animation: action3 3s ease-in-out infinite alternate;
-        animation: action3 3s ease-in-out infinite alternate;
-}
-
-/*Pills*/
-.pill{
-  animation: pillspin 24s linear infinite;
-}
-
-.pill2{
-  animation: pillspin 26s linear infinite;
-  animation-delay:500ms;
-}
-
-@keyframes pillspin{  
-  0%   {-webkit-transform: rotate(0deg);}
-	50%  {-webkit-transform: rotate(180deg); }
-	100% {-webkit-transform: rotate(360deg);}
-}
-
-@keyframes action {
-        0% {transform: translateY(-0.7em);}
-      100% { transform: translateY(-0.5em); }
-    }
-
-@keyframes action2 {
-        0% { transform: translateY(-0.6em);}
-        100% { transform: translateY(-0.45em); }
-}
-
-@keyframes action3 {
-         0% { transform: translateY(-0.75em);}
-        100% { transform: translateY(-0.5em); }
-}
-
-#container{
-  display: flex;
-  /*border: 1px solid #333;*/
-}
-
-#container section {
-  padding: 8px;
-}
-
-.shortside{
-  margin-left:20px;
-  margin-right:20px;
-  background: #AAAAA;
-  width: 40%;
-}
-
-.longside{
-  background: #080808;
-  width: 70%;
-}
-
-.longsidestatic{
-  background: #AAAAA;
-  /*width: 70%;*/
-  /*width="768" height="432"*/
-  height:300px;
-  border: 8px solid #080808;
-  background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
-}
-
-.shortsidestatic{
-  background: #AAAAA;
-  width: 40%;
-  background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
-}
-
-.longsideimage{
-  text-align:center;
-  width=768px;
-  height=432px;
-  border: 8px solid #080808;
-}
-
-.floatleft{
-  float: left;
-  margin: 0px 15px 15px 0px;
-}
-
-.floatright{
-  float: right; margin: 0px 0px 15px 15px;
-}
-
-.brclear{
-  clear:both;
-}
-
+/*For the static effect behind the Deficit logo*/
 .staticbox{
-  height:300px;
-  width:700px;
-  border: 8px solid #080808;
   background:url("https://raw.githubusercontent.com/vinagava/vinagava/master/Deficit/Static1kblack.gif");
 }
 
-
-.row {
-  margin:0;
-}
-
-.column-wrapper{
-/*height:200px;
-  justify-content:center;
-  text-align:center;*/
-  display:flex;
-  flex-direction:column;
-  
-}
-
-.column-wrapper img {
-  /*max-height:100px;
-  max-width:50%;*/
-}
-
-
+/*For line break with a star*/
 .hrstar {
     border: none;
-    border-top: 3px double #333;
-    color: #333;
+    border-top: 4px double #724b7e;
+    color: #c890d9;
     overflow: visible;
     text-align: center;
-    /*height: 5px;*/
 }
 
 .hrstar:after {
-    background: #000;
-    content: '☆ ★';
-    padding: 0 4px;
+    /*background: #000;*/
+    content: '☆ ★ ☆';
+    padding: 0 12px;
     position: relative;
     top: -13px;
 }
 
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+highlight {
+  position: relative;
 }
 
-.use-cover-background {
-  background-size: cover;
-  background-position: center;
-}
-.square {
-  margin: 10px 0;
-  margin-right:3px;
-  width: 300px;
-  height: 300px;
-}
+highlight::before {
+  /* Highlight color */
+  background-color: #9d23e1;
 
-.linktext {
-  /*border-radius:20px; 
-  background: #CDCDCD; 
-  padding: 5px 30px 5px 30px;
-  font-weight: bold;*/
-  text-align:center;
-  font-size: 24px;
-  color: #7070ff;
-}
-
-.linktext:visited {
-  text-align:center;
-  font-size: 24px;
-  color: #93048a;
+  content: "";
+  position: absolute;
+  width: calc(100% + 10px);
+  height: 75%;
+  left: -7px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-1deg);
 }

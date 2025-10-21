@@ -8,24 +8,29 @@ body{
 
 @media screen and (max-width: 1200px) {
   body{
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-  p {
+          margin-left: 4%;
+          margin-right: 4%;
+        }
+  p     {
           font-size: 1.2rem;
         }
   h1    {
           font-size:1.5rem;
         }
+  h8    {
+          margin-left: 4vw;
+          margin-right: 4vw;
+        }
+  
   img   {
-    width:100%;
+          width:100%;
         }
   .staticbox{
-    height:auto;
-    width:auto;
+          height:auto;
+          width:auto;
         }
 	#staticbanner{
-    margin-top:30px;
+          margin-top:30px;
         }
   .iframebox{
           margin: auto;
@@ -82,6 +87,12 @@ body{
         display: block;
         max-width: 100%;
        }
+  
+  h8    {
+          margin-left: 1vw;
+          margin-right: 1vw;
+        }
+  
   .staticbox{
         height:100%;
         width:auto;

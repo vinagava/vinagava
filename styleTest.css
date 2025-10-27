@@ -14,7 +14,10 @@ body{
   p     {
           font-size: 1.2rem;
         }
-  h1    {
+  a2{
+          font-size:14px;
+  }
+    h1    {
           font-size:1.5rem;
         }
   h8    {
@@ -87,7 +90,9 @@ body{
         display: block;
         max-width: 100%;
        }
-  
+  a2{
+          font-size:1.2rem;
+  }
   h8    {
           margin-left: 1vw;
           margin-right: 1vw;
@@ -160,9 +165,10 @@ h1, h2, h3, h4, h5, h6{
 
 /*for rounded box titles in Writing Samples*/
 h7{
-  color:black;
+  color:#9e0eee;
  	font-family:Arial, Helvetica, sans-serif;
-  font-size:24px;
+  font-size:1.8rem;
+  font-weight:bold;
 }
 
 /*Text used in sample page boxes*/
@@ -179,6 +185,7 @@ h4{
 
 a{
   color:white;
+  text-decoration:none;
 }
 
 a2{
@@ -186,7 +193,7 @@ a2{
   font-family:Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   line-height: 2;
-  font-size: 14px;
+ /* font-size: 14px;*/
   letter-spacing: 2px;
 }
 

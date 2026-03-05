@@ -87,8 +87,10 @@ body{
           flex-direction: column;
         }
   .selfie{
-    width: 65%;
-    margin-left: 25%;
+    border: 2px solid #f000;
+    border-radius: 25px;
+    /*width: 65%;
+    margin-left: 25%;*/
   }
    img {
         display: block;

@@ -11,6 +11,14 @@ body{
           margin-left: 4%;
           margin-right: 4%;
         }
+  
+  .selfie{
+    border: 2px solid #f000;
+    border-radius: 25px;
+    /*width: 65%;
+    margin-left: 25%;*/
+  }
+  
   p     {
           font-size: 1.2rem;
         }
@@ -92,7 +100,8 @@ body{
     /*width: 65%;
     margin-left: 25%;*/
   }
-   img {
+  
+  img {
         display: block;
         max-width: 100%;
        }

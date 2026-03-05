@@ -6,6 +6,7 @@ body{
 	    margin-right: 15%;
 }
 
+/* Rules for mobile screens */
 @media screen and (max-width: 1200px) {
   body{
           margin-left: 4%;
@@ -17,6 +18,17 @@ body{
     border-radius: 25px;
     /*width: 65%;
     margin-left: 25%;*/
+  }
+  
+  /* Formatting divs on About page */
+  #aboutdiv{
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  
+  /* Formatting top of About page */
+  #abouttop{
+    margin-top:3em;
   }
   
   p     {
@@ -99,6 +111,11 @@ body{
     border-radius: 25px;
     /*width: 65%;
     margin-left: 25%;*/
+  }
+  
+   /* Formatting top of About page */
+  #abouttop{
+    margin-top:3em;
   }
   
   img {
